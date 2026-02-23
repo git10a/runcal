@@ -21,7 +21,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                                 陸連公認
                             </span>
                         )}
-                        <h3 className="font-extrabold text-lg leading-snug group-hover:text-primary transition-colors line-clamp-2">
+                        <h3 className="font-extrabold text-lg leading-snug line-clamp-2">
                             {race.name.split(/[（(]/)[0].trim()}
                         </h3>
                     </div>
