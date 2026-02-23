@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ランカル - 走りたい大会が3秒で見つかる',
+  title: 'ランカル - 走りたい大会がすぐに見つかる',
   description: 'ミニマルなマラソン検索エンジン。地域、距離、公認の有無からサクッと大会を検索できます。',
 };
 

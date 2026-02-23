@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { Race } from '@/lib/data';
 import RaceCard from './RaceCard';
 import FilterBar from './FilterBar';
-import { Grid, List, Heart } from 'lucide-react';
+import { Grid, List, Heart, CalendarDays, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
 
 interface RaceListProps {
@@ -19,11 +19,14 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
     const [selectedEntryStatus, setSelectedEntryStatus] = useState<string | null>(null);
     const [selectedCertified, setSelectedCertified] = useState<boolean | null>(null);
 
-    const [viewMode, setViewMode] = useState<'card' | 'table'>('card');
+    const [viewMode, setViewMode] = useState<'card' | 'table' | 'calendar'>('card');
     const { favorites, toggleFavorite, isLoaded } = useFavorites();
 
     const [currentPage, setCurrentPage] = useState(1);
     const ITEMS_PER_PAGE = 12;
+
+    // Calendar State
+    const [currentMonth, setCurrentMonth] = useState(new Date());
 
     const filteredRaces = useMemo(() => {
         let races = initialRaces;
@@ -56,6 +59,50 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
 
     const totalPages = Math.ceil(filteredRaces.length / ITEMS_PER_PAGE);
     const paginatedRaces = filteredRaces.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+
+    // Calendar Logic
+    const nextMonth = () => {
+        setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1));
+    };
+
+    const prevMonth = () => {
+        setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1));
+    };
+
+    const calendarDays = useMemo(() => {
+        const year = currentMonth.getFullYear();
+        const month = currentMonth.getMonth();
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+
+        const days = [];
+        // Add padding days from previous month to start on Sunday
+        const startPadding = firstDay.getDay();
+        for (let i = startPadding - 1; i >= 0; i--) {
+            const d = new Date(year, month, -i);
+            days.push({ date: d, isCurrentMonth: false });
+        }
+
+        // Add days of current month
+        for (let i = 1; i <= lastDay.getDate(); i++) {
+            const d = new Date(year, month, i);
+            days.push({ date: d, isCurrentMonth: true });
+        }
+
+        // Add padding days for next month to complete rows
+        const endPadding = 42 - days.length; // 6 rows of 7 days
+        for (let i = 1; i <= endPadding; i++) {
+            const d = new Date(year, month + 1, i);
+            days.push({ date: d, isCurrentMonth: false });
+        }
+
+        return days;
+    }, [currentMonth]);
+
+    const getRacesForDate = (date: Date) => {
+        const dateStr = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+        return filteredRaces.filter(r => r.date === dateStr);
+    };
 
     return (
         <>
@@ -101,6 +148,14 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                             >
                                 <List size={16} />
                             </button>
+                            <button
+                                onClick={() => setViewMode('calendar')}
+                                className={`flex items-center justify-center w-10 h-8 rounded-lg transition-all cursor-pointer ${viewMode === 'calendar' ? 'bg-background shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'}`}
+                                aria-label="カレンダー表示"
+                                title="カレンダー表示"
+                            >
+                                <CalendarDays size={16} />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -113,7 +168,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                                     <RaceCard key={race.id} race={race} />
                                 ))}
                             </div>
-                        ) : (
+                        ) : viewMode === 'table' ? (
                             <div className="overflow-x-auto bg-card rounded-2xl border border-border shadow-sm">
                                 <table className="w-full text-sm text-left">
                                     <thead className="bg-muted/50 text-muted-foreground font-medium border-b border-border whitespace-nowrap">
@@ -179,6 +234,68 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                                         })}
                                     </tbody>
                                 </table>
+                            </div>
+                        ) : (
+                            <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
+                                <div className="flex items-center justify-between p-4 border-b border-border bg-muted/30">
+                                    <button
+                                        onClick={prevMonth}
+                                        className="p-2 hover:bg-muted rounded-full transition-colors cursor-pointer"
+                                    >
+                                        <ChevronLeft size={20} />
+                                    </button>
+                                    <h3 className="text-lg font-bold">
+                                        {currentMonth.getFullYear()}年 {currentMonth.getMonth() + 1}月
+                                    </h3>
+                                    <button
+                                        onClick={nextMonth}
+                                        className="p-2 hover:bg-muted rounded-full transition-colors cursor-pointer"
+                                    >
+                                        <ChevronRight size={20} />
+                                    </button>
+                                </div>
+                                <div className="grid grid-cols-7 border-b border-border bg-muted/50 text-center text-sm font-medium text-muted-foreground">
+                                    {['日', '月', '火', '水', '木', '金', '土'].map(day => (
+                                        <div key={day} className="py-2">{day}</div>
+                                    ))}
+                                </div>
+                                <div className="grid grid-cols-7 auto-rows-[120px]">
+                                    {calendarDays.map((dayObj, i) => {
+                                        const dayRaces = getRacesForDate(dayObj.date);
+                                        return (
+                                            <div
+                                                key={i}
+                                                className={`p-2 border-r border-b border-border last:border-r-0 ${dayObj.isCurrentMonth ? 'bg-card' : 'bg-muted/10 opacity-60'
+                                                    }`}
+                                            >
+                                                <div className={`text-sm font-medium mb-1 ${dayObj.date.toDateString() === new Date().toDateString()
+                                                        ? 'bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mx-auto'
+                                                        : 'text-center text-muted-foreground'
+                                                    }`}>
+                                                    {dayObj.date.getDate()}
+                                                </div>
+                                                <div className="space-y-1 overflow-y-auto max-h-[80px] pr-1 custom-scrollbar">
+                                                    {dayRaces.map(race => (
+                                                        <a
+                                                            key={race.id}
+                                                            href={race.url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className={`block text-[10px] p-1.5 rounded truncate transition-colors ${race.entry_status === '受付中'
+                                                                    ? 'bg-primary/20 text-orange-800 hover:bg-primary/30 font-bold'
+                                                                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                                                                }`}
+                                                            title={race.name}
+                                                        >
+                                                            {race.entry_status === '受付中' && '🎌 '}
+                                                            {race.name.split(/[（(]/)[0]}
+                                                        </a>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                             </div>
                         )}
 
