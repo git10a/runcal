@@ -20,21 +20,7 @@
   --radius: 1.2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #022c22;
-    --foreground: #F8FFFB;
-    --primary: #A0FFE1;
-    --primary-hover: #7EFCD1;
-    --primary-light: #4DEBB9;
-    --primary-foreground: #022C22;
-    --card: #064e3b;
-    --card-foreground: #F8FFFB;
-    --border: #065f46;
-    --muted: #065f46;
-    --muted-foreground: #A0FFE1;
-  }
-}
+
 
 @theme inline {
   --color-background: var(--background);
