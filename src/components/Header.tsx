@@ -7,10 +7,14 @@ export default function Header() {
         <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="relative w-10 h-10 group-hover:scale-105 transition-transform overflow-hidden rounded-xl shadow-sm border border-border">
-                        <Image src="/logo.png" alt="RUNCAL Logo" fill className="object-cover" />
-                    </div>
-                    <span className="font-extrabold text-xl tracking-tight text-foreground">ランカル</span>
+                    <Image
+                        src="/runcal-logo.png"
+                        alt="RUNCAL Logo"
+                        width={183}
+                        height={120}
+                        className="h-10 w-auto group-hover:scale-105 transition-transform object-contain"
+                        priority
+                    />
                 </Link>
                 <nav className="flex items-center gap-4">
                     <Link href="/favorites" className="flex items-center gap-1.5 text-sm font-bold text-muted-foreground hover:text-primary transition-colors hover:bg-primary/10 px-4 py-2 rounded-full">
