@@ -1,12 +1,10 @@
 import os
-import time
 from dotenv import load_dotenv
 
 # Load .env.local from the parent directory
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env.local'))
 
 from google import genai
-from PIL import Image
 
 # Initialize the Gemini client. 
 # It expects GEMINI_API_KEY environment variable to be set.
