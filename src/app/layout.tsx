@@ -15,8 +15,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ランカル - 走りたい大会がすぐに見つかる',
-  description: 'ミニマルなマラソン検索エンジン。地域、距離、公認の有無からサクッと大会を検索できます。',
+  title: {
+    default: 'ランカル | 日本のマラソン大会・ハーフマラソン日程カレンダー',
+    template: '%s | ランカル',
+  },
+  description: '日本全国のマラソン大会・ハーフマラソンの日程一覧。地域、距離、陸連公認の有無で簡単検索。フルマラソン、ハーフマラソン、ウルトラマラソンなど、走りたい大会がすぐに見つかるカレンダーサイト。',
+  keywords: ['マラソン大会', '日程', 'ハーフマラソン', 'カレンダー', '日本', 'マラソン大会一覧', 'フルマラソン', 'ウルトラマラソン', '陸連公認'],
+  openGraph: {
+    title: 'ランカル | 日本のマラソン大会・ハーフマラソン日程カレンダー',
+    description: '日本全国のマラソン大会・ハーフマラソンの日程一覧。走りたい大会がすぐに見つかる。',
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ランカル | マラソン大会日程カレンダー',
+    description: '日本全国のマラソン大会・ハーフマラソンの日程一覧。走りたい大会がすぐに見つかる。',
+  },
 };
 
 export default function RootLayout({
