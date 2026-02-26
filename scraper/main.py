@@ -5,7 +5,14 @@ import re
 import json
 import os
 import time
+import hashlib
 from datetime import datetime, timezone, timedelta
+
+# Import the new image generator
+try:
+    import image_generator
+except ImportError:
+    image_generator = None
 
 def extract_prefecture(text):
     prefs_list = [
@@ -341,10 +348,43 @@ def main():
     data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
     json_path = os.path.join(data_dir, 'races.json')
     
+    public_images_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'public', 'images', 'races')
+    os.makedirs(public_images_dir, exist_ok=True)
+    
     new_races = scrape_runners_bible()
     
     if new_races:
         new_races.sort(key=lambda x: x['date'])
+        
+        # --- Image Generation Step ---
+        print("\nProcessing images for races...")
+        for race in new_races:
+            # Generate a consistent filename based on an MD5 hash of the race name
+            hash_str = hashlib.md5(race['name'].encode('utf-8')).hexdigest()
+            filename = f"race_{hash_str}.png"
+            image_filepath = os.path.join(public_images_dir, filename)
+            
+            # Add the URL path to the race data so the frontend can use it
+            race['image_url'] = f"/images/races/{filename}"
+            
+            if os.path.exists(image_filepath):
+                # Image already exists -> skip generation to save API calls
+                print(f"  Image already exists for '{race['name']}' ({filename})")
+            else:
+                if image_generator:
+                    success = image_generator.generate_and_save_race_image(race['name'], image_filepath)
+                    if success:
+                        # Add a small delay to avoid hitting API rate limits immediately
+                        time.sleep(2)
+                        
+                        # Incrementally save the JSON file so the UI can update while processing
+                        with open(json_path, 'w', encoding='utf-8') as f:
+                            json.dump(new_races, f, ensure_ascii=False, indent=2)
+                else:
+                     print(f"  Image generator not imported, skipping '{race['name']}'...")
+                     
+        # --- End Image Generation Step ---
+        
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(new_races, f, ensure_ascii=False, indent=2)
         print(f"Successfully generated and saved {len(new_races)} real races to {json_path}")

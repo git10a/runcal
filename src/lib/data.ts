@@ -14,6 +14,7 @@ export interface Race {
   time_limit?: string;
   features?: string;
   url: string;
+  image_url?: string;
   updated_at: string;
 }
 

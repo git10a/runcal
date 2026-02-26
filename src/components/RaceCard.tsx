@@ -1,4 +1,5 @@
 import { Race } from '@/lib/data';
+import Image from 'next/image';
 import { Heart, MapPin, Calendar, Award, Footprints } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
 import CalendarButton from './CalendarButton';
@@ -12,8 +13,20 @@ export default function RaceCard({ race }: RaceCardProps) {
     const isFav = isFavorite(race.id);
 
     return (
-        <div className="bg-card text-card-foreground rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 group flex flex-col justify-between h-full ring-1 ring-border/50 overflow-hidden">
-            <div className="p-6">
+        <div className="bg-card text-card-foreground rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 group flex flex-col justify-between h-full ring-1 ring-border/50 overflow-hidden relative">
+            {race.image_url && (
+                <div className="w-full h-40 relative overflow-hidden bg-muted">
+                    <Image
+                        src={race.image_url}
+                        alt={`${race.name}の画像`}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80" />
+                </div>
+            )}
+            <div className={`p-6 ${race.image_url ? 'pt-4 border-t-0' : ''}`}>
                 <div className="flex justify-between items-start gap-4 mb-3">
                     <div>
                         {race.is_jaaf_certified && (
@@ -22,7 +35,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                                 陸連公認
                             </span>
                         )}
-                        <h3 className="font-extrabold text-lg leading-snug line-clamp-2">
+                        <h3 className={`font-extrabold text-lg leading-snug line-clamp-2 ${race.image_url ? 'mt-1' : ''}`}>
                             {race.name.split(/[（(]/)[0].trim()}
                         </h3>
                     </div>
