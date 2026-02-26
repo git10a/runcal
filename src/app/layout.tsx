@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     description: '日本全国のマラソン大会・ハーフマラソンの日程一覧。走りたい大会がすぐに見つかる。',
     locale: 'ja_JP',
     type: 'website',
+    images: [
+      {
+        url: '/runcalfull.png',
+        width: 1200,
+        height: 630,
+        alt: 'ランカル OGP Image',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ランカル | マラソン大会日程カレンダー',
     description: '日本全国のマラソン大会・ハーフマラソンの日程一覧。走りたい大会がすぐに見つかる。',
+    images: ['/runcalfull.png'],
   },
 };
 
