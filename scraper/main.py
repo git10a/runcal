@@ -23,11 +23,29 @@ def extract_prefecture(text):
     return "不明"
 
 def parse_date(date_text):
-    # e.g., "2026.1.4（日）" -> "2026-01-04"
+    if not date_text:
+        return None
+        
+    date_text = date_text.strip()
+    
+    # "2026.1.4（日）" or "2026.1.4"
     match = re.search(r'(\d{4})\.(\d{1,2})\.(\d{1,2})', date_text)
     if match:
         year, month, day = match.groups()
         return f"{year}-{int(month):02d}-{int(day):02d}"
+        
+    # "2026年1月4日" or "2026年01月04日（日）"
+    match = re.search(r'(\d{4})年(\d{1,2})月(\d{1,2})日', date_text)
+    if match:
+        year, month, day = match.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d}"
+        
+    # "2026/1/4" or "2026/01/04"
+    match = re.search(r'(\d{4})/(\d{1,2})/(\d{1,2})', date_text)
+    if match:
+        year, month, day = match.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d}"
+        
     return None
 
 def scrape_runners_bible():
@@ -78,19 +96,27 @@ def scrape_runners_bible():
             
         # Parse Entry Window
         entry_start, entry_end = None, None
+        
+        # Example formats:
+        # "2025年9月1日（月）～2025年12月15日（月）"
+        # "2026.1.4 ～ 2026.2.1"
         if '～' in entry_str:
             parts = [p.strip() for p in entry_str.split('～')]
             if len(parts) >= 1 and parts[0]:
-                entry_start = parse_date(parts[0] + '（月）') # dummy day of week to reuse parse_date
+                entry_start = parse_date(parts[0])
             if len(parts) >= 2 and parts[1]:
-                entry_end = parse_date(parts[1] + '（月）')
+                entry_end = parse_date(parts[1])
         
         # Determine Status
         entry_status = "エントリー前"
-        if entry_start and entry_end:
-            if entry_start <= today_str <= entry_end:
+        
+        # If entry_end is missing, assume it stays open until the event date
+        end_date_for_status = entry_end if entry_end else parsed_date
+        
+        if entry_start:
+            if entry_start <= today_str <= end_date_for_status:
                 entry_status = "受付中"
-            elif today_str > entry_end:
+            elif today_str > end_date_for_status:
                 entry_status = "受付終了"
         
         # Extract Link
@@ -108,6 +134,10 @@ def scrape_runners_bible():
         
         # Discover Distances
         distance_set = set()
+        
+        # Consider it a full marathon if "フル" or "マラソン" is in the name,
+        # but avoid false positives from "ハーフ" or "リレー".
+        # Also avoid it if the name explicitly contains other km numbers (e.g. 10k).
         if "フル" in name_str or "マラソン" in name_str and "ハーフ" not in name_str and "リレー" not in name_str and not re.search(r'\d+k', name_str, re.IGNORECASE):
             distance_set.add("フル")
         
@@ -117,7 +147,13 @@ def scrape_runners_bible():
         
         km_matches = re.findall(r'(\d+(?:\.\d+)?)\s*(?:km|K|k|キロ)', name_str, re.IGNORECASE)
         for km in km_matches:
-            distance_set.add(f"{km}km")
+            # Normalize 42.195km to "フル"
+            if float(km) == 42.195:
+                distance_set.add("フル")
+            else:
+                # Remove unnecessary decimals (e.g. 10.0 -> 10)
+                clean_km = int(float(km)) if float(km).is_integer() else float(km)
+                distance_set.add(f"{clean_km}km")
             
         distance = list(distance_set)
         if not distance: distance.append("その他")

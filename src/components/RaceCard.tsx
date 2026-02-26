@@ -1,6 +1,7 @@
 import { Race } from '@/lib/data';
 import { Heart, MapPin, Calendar, Award, Footprints } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
+import CalendarButton from './CalendarButton';
 
 interface RaceCardProps {
     race: Race;
@@ -25,12 +26,15 @@ export default function RaceCard({ race }: RaceCardProps) {
                             {race.name.split(/[（(]/)[0].trim()}
                         </h3>
                     </div>
-                    <button
-                        onClick={() => toggleFavorite(race.id)}
-                        className={`transition-colors p-2 rounded-full shrink-0 cursor-pointer ${isFav ? 'text-red-500 bg-red-50 hover:bg-red-100' : 'text-muted-foreground hover:text-red-500 hover:bg-red-50'}`}
-                    >
-                        <Heart size={20} fill={isFav ? "currentColor" : "none"} />
-                    </button>
+                    <div className="flex gap-1">
+                        <CalendarButton race={race} />
+                        <button
+                            onClick={() => toggleFavorite(race.id)}
+                            className={`transition-colors p-2 rounded-full shrink-0 cursor-pointer ${isFav ? 'text-red-500 bg-red-50 hover:bg-red-100' : 'text-muted-foreground hover:text-red-500 hover:bg-red-50'}`}
+                        >
+                            <Heart size={20} fill={isFav ? "currentColor" : "none"} />
+                        </button>
+                    </div>
                 </div>
 
                 <div className="space-y-3 text-sm text-muted-foreground font-medium mt-4">

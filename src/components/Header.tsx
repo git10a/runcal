@@ -10,9 +10,9 @@ export default function Header() {
                     <Image
                         src="/runcal-logo.png"
                         alt="RUNCAL Logo"
-                        width={183}
-                        height={120}
-                        className="h-10 w-auto group-hover:scale-105 transition-transform object-contain"
+                        width={220}
+                        height={144}
+                        className="h-12 w-auto group-hover:scale-105 transition-transform object-contain"
                         priority
                     />
                 </Link>
