@@ -48,8 +48,17 @@ def parse_date(date_text):
         
     return None
 
-def extract_entry_period_from_moshicom(url):
-    """Extract entry period from moshicom.com page."""
+# Known external entry sites that we can scrape
+ENTRY_SITE_DOMAINS = [
+    'moshicom.com',
+    'sportsentry.ne.jp',
+    'runnet.jp',
+    'e-moshicom.com',
+]
+
+
+def extract_entry_period_from_external_site(url):
+    """Extract entry period from known external entry sites (moshicom, sportsentry, etc.)."""
     try:
         time.sleep(1)
         res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10, allow_redirects=True)
@@ -61,7 +70,6 @@ def extract_entry_period_from_moshicom(url):
         date_range_pattern = r'(\d{4}/\d{1,2}/\d{1,2})\s*(?:[(（][月火水木金土日][)）])?\s*\d{1,2}:\d{2}\s*[～~－ー-]\s*(\d{4}/\d{1,2}/\d{1,2})'
         matches = list(re.finditer(date_range_pattern, text))
         if matches:
-            # First match is usually the entry period
             return parse_date(matches[0].group(1)), parse_date(matches[0].group(2))
 
         # Pattern without time: 2025/11/14 ～ 2026/2/27
@@ -70,108 +78,101 @@ def extract_entry_period_from_moshicom(url):
         if matches:
             return parse_date(matches[0].group(1)), parse_date(matches[0].group(2))
 
+        # Pattern: 2025年11月14日 ～ 2026年2月27日
+        jp_pattern = r'(\d{4}年\d{1,2}月\d{1,2}日)\s*(?:[(（][月火水木金土日][)）])?\s*[～~－ー-]\s*(\d{4}年\d{1,2}月\d{1,2}日)'
+        matches = list(re.finditer(jp_pattern, text))
+        if matches:
+            return parse_date(matches[0].group(1)), parse_date(matches[0].group(2))
+
     except Exception as e:
-        print(f"  Error scraping moshicom page {url}: {e}")
+        print(f"    Error scraping external site {url}: {e}")
 
     return None, None
 
 
-def extract_entry_links_from_uprun(soup):
-    """Extract external entry site links from up-run.jp page."""
-    entry_links = {
-        'moshicom': None,
-        'sportsentry': None,
-        'peatix': None
-    }
+def find_external_entry_links(soup):
+    """Find links to external entry sites (moshicom, sportsentry, etc.) from any page."""
+    entry_links = []
 
     for a_tag in soup.find_all('a', href=True):
         href = a_tag['href']
-        if 'moshicom.com' in href:
-            entry_links['moshicom'] = href
-        elif 'sportsentry.ne.jp' in href:
-            entry_links['sportsentry'] = href
-        elif 'peatix.com' in href:
-            entry_links['peatix'] = href
+        for domain in ENTRY_SITE_DOMAINS:
+            if domain in href:
+                entry_links.append(href)
+                break
 
     return entry_links
 
 
-def extract_entry_period_from_uprun(url):
-    """Extract entry period from up-run.jp by following entry links."""
-    try:
-        time.sleep(1)
-        res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
-        res.encoding = res.apparent_encoding
-        soup = BeautifulSoup(res.text, 'html.parser')
+def extract_dates_from_page_text(text):
+    """Try to extract entry period directly from page text."""
+    # 1. Look for range patterns: 2025年9月1日（月）～2025年12月15日（月）
+    date_range_pattern = r'((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)\s*[(（]?[月火水木金土日]?[)）]?\s*[～~-]\s*((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)'
+    matches = list(re.finditer(date_range_pattern, text))
+    for match in matches:
+        start_pos = max(0, match.start() - 50)
+        end_pos = min(len(text), match.end() + 50)
+        context = text[start_pos:end_pos]
+        if any(k in context for k in ['申込', '募集', 'エントリー', '受付', '期間']):
+            return parse_date(match.group(1)), parse_date(match.group(2))
 
-        entry_links = extract_entry_links_from_uprun(soup)
-
-        # Try moshicom first (most reliable)
-        if entry_links['moshicom']:
-            print(f"  -> Following moshicom link: {entry_links['moshicom']}")
-            start, end = extract_entry_period_from_moshicom(entry_links['moshicom'])
-            if start or end:
-                return start, end
-
-        # Could add sportsentry and peatix handlers here if needed
-
-    except Exception as e:
-        print(f"  Error scraping up-run page {url}: {e}")
+    # 2. Look for just deadline patterns
+    deadline_pattern = r'(?:締切|まで|終了)\s*((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)|((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)\s*[(（]?[月火水木金土日]?[)）]?\s*(?:締切|まで|終了)'
+    matches = list(re.finditer(deadline_pattern, text))
+    for match in matches:
+        date_str = match.group(1) or match.group(2)
+        if not date_str:
+            continue
+        start_pos = max(0, match.start() - 50)
+        end_pos = min(len(text), match.end() + 50)
+        context = text[start_pos:end_pos]
+        if any(k in context for k in ['申込', '募集', 'エントリー', '受付']):
+            return None, parse_date(date_str)
 
     return None, None
 
 
 def extract_entry_period_from_url(url):
-    # Special handling for up-run.jp
-    if 'up-run.jp' in url:
-        return extract_entry_period_from_uprun(url)
+    """
+    Extract entry period from a race detail page.
 
+    Strategy:
+    1. First try to find entry dates directly on the page
+    2. If not found, look for links to external entry sites (moshicom, sportsentry, etc.)
+    3. Follow those links and extract entry dates from there
+    """
     try:
-        # Give a small delay to be polite
         time.sleep(1)
         res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10)
         res.encoding = res.apparent_encoding
         soup = BeautifulSoup(res.text, 'html.parser')
-
         text = soup.get_text(separator=' ')
 
-        # 0. Check meta description for standard date strings
+        # Step 1: Check meta description first
         meta_desc = soup.find('meta', attrs={'name': 'description'})
         if meta_desc and meta_desc.get('content'):
             meta_text = meta_desc.get('content')
-            date_range_pattern = r'((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)\s*[(（]?[月火水木金土日]?[)）]?\s*[～~-]\s*((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)'
-            matches = list(re.finditer(date_range_pattern, meta_text))
-            if matches:
-                 return parse_date(matches[0].group(1)), parse_date(matches[0].group(2))
+            start, end = extract_dates_from_page_text(meta_text)
+            if start or end:
+                return start, end
 
-            deadline_pattern = r'(?:締切|まで|終了)\s*((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)|((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)\s*[(（]?[月火水木金土日]?[)）]?\s*(?:締切|まで|終了)'
-            matches = list(re.finditer(deadline_pattern, meta_text))
-            if matches:
-                date_str = matches[0].group(1) or matches[0].group(2)
-                return None, parse_date(date_str)
+        # Step 2: Try to find dates directly on the page
+        start, end = extract_dates_from_page_text(text)
+        if start or end:
+            return start, end
 
-        # 1. Look for range patterns: 2025年9月1日（月）～2025年12月15日（月）
-        date_range_pattern = r'((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)\s*[(（]?[月火水木金土日]?[)）]?\s*[～~-]\s*((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)'
-        matches = list(re.finditer(date_range_pattern, text))
-        for match in matches:
-            start = max(0, match.start() - 50)
-            end = min(len(text), match.end() + 50)
-            context = text[start:end]
-            if any(k in context for k in ['申込', '募集', 'エントリー', '受付', '期間']):
-                return parse_date(match.group(1)), parse_date(match.group(2))
+        # Step 3: Look for external entry site links and follow them
+        entry_links = find_external_entry_links(soup)
+        if entry_links:
+            # Try moshicom first (most reliable), then others
+            moshicom_links = [l for l in entry_links if 'moshicom' in l]
+            other_links = [l for l in entry_links if 'moshicom' not in l]
 
-        # 2. Look for just deadline patterns: 2025年12月15日(月)締切
-        # Pattern that matches either "締切 2025/12/15" OR "2025/12/15 締切"
-        deadline_pattern = r'(?:締切|まで|終了)\s*((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)|((?:20\d{2}[年/.-])?\d{1,2}[月/.-]\d{1,2}[日]?)\s*[(（]?[月火水木金土日]?[)）]?\s*(?:締切|まで|終了)'
-        matches = list(re.finditer(deadline_pattern, text))
-        for match in matches:
-            date_str = match.group(1) or match.group(2)
-            if not date_str: continue
-            start = max(0, match.start() - 50)
-            end = min(len(text), match.end() + 50)
-            context = text[start:end]
-            if any(k in context for k in ['申込', '募集', 'エントリー', '受付']):
-                return None, parse_date(date_str)
+            for link in moshicom_links + other_links:
+                print(f"  -> Following entry link: {link}")
+                start, end = extract_entry_period_from_external_site(link)
+                if start or end:
+                    return start, end
 
     except Exception as e:
         print(f"  Error scraping detail page {url}: {e}")
