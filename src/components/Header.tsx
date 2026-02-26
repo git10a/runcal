@@ -8,8 +8,8 @@ export default function Header() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 group">
                     <Image
-                        src="/runcalfull.png"
-                        alt="RUNCAL Logo"
+                        src="/runcalefull.png"
+                        alt="RUNCALE Logo"
                         width={220}
                         height={144}
                         className="h-12 w-auto group-hover:scale-105 transition-transform object-contain"
