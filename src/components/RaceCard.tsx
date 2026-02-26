@@ -24,18 +24,29 @@ export default function RaceCard({ race }: RaceCardProps) {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80" />
+
+                    {race.is_jaaf_certified && (
+                        <div className="absolute top-3 left-3 z-10">
+                            <span className="inline-flex items-center rounded-full bg-white/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-primary-hover shadow-sm">
+                                <Award size={12} className="mr-1" />
+                                陸連公認
+                            </span>
+                        </div>
+                    )}
                 </div>
             )}
             <div className={`p-6 ${race.image_url ? 'pt-4 border-t-0' : ''}`}>
                 <div className="flex justify-between items-start gap-4 mb-3">
                     <div>
-                        {race.is_jaaf_certified && (
-                            <span className="inline-flex items-center rounded-full bg-primary/15 px-2.5 py-1 text-[11px] font-bold text-primary-hover mb-3">
-                                <Award size={12} className="mr-1" />
-                                陸連公認
-                            </span>
+                        {!race.image_url && race.is_jaaf_certified && (
+                            <div className="absolute top-4 left-6">
+                                <span className="inline-flex items-center rounded-full bg-primary/15 px-2.5 py-1 text-[11px] font-bold text-primary-hover">
+                                    <Award size={12} className="mr-1" />
+                                    陸連公認
+                                </span>
+                            </div>
                         )}
-                        <h3 className={`font-extrabold text-lg leading-snug line-clamp-2 ${race.image_url ? 'mt-1' : ''}`}>
+                        <h3 className={`font-extrabold text-lg leading-snug line-clamp-2 ${race.image_url ? 'mt-1' : ''} ${!race.image_url && race.is_jaaf_certified ? 'mt-8' : ''}`}>
                             {race.name.split(/[（(]/)[0].trim()}
                         </h3>
                     </div>

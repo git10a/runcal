@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { Race } from '@/lib/data';
 import RaceCard from './RaceCard';
 import FilterBar from './FilterBar';
@@ -14,10 +14,12 @@ interface RaceListProps {
 }
 
 export default function RaceList({ initialRaces, prefectures, distances }: RaceListProps) {
+    // Filter states
     const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null);
     const [selectedDistance, setSelectedDistance] = useState<string | null>(null);
-    const [selectedEntryStatus, setSelectedEntryStatus] = useState<string | null>(null);
-    const [selectedCertified, setSelectedCertified] = useState<boolean | null>(null);
+    const [selectedMonth, setSelectedMonth] = useState<string | null>(null);
+    const [showOnlyOpen, setShowOnlyOpen] = useState<boolean>(false);
+    const [showOnlyCertified, setShowOnlyCertified] = useState<boolean>(false);
 
     const [viewMode, setViewMode] = useState<'card' | 'table' | 'calendar'>('card');
     const { favorites, toggleFavorite, isLoaded } = useFavorites();
@@ -25,37 +27,78 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
     const [currentPage, setCurrentPage] = useState(1);
     const ITEMS_PER_PAGE = 12;
 
+    const listRef = useRef<HTMLDivElement>(null);
+
+    const handlePageChange = (newPage: number) => {
+        setCurrentPage(newPage);
+    };
+
     // Calendar State
     const [currentMonth, setCurrentMonth] = useState(new Date());
 
     const filteredRaces = useMemo(() => {
         let races = initialRaces;
+
+        // Month filter
+        if (selectedMonth) {
+            races = races.filter(r => r.date.startsWith(selectedMonth));
+        }
+
+        // Prefecture filter
         if (selectedPrefecture) {
             races = races.filter(r => r.prefecture === selectedPrefecture);
         }
+
+        // Distance filter
         if (selectedDistance) {
             races = races.filter(r => r.distance.includes(selectedDistance));
         }
-        if (selectedEntryStatus) {
-            races = races.filter(r => r.entry_status === selectedEntryStatus);
-        }
-        if (selectedCertified !== null) {
-            races = races.filter(r => r.is_jaaf_certified === selectedCertified);
-        }
-        return races;
-    }, [initialRaces, selectedPrefecture, selectedDistance, selectedEntryStatus, selectedCertified]);
 
-    const handleFilterChange = (type: 'prefecture' | 'distance' | 'entryStatus' | 'certified', value: any) => {
-        if (type === 'prefecture') setSelectedPrefecture(value);
-        if (type === 'distance') setSelectedDistance(value);
-        if (type === 'entryStatus') setSelectedEntryStatus(value);
-        if (type === 'certified') setSelectedCertified(value);
+        // Only open filter
+        if (showOnlyOpen) {
+            races = races.filter(r => r.entry_status === '受付中');
+        }
+
+        // Certified filter
+        if (showOnlyCertified) {
+            races = races.filter(r => r.is_jaaf_certified === true);
+        }
+
+        return races;
+    }, [initialRaces, selectedPrefecture, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
+
+    const handleFilterChange = (type: 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified', value: any) => {
+        switch (type) {
+            case 'prefecture':
+                setSelectedPrefecture(value);
+                break;
+            case 'distance':
+                setSelectedDistance(value);
+                break;
+            case 'month':
+                setSelectedMonth(value);
+                break;
+            case 'onlyOpen':
+                setShowOnlyOpen(value);
+                break;
+            case 'onlyCertified':
+                setShowOnlyCertified(value);
+                break;
+        }
+    };
+
+    const handleClearAll = () => {
+        setSelectedPrefecture(null);
+        setSelectedDistance(null);
+        setSelectedMonth(null);
+        setShowOnlyOpen(false);
+        setShowOnlyCertified(false);
     };
 
     // Reset page to 1 when filters change
     useEffect(() => {
         setCurrentPage(1);
-    }, [selectedPrefecture, selectedDistance, selectedEntryStatus, selectedCertified]);
+    }, [selectedPrefecture, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
 
     const totalPages = Math.ceil(filteredRaces.length / ITEMS_PER_PAGE);
     const paginatedRaces = filteredRaces.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
@@ -111,11 +154,14 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                 distances={distances}
                 selectedPrefecture={selectedPrefecture}
                 selectedDistance={selectedDistance}
-                selectedEntryStatus={selectedEntryStatus}
-                selectedCertified={selectedCertified}
+                selectedMonth={selectedMonth}
+                showOnlyOpen={showOnlyOpen}
+                showOnlyCertified={showOnlyCertified}
                 onFilterChange={handleFilterChange}
+                onClearAll={handleClearAll}
+                totalResults={filteredRaces.length}
             />
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto px-4 py-8" ref={listRef}>
                 <div className="mb-6 flex justify-between items-end">
                     <div>
                         <h2 className="text-2xl font-bold tracking-tight">大会一覧</h2>
@@ -130,7 +176,6 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                         </p>
                     </div>
                     <div className="flex flex-col items-end gap-3">
-                        <p className="text-sm text-muted-foreground font-medium">{filteredRaces.length}件の大会が見つかりました</p>
                         <div className="flex bg-muted/60 p-1 rounded-xl">
                             <button
                                 onClick={() => setViewMode('card')}
@@ -163,13 +208,13 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                 {filteredRaces.length > 0 ? (
                     <>
                         {viewMode === 'card' ? (
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-h-[600px] content-start">
                                 {paginatedRaces.map(race => (
                                     <RaceCard key={race.id} race={race} />
                                 ))}
                             </div>
                         ) : viewMode === 'table' ? (
-                            <div className="overflow-x-auto bg-card rounded-2xl border border-border shadow-sm">
+                            <div className="overflow-x-auto bg-card rounded-2xl border border-border shadow-sm min-h-[600px]">
                                 <table className="w-full text-sm text-left">
                                     <thead className="bg-muted/50 text-muted-foreground font-medium border-b border-border whitespace-nowrap">
                                         <tr>
@@ -236,7 +281,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                                 </table>
                             </div>
                         ) : (
-                            <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
+                            <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm min-h-[600px]">
                                 <div className="flex items-center justify-between p-4 border-b border-border bg-muted/30">
                                     <button
                                         onClick={prevMonth}
@@ -269,8 +314,8 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                                                     }`}
                                             >
                                                 <div className={`text-sm font-medium mb-1 ${dayObj.date.toDateString() === new Date().toDateString()
-                                                        ? 'bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mx-auto'
-                                                        : 'text-center text-muted-foreground'
+                                                    ? 'bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mx-auto'
+                                                    : 'text-center text-muted-foreground'
                                                     }`}>
                                                     {dayObj.date.getDate()}
                                                 </div>
@@ -282,8 +327,8 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                             className={`block text-[10px] p-1.5 rounded truncate transition-colors ${race.entry_status === '受付中'
-                                                                    ? 'bg-primary/20 text-orange-800 hover:bg-primary/30 font-bold'
-                                                                    : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                                                                ? 'bg-primary/20 text-orange-800 hover:bg-primary/30 font-bold'
+                                                                : 'bg-muted text-muted-foreground hover:bg-muted/80'
                                                                 }`}
                                                             title={race.name}
                                                         >
@@ -303,7 +348,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                         {totalPages > 1 && (
                             <div className="flex justify-center items-center mt-12 gap-2">
                                 <button
-                                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                                    onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                                     disabled={currentPage === 1}
                                     className="px-4 py-2 rounded-xl text-sm font-bold border transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer hover:bg-muted"
                                 >
@@ -313,7 +358,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                                     {currentPage} / {totalPages}
                                 </span>
                                 <button
-                                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                                    onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                                     disabled={currentPage === totalPages}
                                     className="px-4 py-2 rounded-xl text-sm font-bold border transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer hover:bg-muted"
                                 >
@@ -327,12 +372,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                         <h3 className="text-lg font-medium text-foreground mb-2">条件に一致する大会がありません</h3>
                         <p className="text-muted-foreground text-sm">フィルターの条件を変更してお試しください。</p>
                         <button
-                            onClick={() => {
-                                setSelectedPrefecture(null);
-                                setSelectedDistance(null);
-                                setSelectedEntryStatus('受付中');
-                                setSelectedCertified(null);
-                            }}
+                            onClick={handleClearAll}
                             className="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:bg-primary-hover transition-colors cursor-pointer"
                         >
                             条件をクリア

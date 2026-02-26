@@ -8,7 +8,7 @@ import time
 import hashlib
 from datetime import datetime, timezone, timedelta
 
-# Import the new image generator
+# Import the image generator
 try:
     import image_generator
 except ImportError:
@@ -32,27 +32,27 @@ def extract_prefecture(text):
 def parse_date(date_text):
     if not date_text:
         return None
-        
+
     date_text = date_text.strip()
-    
+
     # "2026.1.4（日）" or "2026.1.4"
     match = re.search(r'(\d{4})\.(\d{1,2})\.(\d{1,2})', date_text)
     if match:
         year, month, day = match.groups()
         return f"{year}-{int(month):02d}-{int(day):02d}"
-        
+
     # "2026年1月4日" or "2026年01月04日（日）"
     match = re.search(r'(\d{4})年(\d{1,2})月(\d{1,2})日', date_text)
     if match:
         year, month, day = match.groups()
         return f"{year}-{int(month):02d}-{int(day):02d}"
-        
+
     # "2026/1/4" or "2026/01/04"
     match = re.search(r'(\d{4})/(\d{1,2})/(\d{1,2})', date_text)
     if match:
         year, month, day = match.groups()
         return f"{year}-{int(month):02d}-{int(day):02d}"
-        
+
     return None
 
 # Known external entry sites that we can scrape
@@ -189,9 +189,9 @@ def extract_entry_period_from_url(url):
 def determine_entry_status(entry_start, entry_end, parsed_date, today_str):
     if not entry_start and not entry_end:
         return "エントリー前"
-        
+
     end_date_for_status = entry_end if entry_end else parsed_date
-    
+
     if entry_start:
         if entry_start <= today_str <= end_date_for_status:
             return "受付中"
@@ -205,42 +205,42 @@ def determine_entry_status(entry_start, entry_end, parsed_date, today_str):
             return "受付中"
         else:
             return "受付終了"
-            
+
     return "エントリー前"
 
-def scrape_runners_bible():
-    url = "https://www.runnersbible.info/DB/Marathon.html"
+def scrape_runners_bible_page(url, default_distance="フル"):
+    """Scrape a single RunnersBible page."""
     print(f"Fetching data from {url}...")
     headers = {'User-Agent': 'Mozilla/5.0'}
-    
+
     res = requests.get(url, headers=headers, timeout=10)
     res.encoding = res.apparent_encoding # Fix garbled text
     soup = BeautifulSoup(res.text, 'html.parser')
-    
+
     table = soup.find('table')
     if not table:
         print("Could not find the target table.")
         return []
-        
+
     rows = table.find_all('tr')
     print(f"Found {len(rows)} rows to process.")
-    
+
     races = []
     jst_now = datetime.now(timezone(timedelta(hours=9)))
     today_str = jst_now.strftime("%Y-%m-%d")
-    
+
     for row in rows:
         cells = row.find_all(['td', 'th'])
         # Actual race rows have 7 columns
         if len(cells) != 7:
             continue
-            
+
         tds = [td.text.strip().replace('\n', ' ') for td in cells]
-        
+
         # Skip header row
         if tds[0] == '開催日':
             continue
-            
+
         date_str = tds[0]
         entry_str = tds[1]
         name_str = tds[2]
@@ -248,22 +248,22 @@ def scrape_runners_bible():
         time_limit_str = tds[4]
         certified_str = tds[5]
         features_str = tds[6]
-        
+
         # Parse Dates
         parsed_date = parse_date(date_str)
         if not parsed_date or parsed_date < today_str:
             continue # Skip past events or unparseable dates
-            
+
         # Parse Entry Window from list page
         entry_start, entry_end = None, None
-        
+
         if '～' in entry_str:
             parts = [p.strip() for p in entry_str.split('～')]
             if len(parts) >= 1 and parts[0]:
                 entry_start = parse_date(parts[0])
             if len(parts) >= 2 and parts[1]:
                 entry_end = parse_date(parts[1])
-        
+
         # Extract Link
         race_url = url # fallback
         a_tag = cells[2].find('a')
@@ -272,7 +272,7 @@ def scrape_runners_bible():
             # Handle relative URLs if any
             if race_url.startswith('/'):
                 race_url = "https://www.runnersbible.info" + race_url
-                
+
         # Scrape detail page if entry date is missing
         if not entry_start and not entry_end and race_url != url:
             print(f"Scraping detail page for missing dates: {name_str} ({race_url})")
@@ -281,27 +281,27 @@ def scrape_runners_bible():
                  print(f"  -> Found dates: {scraped_start} ~ {scraped_end}")
                  entry_start = scraped_start
                  entry_end = scraped_end
-        
+
         # Determine Status
         entry_status = determine_entry_status(entry_start, entry_end, parsed_date, today_str)
-        
+
         # Location Info
         prefecture = extract_prefecture(location_str)
         city = location_str.replace(prefecture, '').strip()
-        
+
         # Discover Distances
         distance_set = set()
-        
+
         # Consider it a full marathon if "フル" or "マラソン" is in the name,
         # but avoid false positives from "ハーフ" or "リレー".
         # Also avoid it if the name explicitly contains other km numbers (e.g. 10k).
         if "フル" in name_str or "マラソン" in name_str and "ハーフ" not in name_str and "リレー" not in name_str and not re.search(r'\d+k', name_str, re.IGNORECASE):
             distance_set.add("フル")
-        
+
         if "ハーフ" in name_str: distance_set.add("ハーフ")
         if "ウルトラ" in name_str: distance_set.add("ウルトラ")
         if "リレー" in name_str: distance_set.add("リレー")
-        
+
         km_matches = re.findall(r'(\d+(?:\.\d+)?)\s*(?:km|K|k|キロ)', name_str, re.IGNORECASE)
         for km in km_matches:
             # Normalize 42.195km to "フル"
@@ -311,17 +311,17 @@ def scrape_runners_bible():
                 # Remove unnecessary decimals (e.g. 10.0 -> 10)
                 clean_km = int(float(km)) if float(km).is_integer() else float(km)
                 distance_set.add(f"{clean_km}km")
-            
+
         distance = list(distance_set)
         if not distance: distance.append("その他")
-        
+
         # Certification
         is_jaaf = "公認" in certified_str
-        
+
         # Clean features length
         if len(features_str) > 50:
             features_str = features_str[:50] + "..."
-            
+
         races.append({
             "id": str(uuid.uuid4()),
             "name": name_str,
@@ -336,58 +336,144 @@ def scrape_runners_bible():
             "time_limit": time_limit_str or None,
             "features": features_str or None,
             "url": race_url,
+            "source": "runnersbible",
             "updated_at": jst_now.strftime("%Y年%m月%d日")
         })
-        
+
     print(f"Properly parsed {len(races)} upcoming races.")
     return races
 
+
+def scrape_runners_bible():
+    """Scrape all RunnersBible pages (Marathon + Ultra)."""
+    all_races = []
+
+    # Marathon page
+    marathon_races = scrape_runners_bible_page(
+        "https://www.runnersbible.info/DB/Marathon.html",
+        default_distance="フル"
+    )
+    all_races.extend(marathon_races)
+
+    # Ultra Marathon page
+    time.sleep(1)  # Be polite
+    ultra_races = scrape_runners_bible_page(
+        "https://www.runnersbible.info/DB/UltraMarathon.html",
+        default_distance="ウルトラ"
+    )
+    all_races.extend(ultra_races)
+
+    print(f"Total from RunnersBible: {len(all_races)} races")
+    return all_races
+
+
+def normalize_race_name(name):
+    """Normalize race name for deduplication."""
+    # Remove common suffixes and variations
+    name = re.sub(r'[（(].*?[)）]', '', name)  # Remove parenthetical content
+    name = re.sub(r'\d{4}', '', name)  # Remove years
+    name = re.sub(r'第\d+回', '', name)  # Remove "第X回"
+    name = re.sub(r'\s+', '', name)  # Remove whitespace
+    name = name.strip()
+    return name.lower()
+
+
+def deduplicate_races(races):
+    """Remove duplicate races based on name + date."""
+    seen = {}
+    unique_races = []
+
+    for race in races:
+        # Create a key from normalized name + date
+        norm_name = normalize_race_name(race['name'])
+        key = f"{norm_name}_{race['date']}"
+
+        if key not in seen:
+            seen[key] = race
+            unique_races.append(race)
+        else:
+            # Prefer RunnersBible data (has more details like entry dates, time limit)
+            existing = seen[key]
+            if race.get('source') == 'runnersbible' and existing.get('source') != 'runnersbible':
+                # Replace with RunnersBible version
+                idx = unique_races.index(existing)
+                unique_races[idx] = race
+                seen[key] = race
+            elif existing.get('source') == 'runnersbible':
+                # Keep existing RunnersBible version
+                pass
+            else:
+                # Both are from same source or neither is RunnersBible
+                # Keep the one with more info
+                if race.get('entry_start_date') and not existing.get('entry_start_date'):
+                    idx = unique_races.index(existing)
+                    unique_races[idx] = race
+                    seen[key] = race
+
+    return unique_races
+
+
 def main():
-    print("Starting RunnersBible marathon scraping...")
-    
+    print("Starting marathon race scraping...")
+    print("=" * 50)
+
     data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
     json_path = os.path.join(data_dir, 'races.json')
-    
+
     public_images_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'public', 'images', 'races')
     os.makedirs(public_images_dir, exist_ok=True)
-    
-    new_races = scrape_runners_bible()
-    
-    if new_races:
-        new_races.sort(key=lambda x: x['date'])
-        
+
+    all_races = []
+
+    # 1. Scrape RunnersBible (Marathon + Ultra)
+    print("\n[1/1] Scraping RunnersBible (Marathon + Ultra)...")
+    runnersbible_races = scrape_runners_bible()
+    all_races.extend(runnersbible_races)
+
+    # 3. Deduplicate
+    print("\n" + "=" * 50)
+    print(f"Total races before deduplication: {len(all_races)}")
+    unique_races = deduplicate_races(all_races)
+    print(f"Total races after deduplication: {len(unique_races)}")
+
+    if unique_races:
+        unique_races.sort(key=lambda x: x['date'])
+
         # --- Image Generation Step ---
         print("\nProcessing images for races...")
-        for race in new_races:
+        for race in unique_races:
             # Generate a consistent filename based on an MD5 hash of the race name
             hash_str = hashlib.md5(race['name'].encode('utf-8')).hexdigest()
             filename = f"race_{hash_str}.png"
             image_filepath = os.path.join(public_images_dir, filename)
-            
+
             # Add the URL path to the race data so the frontend can use it
-            race['image_url'] = f"/images/races/{filename}"
-            
+            if not race.get('image_url') or not race['image_url'].startswith('http'):
+                race['image_url'] = f"/images/races/{filename}"
+
             if os.path.exists(image_filepath):
                 # Image already exists -> skip generation to save API calls
-                print(f"  Image already exists for '{race['name']}' ({filename})")
+                pass
             else:
                 if image_generator:
                     success = image_generator.generate_and_save_race_image(race['name'], image_filepath)
                     if success:
                         # Add a small delay to avoid hitting API rate limits immediately
                         time.sleep(2)
-                        
+
                         # Incrementally save the JSON file so the UI can update while processing
                         with open(json_path, 'w', encoding='utf-8') as f:
-                            json.dump(new_races, f, ensure_ascii=False, indent=2)
-                else:
-                     print(f"  Image generator not imported, skipping '{race['name']}'...")
-                     
+                            json.dump(unique_races, f, ensure_ascii=False, indent=2)
+
         # --- End Image Generation Step ---
-        
+
+        # Remove source field before saving (internal use only)
+        for race in unique_races:
+            race.pop('source', None)
+
         with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(new_races, f, ensure_ascii=False, indent=2)
-        print(f"Successfully generated and saved {len(new_races)} real races to {json_path}")
+            json.dump(unique_races, f, ensure_ascii=False, indent=2)
+        print(f"\nSuccessfully saved {len(unique_races)} races to {json_path}")
     else:
         print("No races generated.")
 

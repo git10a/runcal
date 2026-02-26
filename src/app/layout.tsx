@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/runcalefull.png',
+        url: '/runcaleogp.png',
         width: 1200,
         height: 630,
         alt: 'ランカレ OGP Image',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ランカレ | マラソン大会日程カレンダー',
     description: '日本全国のマラソン大会・ハーフマラソンの日程一覧。走りたい大会がすぐに見つかる。',
-    images: ['/runcalefull.png'],
+    images: ['/runcaleogp.png'],
   },
 };
 
