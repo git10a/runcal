@@ -1,6 +1,6 @@
 [
   {
-    "id": "4f9f8667-0244-4dbc-81c0-1e83ae70841d",
+    "id": "651acc15-0f38-404e-8640-28e3ed34c95f",
     "name": "第92回赤羽トライアル",
     "date": "2026-02-28",
     "entry_start_date": "2025-10-16",
@@ -19,7 +19,7 @@
     "image_url": "/images/races/race_fda14172fba9ae1f8c12ff97bad342f3.png"
   },
   {
-    "id": "b86aa371-f296-4d3b-a8e1-57790e0d1abf",
+    "id": "a21135a9-dba6-43f1-afc2-4b81f7a406b4",
     "name": "第93回スポーツメイトラン新横浜鶴見川マラソン",
     "date": "2026-02-28",
     "entry_start_date": "2025-11-14",
@@ -38,7 +38,7 @@
     "image_url": "/images/races/race_0b631de4e6714131dbdc17b62b529d96.png"
   },
   {
-    "id": "2eaac185-bd8c-4a51-8a69-5bbdf34b6a62",
+    "id": "e593ffb8-b073-409e-b54a-bf291eca3a8f",
     "name": "第66回スポーツメイトラン松戸江戸川河川敷マラソン",
     "date": "2026-03-01",
     "entry_start_date": "2025-12-08",
@@ -57,7 +57,7 @@
     "image_url": "/images/races/race_13dad841e039ae44016a762fa0f04de6.png"
   },
   {
-    "id": "c772efb1-321d-4b0c-aafc-8bb00de2da5d",
+    "id": "04e4848d-94ee-4847-a65a-276237b5eaee",
     "name": "東京マラソン2026Tokyo Marathon 2026",
     "date": "2026-03-01",
     "entry_start_date": "2025-08-01",
@@ -76,7 +76,7 @@
     "image_url": "/images/races/race_5572c87bd3ead5218cf3feb3705271dd.png"
   },
   {
-    "id": "6724b5b5-5932-46aa-8519-9a1a1b0dbf65",
+    "id": "fbb9dea3-5618-4699-bfa3-7e040b9fd81a",
     "name": "第29回UPRUN赤羽荒川マラソン～全種目ver～",
     "date": "2026-03-01",
     "entry_start_date": "2025-12-08",
@@ -95,7 +95,7 @@
     "image_url": "/images/races/race_a2e3183e0d2740b3a2f3613ebb4047d9.png"
   },
   {
-    "id": "3d2f5ea7-df5a-488f-9d17-264aaf130e82",
+    "id": "05bdddcd-b272-41d5-a459-85a0af4b910f",
     "name": "第48回大阪42.195kmフルマラソン・第19回大阪ハーフマラソン",
     "date": "2026-03-01",
     "entry_start_date": "2025-12-08",
@@ -104,8 +104,8 @@
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
-      "ハーフ",
-      "フル"
+      "フル",
+      "ハーフ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "6時間",
@@ -115,7 +115,7 @@
     "image_url": "/images/races/race_fc4c76878350af51c2ad959b2062e8f5.png"
   },
   {
-    "id": "216409c9-328a-4c2d-9fd9-b623740dc172",
+    "id": "15b7174f-d1f4-4e35-9085-12cd31d42017",
     "name": "第46回丹波篠山ABCマラソン",
     "date": "2026-03-01",
     "entry_start_date": "2025-10-01",
@@ -134,7 +134,7 @@
     "image_url": "/images/races/race_8624f5b88980bbd92e947e7a4c4e0cde.png"
   },
   {
-    "id": "2eeae51e-63e5-44cf-99dd-c45244173d47",
+    "id": "f840dd7e-7110-4461-b6eb-0f3aa22c9ef7",
     "name": "第26回 五島つばきマラソン",
     "date": "2026-03-01",
     "entry_start_date": "2025-09-20",
@@ -153,7 +153,7 @@
     "image_url": "/images/races/race_6b4c6ab7290f2263b00df1c5ea3f836e.png"
   },
   {
-    "id": "8e46479d-ac23-4141-ae7d-333c656b69c9",
+    "id": "170806fe-92e1-415d-8e51-08b34b90ff66",
     "name": "第37回岡の里名水マラソン",
     "date": "2026-03-01",
     "entry_start_date": "2025-11-17",
@@ -172,7 +172,7 @@
     "image_url": "/images/races/race_05398984da76863cdaa1fb9cb10abeae.png"
   },
   {
-    "id": "93d26ee2-62d1-4634-a2c3-51ec1e924592",
+    "id": "45e7cdbf-82e3-4bb7-9409-86a52ce9bc58",
     "name": "鹿児島マラソン2026",
     "date": "2026-03-01",
     "entry_start_date": "2025-09-01",
@@ -191,7 +191,7 @@
     "image_url": "/images/races/race_50134229d368c63aa8e6a76b94fbe36e.png"
   },
   {
-    "id": "c3cfe419-d556-4071-8ded-11748a46aaec",
+    "id": "a39632ce-8217-4ffa-8a0e-977a4b3f7755",
     "name": "THE CHALLENGE RACE OSAKA 4",
     "date": "2026-03-07",
     "entry_start_date": "2025-11-17",
@@ -210,7 +210,7 @@
     "image_url": "/images/races/race_146c76c9342e67824d43ce4bdefc0537.png"
   },
   {
-    "id": "a6b90c80-e792-4501-bc22-4d79dc1cccf6",
+    "id": "1db9a2b2-18b8-42fd-aa37-c22693750d82",
     "name": "第93回赤羽トライアル",
     "date": "2026-03-08",
     "entry_start_date": "2025-12-10",
@@ -229,7 +229,7 @@
     "image_url": "/images/races/race_149692bea09e408e1df525a1940a6656.png"
   },
   {
-    "id": "7695b3aa-1345-4c81-a23b-895146067afe",
+    "id": "d0edc210-bc4a-45b6-b513-4e628f00ef41",
     "name": "第83回UP RUN新横浜鶴見川マラソン",
     "date": "2026-03-08",
     "entry_start_date": "2025-12-08",
@@ -248,7 +248,7 @@
     "image_url": "/images/races/race_79e3988e1629a62f3f1f7af3220da34f.png"
   },
   {
-    "id": "ff92c215-b1ef-4d61-aacf-2285e555f252",
+    "id": "d663b37d-c537-4ba6-aaaa-dc275a40727e",
     "name": "【開催中止】能登和倉万葉の里マラソン2026",
     "date": "2026-03-08",
     "entry_start_date": null,
@@ -267,7 +267,7 @@
     "image_url": "/images/races/race_a6b10e32c1a217872f2b715c7d4b3c2d.png"
   },
   {
-    "id": "7c10b95b-1b74-4437-80da-071e26a5ebf1",
+    "id": "8a21f357-f09d-4334-8a7c-716ed671e8a2",
     "name": "静岡マラソン2026Shizuoka Marathon 2026",
     "date": "2026-03-08",
     "entry_start_date": "2025-10-02",
@@ -286,7 +286,7 @@
     "image_url": "/images/races/race_4e360230a97833b220fb0b88da8e0879.png"
   },
   {
-    "id": "ce042a53-7e19-4f62-8b49-ee4492f9b1bd",
+    "id": "ab4dfd25-b515-4bf2-9413-a9304c005fa1",
     "name": "名古屋ウィメンズマラソン2026NAGOYA WOMEN’S MARATHON 2026",
     "date": "2026-03-08",
     "entry_start_date": "2025-09-18",
@@ -305,7 +305,7 @@
     "image_url": "/images/races/race_3e34199e4d232f2fd4daa16315923b55.png"
   },
   {
-    "id": "6ed2362e-bbff-4276-aec6-6d7a582b3267",
+    "id": "628198b1-4ef0-498a-9976-5c25ad24d8c2",
     "name": "庄内緑地マラソングランプリ2026 Spring(フル・ハーフ・リレー)",
     "date": "2026-03-08",
     "entry_start_date": "2025-12-27",
@@ -314,9 +314,9 @@
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
-      "リレー",
+      "フル",
       "ハーフ",
-      "フル"
+      "リレー"
     ],
     "is_jaaf_certified": false,
     "time_limit": "5時間20分",
@@ -326,7 +326,7 @@
     "image_url": "/images/races/race_9d68c77fff7a0ff78b0161ceab70ed87.png"
   },
   {
-    "id": "25e5c8cb-224f-4319-89ab-4dbe61bc591c",
+    "id": "7efce8a9-16c9-4cdf-819d-c4036588820c",
     "name": "びわ湖マラソン2026BIWAKO MARATHON 2026",
     "date": "2026-03-08",
     "entry_start_date": "2025-08-01",
@@ -345,7 +345,7 @@
     "image_url": "/images/races/race_2d095ac850d39f44de2a04bab88cad03.png"
   },
   {
-    "id": "50d76095-eeee-4f62-80a1-e7d6147fcc64",
+    "id": "82e31f6d-de5b-4aea-80a7-7cc0579265a9",
     "name": "第3回 東京・品川マラソンフェスタ 2026 ～震災復興チャリティ～",
     "date": "2026-03-14",
     "entry_start_date": "2025-12-05",
@@ -364,7 +364,7 @@
     "image_url": "/images/races/race_d6f68e5031ce583c6fac47a2ebb25086.png"
   },
   {
-    "id": "d6c81bb3-37ec-4cca-9ee9-e4872a7978e4",
+    "id": "05577795-20df-4417-80c7-83875c847fd3",
     "name": "第75回UPRUN府中多摩川風の道マラソン大会",
     "date": "2026-03-14",
     "entry_start_date": "2025-12-08",
@@ -383,7 +383,7 @@
     "image_url": "/images/races/race_eac121bf425a4e0b6eee4355c3e88deb.png"
   },
   {
-    "id": "4699e291-a487-49df-b4b2-bc06de2c5a82",
+    "id": "b6d0e12f-8203-4fc2-a1ed-8e2635549bb8",
     "name": "THE CHALLENGE RACE TOYOSU 3 in 2026",
     "date": "2026-03-14",
     "entry_start_date": "2025-12-16",
@@ -402,7 +402,7 @@
     "image_url": "/images/races/race_e5ba962a0d725b957d7acf8f66bc2128.png"
   },
   {
-    "id": "0d99ab08-cc91-419b-950d-ca49b2a36e5a",
+    "id": "6781f826-cec8-4edf-9df3-5e2db9209d3b",
     "name": "2026板橋Cityマラソン",
     "date": "2026-03-15",
     "entry_start_date": "2025-08-01",
@@ -421,7 +421,7 @@
     "image_url": "/images/races/race_31f72fd328303956cd066a4ec3ee3296.png"
   },
   {
-    "id": "e10443bc-39b9-42cb-9159-8b26dcc3ed0e",
+    "id": "f74b8e23-5a9d-4231-92f7-c430748c0162",
     "name": "第55回スポーツメイトラン川崎多摩川マラソン",
     "date": "2026-03-15",
     "entry_start_date": "2025-12-08",
@@ -440,7 +440,7 @@
     "image_url": "/images/races/race_50105fb264a2cbb9f73e84bed780b42c.png"
   },
   {
-    "id": "24fd7a16-d1ef-44ef-98d9-53e892ea5410",
+    "id": "731eb7b5-5aba-4d19-8a8d-b94716660fa1",
     "name": "鳥取マラソン2026",
     "date": "2026-03-15",
     "entry_start_date": "2025-10-15",
@@ -459,7 +459,7 @@
     "image_url": "/images/races/race_56010524977a0b948d00036b7c3cbb4a.png"
   },
   {
-    "id": "7a2c703c-9c5e-4c32-95b1-15a24a26c1f9",
+    "id": "5ce3a825-27c2-4868-a4cf-d10c8be0d2a4",
     "name": "かがわマラソン2026",
     "date": "2026-03-15",
     "entry_start_date": "2025-10-06",
@@ -478,7 +478,7 @@
     "image_url": "/images/races/race_f8fcd389aa959a3c1c4256deeffdfe7d.png"
   },
   {
-    "id": "3c934c36-4d4e-4cb4-ba74-30132afdfbc7",
+    "id": "f734f6e4-2d46-4442-b840-626fefc2feb4",
     "name": "第11回 柏の葉 春らんRunマラソンwithクールノット",
     "date": "2026-03-20",
     "entry_start_date": "2025-10-22",
@@ -497,7 +497,7 @@
     "image_url": "/images/races/race_bd6842204e446c351039a2634bac86a3.png"
   },
   {
-    "id": "9b44729c-6722-43fc-b7c9-aa056a291f79",
+    "id": "e3bbddd4-fe66-4efc-9c94-0120ef69fb9c",
     "name": "第30回UP RUN東大島小松川公園マラソン～長距離特別ver～",
     "date": "2026-03-20",
     "entry_start_date": "2025-12-08",
@@ -516,7 +516,7 @@
     "image_url": "/images/races/race_3091c2d8465a5afcab3e9f860e41736d.png"
   },
   {
-    "id": "23156d04-3ac3-4904-a22b-c5015beafb9b",
+    "id": "47bef10e-6057-4f3a-a6e5-8827e1f1f14a",
     "name": "THE CHALLENGE RACE KOBE 1 in 2026",
     "date": "2026-03-20",
     "entry_start_date": "2025-11-01",
@@ -535,7 +535,7 @@
     "image_url": "/images/races/race_88153a811c05e87fcdee73f33e22199f.png"
   },
   {
-    "id": "9663d836-5e1d-4caa-98e9-7bc930917e57",
+    "id": "a9bc6b7f-b1fe-4c76-a218-df432d7d27ea",
     "name": "第94回スポーツメイトラン新横浜鶴見川マラソン",
     "date": "2026-03-21",
     "entry_start_date": "2025-12-08",
@@ -554,7 +554,7 @@
     "image_url": "/images/races/race_708cfe243879fd52f31b9e92fff4d78d.png"
   },
   {
-    "id": "3a319129-b8c2-44f5-a94e-1c8c28753afe",
+    "id": "4d3f9afa-ff53-405b-af0b-a2e88a80bcbb",
     "name": "THE CHALLENGE RACE 5 in 2026",
     "date": "2026-03-22",
     "entry_start_date": "2025-12-02",
@@ -573,7 +573,7 @@
     "image_url": "/images/races/race_cd13ac76f722f7aef42d7b9190d68072.png"
   },
   {
-    "id": "e079aad8-6527-43a7-b1f1-a8aa887ffc27",
+    "id": "41a71abe-a97f-4ff0-bd1a-110e9fbbfce4",
     "name": "第44回スポーツメイトラン府中多摩川風の道マラソン",
     "date": "2026-03-22",
     "entry_start_date": "2025-12-09",
@@ -592,7 +592,7 @@
     "image_url": "/images/races/race_574b57290f54604c13ccc580ff728d2b.png"
   },
   {
-    "id": "277d67ea-d5de-4831-b2ad-0bfc2faa11b0",
+    "id": "67baddc3-933d-4efc-84bf-63adad32eb6e",
     "name": "第86回KITA!SENJU（北千住）マラソン",
     "date": "2026-03-22",
     "entry_start_date": "2025-12-22",
@@ -611,7 +611,7 @@
     "image_url": "/images/races/race_24f6f68d6a3242b5ae40c763e8d2b0d4.png"
   },
   {
-    "id": "bdda8642-d167-4df5-9e27-40d9de3beecc",
+    "id": "d69836d9-72b1-41e7-9e44-69bc6f0c801e",
     "name": "第74回UPRUN川崎多摩川マラソン",
     "date": "2026-03-22",
     "entry_start_date": "2025-12-08",
@@ -630,7 +630,7 @@
     "image_url": "/images/races/race_e93e838bd479bc03d7edb6a564b91d63.png"
   },
   {
-    "id": "11620190-665e-4d6f-9352-7af5bfb4a8d6",
+    "id": "aba34e52-7c0e-49be-8164-b54f26f0e3c4",
     "name": "淀川マラソン＆ウォーク 2026",
     "date": "2026-03-22",
     "entry_start_date": "2025-09-17",
@@ -649,7 +649,7 @@
     "image_url": "/images/races/race_5fc0c1ad0910fff997bf9e050bce4386.png"
   },
   {
-    "id": "b4856a9f-dfd1-48e2-825a-a2a47298bb45",
+    "id": "df3bb0fd-3775-4f06-9d3f-f5853fdb44e8",
     "name": "とくしまマラソン2026",
     "date": "2026-03-22",
     "entry_start_date": "2025-09-30",
@@ -668,7 +668,7 @@
     "image_url": "/images/races/race_db7069d3f1a72acdc16b4275c9d631e6.png"
   },
   {
-    "id": "9d6a9f34-a57d-40d7-81fc-48ce8b626390",
+    "id": "a9f3d16b-a1c4-4006-8364-2c6bf3a5cb44",
     "name": "さが桜マラソン2026",
     "date": "2026-03-22",
     "entry_start_date": "2025-10-01",
@@ -687,7 +687,7 @@
     "image_url": "/images/races/race_b4acd1bd6d3ac1fd2682893eb1274d9b.png"
   },
   {
-    "id": "025a99a2-3150-4f23-9baf-257c80c822cf",
+    "id": "996c1c1f-4787-48aa-ab24-fbc3a605698a",
     "name": "THE CHALLENGE RACE 6 in 2026",
     "date": "2026-03-28",
     "entry_start_date": "2025-12-02",
@@ -706,7 +706,7 @@
     "image_url": "/images/races/race_344e3c21f4e79284e1654ac9659c274d.png"
   },
   {
-    "id": "d58a4bc8-7eee-4164-8f6e-a24a4d5eb7dc",
+    "id": "3bfeb4a6-c01d-4a12-969c-69b57ffa1eaf",
     "name": "2026品川マラソン",
     "date": "2026-03-29",
     "entry_start_date": "2025-12-08",
@@ -725,7 +725,7 @@
     "image_url": "/images/races/race_a5a6b18401456925f220a64ce5b921ab.png"
   },
   {
-    "id": "b92e4463-e6ab-4558-825d-4b871f894eb7",
+    "id": "841496be-f585-4404-a108-759496374209",
     "name": "THE CHALLENGE RACE YOKOHAMA 3 in 2026",
     "date": "2026-03-29",
     "entry_start_date": "2025-12-02",
@@ -744,7 +744,7 @@
     "image_url": "/images/races/race_f2ca7839032ebcb1ad4140decfb6cfbd.png"
   },
   {
-    "id": "1c59674e-07e9-43e1-a941-c0cc210cb477",
+    "id": "99aef1f2-31de-44ac-a183-8d95ef241021",
     "name": "ふくい桜マラソン2026FUKUI SAKURA MARATHON 2026",
     "date": "2026-03-29",
     "entry_start_date": "2025-09-25",
@@ -763,7 +763,7 @@
     "image_url": "/images/races/race_5937c84b06ebef4884d6ea536dabf91f.png"
   },
   {
-    "id": "c645d22b-cc8f-419d-a628-6b42dacf400e",
+    "id": "2c8b93a3-1fef-45ff-94fc-a5eaace98a3d",
     "name": "なにわ淀川マラソン2026",
     "date": "2026-03-29",
     "entry_start_date": "2025-07-28",
@@ -782,7 +782,7 @@
     "image_url": "/images/races/race_d1c7088c988b3e4ecb02d9f584c17eac.png"
   },
   {
-    "id": "fd6ff1c9-0912-4fcd-8776-e31c683c98b2",
+    "id": "d3fe236d-4ace-4d6b-b340-161ad8f97a61",
     "name": "きのくに美山マラソン2026",
     "date": "2026-03-29",
     "entry_start_date": "2025-12-18",
@@ -801,7 +801,7 @@
     "image_url": "/images/races/race_1cf0b9aec43a85690edc2cca86897c49.png"
   },
   {
-    "id": "df178470-5a59-47a8-bd66-b77785904039",
+    "id": "c5d648e8-fa4d-45d7-a241-8f4ca4607144",
     "name": "第18回四万十川桜マラソン",
     "date": "2026-03-29",
     "entry_start_date": "2025-10-20",
@@ -820,7 +820,7 @@
     "image_url": "/images/races/race_aab7d55be1cb62f2572ec4f1a392ea0c.png"
   },
   {
-    "id": "0cf76a57-0678-40ef-b655-69217856a031",
+    "id": "79af3c6f-baa3-4334-a7be-46414362f9d9",
     "name": "第70回スポーツメイトラン堀切水辺公園マラソン",
     "date": "2026-04-04",
     "entry_start_date": "2026-01-14",
@@ -839,7 +839,7 @@
     "image_url": "/images/races/race_a2081650bbfa09b7ed6ac1a8c28de284.png"
   },
   {
-    "id": "806c2c49-29ed-48ce-bff8-5d49c76f261e",
+    "id": "e11cdce7-f23e-48a6-8d56-d23c6b2fca7b",
     "name": "第84回UP RUN新横浜鶴見川マラソン",
     "date": "2026-04-04",
     "entry_start_date": "2026-01-13",
@@ -858,7 +858,7 @@
     "image_url": "/images/races/race_88a1d473eb3d65f42ce728d2b89bf62a.png"
   },
   {
-    "id": "6d48d35a-a505-4ebc-85e5-d0caababb2d9",
+    "id": "bc7fe01c-6eff-435f-b29a-c8e28ab674a9",
     "name": "第67回スポーツメイトラン松戸江戸川河川敷マラソン",
     "date": "2026-04-05",
     "entry_start_date": "2026-01-14",
@@ -877,7 +877,7 @@
     "image_url": "/images/races/race_da4499f4513b8e339829a80705210f41.png"
   },
   {
-    "id": "7c7de19b-398f-4c0b-b6c1-402ae446c6ab",
+    "id": "4c8df715-63bb-41ba-ac1a-abd805da8450",
     "name": "THE CHALLENGE RACE 7 in 2026",
     "date": "2026-04-05",
     "entry_start_date": "2026-01-20",
@@ -896,7 +896,7 @@
     "image_url": "/images/races/race_4b4f62fe47cf5053a16a9fd14ad759d4.png"
   },
   {
-    "id": "4de80904-1c4c-4fa8-9811-2c1fcdcaee46",
+    "id": "711778e5-2de2-4580-98d7-218e8080a07e",
     "name": "第30回UPRUN赤羽荒川マラソン～全種目ver～",
     "date": "2026-04-12",
     "entry_start_date": "2026-01-13",
@@ -915,7 +915,7 @@
     "image_url": "/images/races/race_09990d64de5622f881a05d19c216756b.png"
   },
   {
-    "id": "1f0c82ff-dab3-4071-b9e6-a6cd03fd0726",
+    "id": "4310df21-abc4-40ba-b920-50baf8b0a035",
     "name": "｢祝 日本ジオパーク認定｣第12回東経130度喜界島ジオパークマラソン",
     "date": "2026-04-12",
     "entry_start_date": "2025-12-10",
@@ -934,7 +934,7 @@
     "image_url": "/images/races/race_c1f52a3fff155921734caa808e409173.png"
   },
   {
-    "id": "911d2611-b689-4ad0-a43e-f9e304a78089",
+    "id": "ee4a2796-6077-4481-9255-ff099f8dcf1b",
     "name": "第76回UPRUN府中多摩川風の道マラソン大会",
     "date": "2026-04-18",
     "entry_start_date": "2026-01-14",
@@ -953,7 +953,7 @@
     "image_url": "/images/races/race_c1db304a75818bc6d6e59a36fe8d5615.png"
   },
   {
-    "id": "b1c8bc8f-893f-4305-9045-c447ca24a811",
+    "id": "8b92de5d-29d7-4fa3-ba1a-e3acc53c26f7",
     "name": "2026あおもり桜マラソン",
     "date": "2026-04-19",
     "entry_start_date": "2025-11-01",
@@ -972,7 +972,7 @@
     "image_url": "/images/races/race_ba792e0ce2bc659feace227e4e9f4651.png"
   },
   {
-    "id": "1bb926b4-7be8-4a51-b2e3-fe52c6e1a734",
+    "id": "19ca2833-4e7a-4f20-b4c4-287d872142e0",
     "name": "東北風土マラソン2026Tohoku Food Marathon 2026",
     "date": "2026-04-19",
     "entry_start_date": "2025-09-19",
@@ -991,7 +991,7 @@
     "image_url": "/images/races/race_cf53a92ab5863ca03a6456411d6e2a6a.png"
   },
   {
-    "id": "cf133e2e-b300-44a3-84ad-dc63d6f34698",
+    "id": "f6109a77-ae61-48b3-821f-707218ba28a0",
     "name": "かすみがうらマラソン兼国際ブラインドマラソン2026",
     "date": "2026-04-19",
     "entry_start_date": "2025-11-23",
@@ -1010,7 +1010,7 @@
     "image_url": "/images/races/race_74320462de4329bb833698a669a379a2.png"
   },
   {
-    "id": "d720533c-b7fd-44f9-a192-443182930ba1",
+    "id": "458e090b-a319-435d-9efd-b4170e6e333d",
     "name": "第28回長野マラソン28th Nagano Marathon",
     "date": "2026-04-19",
     "entry_start_date": "2025-09-13",
@@ -1029,7 +1029,7 @@
     "image_url": "/images/races/race_249ef04743dc626fb8e6a1df4541af25.png"
   },
   {
-    "id": "a9bcf741-b361-4900-86e3-95d324cf1af5",
+    "id": "28b2d221-4d71-4007-9c9f-5fcdccdb2f37",
     "name": "第33回津山加茂郷フルマラソン全国大会",
     "date": "2026-04-19",
     "entry_start_date": "2025-11-25",
@@ -1048,7 +1048,7 @@
     "image_url": "/images/races/race_6c5a010773db97dc71db53e3fa9aee78.png"
   },
   {
-    "id": "5ec222cf-d101-4865-8930-866ffc8cd403",
+    "id": "cd9df8d9-1057-4a84-b0d0-5925d923728a",
     "name": "第45回スポーツメイトラン府中多摩川風の道マラソン",
     "date": "2026-04-25",
     "entry_start_date": "2026-02-03",
@@ -1067,7 +1067,7 @@
     "image_url": "/images/races/race_24c2124264f34b093df7a50a0b649a02.png"
   },
   {
-    "id": "faa61f2e-f231-4189-8dbe-3fe6f6cccc94",
+    "id": "a376303e-d99d-4bb2-ade2-0f2a8a433e82",
     "name": "THE CHALLENGE RACE YOKOHAMA 4 in 2026",
     "date": "2026-04-25",
     "entry_start_date": "2026-01-20",
@@ -1082,10 +1082,11 @@
     "time_limit": "4時間30分",
     "features": null,
     "url": "https://yokohama-race.rdc-run.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_3d9656b6ae5d14c38ab9a066fa16a8f6.png"
   },
   {
-    "id": "08ec806c-52ee-473c-ad5b-570b59abbbc7",
+    "id": "2b3acc74-d202-4e1b-ab1b-0d708dccead9",
     "name": "第75回UPRUN川崎多摩川マラソン",
     "date": "2026-04-25",
     "entry_start_date": "2026-01-14",
@@ -1100,10 +1101,11 @@
     "time_limit": "5時間30分",
     "features": "ランニングを習慣としている方、他のランナーと一緒に走ってみたい方などを集めて競いあいましょう。 多摩...",
     "url": "https://up-run.jp/events/up-kawasaki75/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_ec251c613992f30a5ece12c3e764e99d.png"
   },
   {
-    "id": "f51ba019-c3e5-4a1e-9a41-043ca9853700",
+    "id": "20f8aae2-7f1b-4f19-8cfa-0094691e2b28",
     "name": "THE CHALLENGE RACE 8 in 2026",
     "date": "2026-04-26",
     "entry_start_date": "2026-01-20",
@@ -1118,10 +1120,11 @@
     "time_limit": null,
     "features": null,
     "url": "https://race.rdc-run.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_62a1b9b80abcdb3fc0190b5119a95755.png"
   },
   {
-    "id": "65eb6f9e-3c81-4cbc-bc95-4661c590d40b",
+    "id": "b5ab5498-dbdc-43f1-bc13-a50193a15ce9",
     "name": "第95回スポーツメイトラン新横浜鶴見川マラソン",
     "date": "2026-04-26",
     "entry_start_date": "2026-01-14",
@@ -1136,10 +1139,11 @@
     "time_limit": "5時間30分",
     "features": "人気の新横浜鶴見川マラソン！！神奈川の中心地でありながら、沢山の自然にふれあえるフラットでとても走り...",
     "url": "https://up-run.jp/events/mate-shinyokohama95/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_ed3106af7b49f219bda827ada557cd01.png"
   },
   {
-    "id": "bd33c68e-1adc-4df7-b44e-e3a43707fe38",
+    "id": "139056f0-7e87-460a-82d0-1cd6972301fe",
     "name": "佐渡トキマラソン2026",
     "date": "2026-04-26",
     "entry_start_date": "2025-12-01",
@@ -1154,10 +1158,11 @@
     "time_limit": "7時間",
     "features": null,
     "url": "https://www.scsf.jp/marathon/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_61d3b520fbac4f45059921f19d7d56f8.png"
   },
   {
-    "id": "8f1bb091-f564-4116-bba5-145b17290abb",
+    "id": "b4fa9d1e-caf8-4158-a6e8-33aed1870bfd",
     "name": "ナゴヤアドベンチャーマラソンSpring Kickoff Run",
     "date": "2026-04-26",
     "entry_start_date": "2026-01-27",
@@ -1172,10 +1177,11 @@
     "time_limit": null,
     "features": null,
     "url": "https://life.run-style.jp/nagoya-adv.spring-kickoff-run-2026",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_482db0ef7e9a574e44ed5b8b1178dc9e.png"
   },
   {
-    "id": "765b66f3-0a39-4da1-9257-4b7c16e19ce0",
+    "id": "c048292b-9d2b-464c-b9b6-81815693e684",
     "name": "第31回UP RUN東大島小松川公園マラソン～長距離特別ver～",
     "date": "2026-04-29",
     "entry_start_date": "2026-01-14",
@@ -1190,10 +1196,11 @@
     "time_limit": "5時間30分",
     "features": "ランナーに人気の荒川！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/up-higashiooshimalong31/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_c96c36c1a8cf2c3ad549d1bfcca23600.png"
   },
   {
-    "id": "f498edbd-f479-4b54-a414-1a2331baa5da",
+    "id": "07b05d04-8f2f-45ea-9335-0f40623a33ef",
     "name": "第31回UPRUN赤羽荒川マラソン～全種目ver～",
     "date": "2026-05-02",
     "entry_start_date": "2026-02-10",
@@ -1208,10 +1215,11 @@
     "time_limit": "5時間半",
     "features": "ランナーに人気の荒川！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/up-akabanezensyumoku31/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_1f9d02354d72f9943a59db475e4c507e.png"
   },
   {
-    "id": "7c6f275f-7313-4889-b73b-7d358aa1c5a1",
+    "id": "04f5c32b-5c86-46d2-a204-ee8ec4d5c583",
     "name": "第1回スポーツメイトラン武蔵小杉多摩川マラソン",
     "date": "2026-05-03",
     "entry_start_date": "2026-02-12",
@@ -1226,10 +1234,11 @@
     "time_limit": "5時間30分",
     "features": "ランナーに人気の武蔵小杉！ 多摩川河川敷を走るフラットな走りやすいコースで初心者から上級者まで楽しめ...",
     "url": "https://up-run.jp/events/mate-musashikosugi1/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_875c27819e14d6dd38efe3054be0fa58.png"
   },
   {
-    "id": "e7c4a832-6e04-40bf-9449-0f757bbfaff8",
+    "id": "b1329546-8fa3-466b-80e8-8ff22e1f4a51",
     "name": "THE CHALLENGE RACE 9 in 2026",
     "date": "2026-05-05",
     "entry_start_date": "2026-01-20",
@@ -1244,10 +1253,11 @@
     "time_limit": null,
     "features": null,
     "url": "https://race.rdc-run.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_6be382af3ae97677b897d4f088ccba8d.png"
   },
   {
-    "id": "b08dcf17-7341-488f-90b3-e7401f814ddf",
+    "id": "3c896c3f-d9fd-43f4-b1b3-5da960232a23",
     "name": "THE CHALLENGE RACE YOKOHAMA 5 in 2026",
     "date": "2026-05-06",
     "entry_start_date": "2026-01-20",
@@ -1262,10 +1272,11 @@
     "time_limit": "4時間30分",
     "features": null,
     "url": "https://yokohama-race.rdc-run.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_6eb1bd1fc72deae55658b29401523b49.png"
   },
   {
-    "id": "8cd3e969-9193-482b-b6fd-50d1c6e55e95",
+    "id": "5db0752c-b3d7-474c-801b-6eb22baab4e5",
     "name": "第85回UP RUN新横浜鶴見川マラソン",
     "date": "2026-05-09",
     "entry_start_date": "2026-02-10",
@@ -1280,10 +1291,11 @@
     "time_limit": "5時間30分",
     "features": "ランナーに人気の新横浜！鶴見川河川敷を走るフラットな走りやすいコースで初心者から上級者まで楽しめる大...",
     "url": "https://up-run.jp/events/up-shinyokohama85/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_ad8ab4752cdd2f0d1565a666ee4ac583.png"
   },
   {
-    "id": "deddd540-09e8-4dba-b273-21934c4c7d86",
+    "id": "59e07f51-b7c4-4a92-b249-fb63338570f7",
     "name": "第46回スポーツメイトラン府中多摩川風の道マラソン",
     "date": "2026-05-16",
     "entry_start_date": "2026-02-10",
@@ -1298,10 +1310,11 @@
     "time_limit": "5時間30分",
     "features": "ランナーに人気の府中！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/mate-futyu46/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_6d6b5567f0e7aab17bb4ca6a4260aeaf.png"
   },
   {
-    "id": "c9800fb5-00b2-4707-ab6c-d9d68a7d2037",
+    "id": "e07b4d1c-18c3-451f-a55b-21b8e4dfeaba",
     "name": "第76回UPRUN川崎多摩川マラソン",
     "date": "2026-05-16",
     "entry_start_date": "2026-02-10",
@@ -1316,10 +1329,11 @@
     "time_limit": "5時間30分",
     "features": "ランニングを習慣としている方、他のランナーと一緒に走ってみたい方などを集めて競いあいましょう。 多摩...",
     "url": "https://up-run.jp/events/up-kawasaki76/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_1f444ce5a0072474ae24e901c96178e4.png"
   },
   {
-    "id": "881df823-99cd-40ba-95a4-186ca1456b6a",
+    "id": "f5a1a2db-0f7c-472e-8314-f56b6328bc0b",
     "name": "ANA洞爺湖マラソン2026",
     "date": "2026-05-17",
     "entry_start_date": "2026-02-01",
@@ -1334,10 +1348,11 @@
     "time_limit": "5時間30分",
     "features": null,
     "url": "https://www.toyako-marathon.jp/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_d29cca33b3ba55cd262e4d1086769825.png"
   },
   {
-    "id": "ce82d9c7-2a52-4aa2-ab9b-66a575e6401d",
+    "id": "619af403-0e23-4e5e-8aa5-1e06e1661d3d",
     "name": "第10回いわて奥州きらめきマラソン",
     "date": "2026-05-17",
     "entry_start_date": "2025-11-28",
@@ -1352,10 +1367,11 @@
     "time_limit": "6時間",
     "features": "全国有数の高低差20m以内の高速平坦コース！",
     "url": "https://oshukirameki.jp/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_112da18f2a3702827b4aab05233f39a4.png"
   },
   {
-    "id": "8477e37f-ada3-4590-ae51-8c4e1215e769",
+    "id": "c014159a-b998-4c1c-bacb-a9fe556282a0",
     "name": "第26回柏崎潮風マラソン",
     "date": "2026-05-17",
     "entry_start_date": "2026-01-13",
@@ -1370,10 +1386,11 @@
     "time_limit": "5時間30分",
     "features": "市民ランナー主役の大会です。柏崎の風・海・山、そして温もりに触れていただくイベントです。",
     "url": "https://shiokaze-run.info/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_fa22153c6412e4518d47733cb8748a1e.png"
   },
   {
-    "id": "fc513dee-80df-4c97-8dd6-e1b64a3eec93",
+    "id": "d32e9978-2dcf-49a3-abc0-e5210ad0c2ba",
     "name": "第23回 とやま清流マラソン",
     "date": "2026-05-17",
     "entry_start_date": "2026-01-24",
@@ -1388,10 +1405,11 @@
     "time_limit": "7時間",
     "features": "5月のさわやかな風、清流のせせらぎ、雄大な北アルプス、緑豊かな神通川河川敷コース",
     "url": "http://www.seiryu-marathon.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_7d61a73670f506f71ef32f469f07ff1a.png"
   },
   {
-    "id": "7fc45206-03ab-4ccc-b4f3-3c0713a200df",
+    "id": "80a8256a-0fed-4fb2-9cac-d3c2f0a847a3",
     "name": "第68回スポーツメイトラン松戸江戸川河川敷マラソン",
     "date": "2026-05-23",
     "entry_start_date": "2026-02-12",
@@ -1406,10 +1424,11 @@
     "time_limit": "5時間30分",
     "features": "ランナーに人気の松戸！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/mate-matudo68/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_5419324e286a2baa6b907e469a970765.png"
   },
   {
-    "id": "27a34e70-559e-4278-8fc4-9fb880946624",
+    "id": "3a55e7ff-6d77-4e38-a156-0124cd2f8035",
     "name": "第14回稲毛花のマラソン",
     "date": "2026-05-24",
     "entry_start_date": "2026-01-30",
@@ -1424,10 +1443,11 @@
     "time_limit": "6時間",
     "features": null,
     "url": "https://earthrunclub.net/competition/20260524_inage_hana_14/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_914305cad716c6b4e81894e63a63e42e.png"
   },
   {
-    "id": "8026bf49-dd39-4d9d-82e0-a3e848a36d31",
+    "id": "795328f3-5c13-4809-8686-18adece071ef",
     "name": "第77回UPRUN府中多摩川風の道マラソン大会",
     "date": "2026-05-24",
     "entry_start_date": "2026-02-10",
@@ -1442,10 +1462,11 @@
     "time_limit": "5時間30分",
     "features": "人気の府中風の道マラソン！！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっており...",
     "url": "https://up-run.jp/events/up-fuchuu77/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_782aed5884bea4b233d2904aaabf459d.png"
   },
   {
-    "id": "e7738d75-7d6b-4edf-802a-1894140af06e",
+    "id": "815639bc-aa7a-4e74-aea4-65806eac3270",
     "name": "第43回 カーター記念黒部名水マラソン",
     "date": "2026-05-24",
     "entry_start_date": "2025-12-01",
@@ -1460,10 +1481,11 @@
     "time_limit": "6時間",
     "features": null,
     "url": "https://www.kurobe-taikyo.jp/road/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_6ea747e9ca3ceb7041e4fbcb00f93487.png"
   },
   {
-    "id": "2c742970-2c02-438a-8966-5490dd350ae6",
+    "id": "c3b8d23e-2e7d-4f86-94d1-b3f047fbf3ad",
     "name": "庄内緑地マラソングランプリ 202605(フル・ハーフ・リレー)",
     "date": "2026-05-24",
     "entry_start_date": "2026-02-21",
@@ -1472,18 +1494,19 @@
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
-      "リレー",
+      "フル",
       "ハーフ",
-      "フル"
+      "リレー"
     ],
     "is_jaaf_certified": false,
     "time_limit": "5時間20分",
     "features": null,
     "url": "https://athmico.jp/item/sg2605",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_fa4b995fa4c6053ead9cf357538bf0c8.png"
   },
   {
-    "id": "a25543e1-b58f-499d-86b4-ac83864078e0",
+    "id": "42826fec-7f50-497d-85ee-c19cbdb478d2",
     "name": "第96回スポーツメイトラン新横浜鶴見川マラソン",
     "date": "2026-05-31",
     "entry_start_date": "2026-02-12",
@@ -1498,10 +1521,11 @@
     "time_limit": "5時間30分",
     "features": "人気の新横浜鶴見川マラソン！！神奈川の中心地でありながら、沢山の自然にふれあえるフラットでとても走り...",
     "url": "https://up-run.jp/events/mate-shinyokohama96/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_e7ba8fc9a1113a87ff9795e2eaeb2369.png"
   },
   {
-    "id": "7fe442e9-e806-4d42-ba07-5c9a33428947",
+    "id": "82339f83-39c7-4ef8-90fa-d8ab855c3ff1",
     "name": "第10回 JAL 向津具(むかつく）ダブルマラソン",
     "date": "2026-06-14",
     "entry_start_date": "2025-11-26",
@@ -1516,10 +1540,11 @@
     "time_limit": "8時間",
     "features": null,
     "url": "https://www.mukatsuku-w-marathon.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_79956d2475b4ae7ffca7a12d67c77989.png"
   },
   {
-    "id": "0b6352d2-f6ab-4dfd-91b3-2b1dea2f0b0d",
+    "id": "0f4ece5a-db4a-4843-933a-bf3a594fb4d8",
     "name": "2026函館マラソン2026 Hakodate Marathon",
     "date": "2026-06-28",
     "entry_start_date": "2026-02-17",
@@ -1534,10 +1559,11 @@
     "time_limit": "6時間",
     "features": null,
     "url": "http://hakodate-marathon.jp/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_d2e1273762e283770fa83b56eb6660d2.png"
   },
   {
-    "id": "8154fdb7-b894-4a0d-9502-088a52cb0dbe",
+    "id": "f0b0ae47-2e10-4db7-82b1-2ec47b7d8be3",
     "name": "ちばアクアラインマラソン2026",
     "date": "2026-11-08",
     "entry_start_date": null,
@@ -1552,6 +1578,7 @@
     "time_limit": "6時間10分",
     "features": null,
     "url": "https://chiba-aqualine-marathon.com/",
-    "updated_at": "2026年02月26日"
+    "updated_at": "2026年02月26日",
+    "image_url": "/images/races/race_cb9664396a782464c3a7b5c5fe19c265.png"
   }
 ]
