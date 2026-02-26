@@ -8,7 +8,7 @@ export default function Header() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2 group">
                     <Image
-                        src="/runcal-logo.png"
+                        src="/RunCalfulllogo.png"
                         alt="RUNCAL Logo"
                         width={220}
                         height={144}
