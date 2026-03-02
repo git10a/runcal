@@ -24,8 +24,10 @@ export function getAllRaces(): Race[] {
   const jstDate = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
   const todayStr = `${jstDate.getFullYear()}-${String(jstDate.getMonth() + 1).padStart(2, '0')}-${String(jstDate.getDate()).padStart(2, '0')}`;
 
-  // Filter out past events
-  return (racesData as Race[]).filter(race => race.date >= todayStr);
+  // Filter out past events and sort by date ascending (upcoming races first)
+  return (racesData as Race[])
+    .filter(race => race.date >= todayStr)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 
 export function getFilteredRaces(filters: {
@@ -47,8 +49,7 @@ export function getFilteredRaces(filters: {
     races = races.filter(r => r.is_jaaf_certified === filters.is_jaaf_certified);
   }
 
-  // Sort by date ascending (upcoming races first)
-  return races.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  return races;
 }
 
 export function getUniquePrefectures(): string[] {

@@ -1,19 +1,19 @@
 "use client";
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Race } from '@/lib/data';
-import RaceCard from './RaceCard';
-import FilterBar from './FilterBar';
-import ViewToggle from './ViewToggle';
+import FilterBar from '@/components/FilterBar';
+import ViewToggle from '@/components/ViewToggle';
+import TableRaceList from '@/components/TableRaceList';
 import { useRaceFilters } from '@/hooks/useRaceFilters';
 
-interface RaceListProps {
+interface ListViewProps {
     initialRaces: Race[];
     prefectures: string[];
     distances: string[];
 }
 
-export default function RaceList({ initialRaces, prefectures, distances }: RaceListProps) {
+export default function ListView({ initialRaces, prefectures, distances }: ListViewProps) {
     const {
         filteredRaces,
         selectedPrefecture,
@@ -27,12 +27,16 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
     } = useRaceFilters(initialRaces);
 
     const [currentPage, setCurrentPage] = useState(1);
-    const ITEMS_PER_PAGE = 12;
+    const ITEMS_PER_PAGE = 25; // More items per page since it's a tight list
     const listRef = useRef<HTMLDivElement>(null);
 
     const handlePageChange = (newPage: number) => {
         setCurrentPage(newPage);
     };
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [selectedPrefecture, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
 
     const totalPages = Math.ceil(filteredRaces.length / ITEMS_PER_PAGE);
     const paginatedRaces = filteredRaces.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
@@ -49,11 +53,9 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={(type, val) => {
                     handleFilterChange(type, val);
-                    setCurrentPage(1);
                 }}
                 onClearAll={() => {
                     handleClearAll();
-                    setCurrentPage(1);
                 }}
                 totalResults={filteredRaces.length}
             />
@@ -78,11 +80,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
 
                 {filteredRaces.length > 0 ? (
                     <>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 min-h-[600px] content-start">
-                            {paginatedRaces.map(race => (
-                                <RaceCard key={race.id} race={race} />
-                            ))}
-                        </div>
+                        <TableRaceList paginatedRaces={paginatedRaces} />
 
                         {/* Pagination Controls */}
                         {totalPages > 1 && (
