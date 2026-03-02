@@ -425,6 +425,16 @@ def main():
 
     all_races = []
 
+    # 0. Load existing races to prevent overwriting manual data
+    if os.path.exists(json_path):
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                existing_races = json.load(f)
+                all_races.extend(existing_races)
+                print(f"Loaded {len(existing_races)} existing races from {json_path}")
+        except json.JSONDecodeError:
+            print(f"Warning: Could not parse {json_path}. Starting fresh.")
+
     # 1. Scrape RunnersBible (Marathon + Ultra)
     print("\n[1/1] Scraping RunnersBible (Marathon + Ultra)...")
     runnersbible_races = scrape_runners_bible()
