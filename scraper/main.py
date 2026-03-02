@@ -456,18 +456,23 @@ def main():
             hash_str = hashlib.md5(race['name'].encode('utf-8')).hexdigest()
             filename = f"race_{hash_str}.png"
             image_filepath = os.path.join(public_images_dir, filename)
+            generated_url = f"/images/races/{filename}"
 
-            # Add the URL path to the race data so the frontend can use it
-            if not race.get('image_url') or not race['image_url'].startswith('http'):
-                race['image_url'] = f"/images/races/{filename}"
+            # If it already has an external HTTP url, leave it alone
+            if race.get('image_url') and race['image_url'].startswith('http'):
+                continue
+                
+            # Otherwise, clear it first
+            race.pop('image_url', None)
 
             if os.path.exists(image_filepath):
-                # Image already exists -> skip generation to save API calls
-                pass
+                # Image already exists
+                race['image_url'] = generated_url
             else:
                 if image_generator:
                     success = image_generator.generate_and_save_race_image(race['name'], image_filepath)
                     if success:
+                        race['image_url'] = generated_url
                         # Add a small delay to avoid hitting API rate limits immediately
                         time.sleep(2)
 
