@@ -19,7 +19,13 @@ export interface Race {
 }
 
 export function getAllRaces(): Race[] {
-  return racesData as Race[];
+  // Get today's date in JST (Asia/Tokyo)
+  const now = new Date();
+  const jstDate = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+  const todayStr = `${jstDate.getFullYear()}-${String(jstDate.getMonth() + 1).padStart(2, '0')}-${String(jstDate.getDate()).padStart(2, '0')}`;
+
+  // Filter out past events
+  return (racesData as Race[]).filter(race => race.date >= todayStr);
 }
 
 export function getFilteredRaces(filters: {
