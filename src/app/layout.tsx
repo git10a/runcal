@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Suspense } from 'react';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -15,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
   title: {
     default: 'ランカレ | 日本のマラソン大会・ハーフマラソン日程カレンダー',
     template: '%s | ランカレ',
@@ -53,7 +55,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Header />
+        <Suspense fallback={<div className="h-16 w-full border-b border-border bg-background/95"></div>}>
+          <Header />
+        </Suspense>
         <main className="flex-1 bg-muted/20">
           {children}
         </main>

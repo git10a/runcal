@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getAllRaces, getUniquePrefectures, getUniqueDistances } from '@/lib/data';
 import ListView from './ListView';
 
@@ -17,11 +18,13 @@ export default function ListPage() {
             </section>
 
             <div className="flex-1 pb-20">
-                <ListView
-                    initialRaces={races}
-                    prefectures={prefectures}
-                    distances={distances}
-                />
+                <Suspense fallback={<div className="flex justify-center p-8">Loading...</div>}>
+                    <ListView
+                        initialRaces={races}
+                        prefectures={prefectures}
+                        distances={distances}
+                    />
+                </Suspense>
             </div>
         </div>
     );

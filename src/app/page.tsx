@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getAllRaces, getUniquePrefectures, getUniqueDistances } from '@/lib/data';
 import RaceList from '@/components/RaceList';
 
@@ -19,11 +20,13 @@ export default function Home() {
 
       {/* Main Content (Filter + List) */}
       <div className="flex-1 pb-20">
-        <RaceList
-          initialRaces={races}
-          prefectures={prefectures}
-          distances={distances}
-        />
+        <Suspense fallback={<div className="flex justify-center p-8">Loading...</div>}>
+          <RaceList
+            initialRaces={races}
+            prefectures={prefectures}
+            distances={distances}
+          />
+        </Suspense>
       </div>
     </div>
   );
