@@ -155,8 +155,8 @@
     "name": "第8回 豊洲のうみべマラソン",
     "date": "2026-03-07",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-02-16",
+    "entry_status": "受付終了",
     "prefecture": "東京都",
     "city": "江東区",
     "distance": [
@@ -166,7 +166,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.goodsports.jp/gs-marathon/ichiran/0307toyosu/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "160fd41d-4fb3-4a45-8733-f30bda3d1b65",
@@ -265,7 +265,7 @@
     "date": "2026-03-07",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "神奈川県",
     "city": "川崎市",
     "distance": [
@@ -275,7 +275,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://sportswiz.jp/tamahalf/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "dab96e16-daa3-43d8-b0fe-cebe7b51b763",
@@ -552,9 +552,9 @@
     "id": "1ee9f6f4-9840-4c8e-b8e4-eca8393a5569",
     "name": "飛鳥ハーフマラソン2026",
     "date": "2026-03-08",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-10-01",
+    "entry_end_date": "2025-12-18",
+    "entry_status": "受付終了",
     "prefecture": "奈良県",
     "city": "明日香村",
     "distance": [
@@ -564,7 +564,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://asuka-marathon.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "35c78091-0bf2-45f9-8581-ebe6bdc521b8",
@@ -823,9 +823,9 @@
     "id": "d68daf43-c16d-4637-a2a9-5431b7f7b46d",
     "name": "名古屋シティマラソン2026NAGOYA CITY MARATHON 2026",
     "date": "2026-03-08",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-10-21",
+    "entry_end_date": "2025-10-27",
+    "entry_status": "受付終了",
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
@@ -835,7 +835,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://city-marathon.nagoya/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "b4a12138-60d6-4824-b349-ba51edac0fab",
@@ -882,7 +882,7 @@
     "date": "2026-03-08",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "東京都",
     "city": "立川市",
     "distance": [
@@ -892,7 +892,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://tachikawa-half.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "4517114e-9679-482e-9eaf-cbdfc6ee6a37",
@@ -1895,7 +1895,7 @@
     "date": "2026-03-15",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "宝塚市",
     "distance": [
@@ -1905,7 +1905,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://relaymarathon-jlsa.jimdofree.com/%E6%AD%A6%E5%BA%AB%E5%B7%9D%E6%B2%B3%E5%B7%9D%E5%85%AC%E5%9C%92/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "a9aa9d3d-d07c-4cc2-a592-8944602e229a",
@@ -1966,8 +1966,8 @@
     "name": "第34回いんない石橋マラソン大会",
     "date": "2026-03-15",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-02-06",
+    "entry_status": "受付終了",
     "prefecture": "大分県",
     "city": "宇佐市院内町",
     "distance": [
@@ -1977,7 +1977,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://i-sam.co.jp/15innai/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "2aa5715f-67ce-4bcf-bafa-03ea0522f031",
@@ -2815,7 +2815,7 @@
     "date": "2026-03-20",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
@@ -2825,7 +2825,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://relaymarathon-jlsa.jimdofree.com/%E4%B9%85%E5%AE%9D%E5%AF%BA%E7%B7%91%E5%9C%B0/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "c95f873b-62ef-4524-be8a-986af211833c",
@@ -3580,7 +3580,7 @@
     "date": "2026-03-22",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
@@ -3590,7 +3590,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.njsf.net/zenkoku/events/event/2026-0322aichi/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "97aa0f45-b1c0-4561-99f9-4766f7f4a2c0",
@@ -4801,7 +4801,7 @@
     "date": "2026-04-04",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "神奈川県",
     "city": "川崎市",
     "distance": [
@@ -4811,7 +4811,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://sportswiz.jp/tamahalf/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "8fc48b0e-611b-4cc0-840e-1d43dea853d1",
@@ -5113,7 +5113,7 @@
     "date": "2026-04-05",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "山口県",
     "city": "田布施町",
     "distance": [
@@ -5123,7 +5123,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.town.tabuse.lg.jp/site/information/8947.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "01b8b706-c0f9-4e26-b193-807b8376bc1e",
@@ -5681,8 +5681,8 @@
     "name": "アミノバイタル presents 荒川ハーフマラソン2026(春)",
     "date": "2026-04-11",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-29",
+    "entry_status": "受付中",
     "prefecture": "東京都",
     "city": "葛飾区",
     "distance": [
@@ -5692,7 +5692,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://boost-inc.jp/arakawa_half/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "348d12cd-1bcd-46ea-a482-b4cc7e0e4e14",
@@ -6749,9 +6749,9 @@
     "id": "ec62a901-81c7-47ac-bd50-f9e9a21886e7",
     "name": "第41回 2026宮崎シーガイアジョギング・ユニファイド大会",
     "date": "2026-04-19",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-12-18",
+    "entry_end_date": "2026-03-09",
+    "entry_status": "受付中",
     "prefecture": "宮崎県",
     "city": "宮崎市",
     "distance": [
@@ -6761,7 +6761,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://i-sam.co.jp/miyazaki-seagaia-jogging/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "117c4d85-4913-415e-9690-7dccacfb0986",
@@ -6898,9 +6898,9 @@
     "id": "9cb99bdb-94c1-4c25-a36b-93a43308b13b",
     "name": "第14回さくらおろち湖トレイルランニングレース",
     "date": "2026-04-19",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-10-10",
+    "entry_end_date": "2026-03-16",
+    "entry_status": "受付中",
     "prefecture": "島根県",
     "city": "雲南市",
     "distance": [
@@ -6910,7 +6910,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://sakuraorochitrail.jimdofree.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "846620e4-9629-4c4e-9278-8062663f0228",
@@ -6971,8 +6971,8 @@
     "name": "第11回 チャリティマラソンin庄内緑地",
     "date": "2026-04-19",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-31",
+    "entry_status": "受付中",
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
@@ -6982,7 +6982,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://kaijyoken-marason.oos.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "718b8eae-0edd-4276-9932-34731da1001a",
@@ -8631,9 +8631,9 @@
     "id": "9b3592f7-bc73-4f44-9e06-2dbe92e22264",
     "name": "第33回 四国せいよ 朝霧湖マラソン大会",
     "date": "2026-05-03",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2026-02-01",
+    "entry_end_date": "2026-02-28",
+    "entry_status": "受付終了",
     "prefecture": "愛媛県",
     "city": "西予市",
     "distance": [
@@ -8643,7 +8643,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://asagirikomarathon.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "e7b49178-8065-47af-96a6-6db84bdf0663",
@@ -9016,7 +9016,7 @@
     "date": "2026-05-06",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "京都府",
     "city": "八幡市",
     "distance": [
@@ -9026,7 +9026,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.ecomarathon.run/%E9%96%A2%E8%A5%BF/%E5%85%AB%E5%B9%A1/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "df0ea3c0-7eb2-41df-9670-3084f148a893",
@@ -9480,7 +9480,7 @@
     "date": "2026-05-10",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
@@ -9490,7 +9490,7 @@
     "time_limit": null,
     "features": null,
     "url": "http://nagorun.com/info/5-10%E9%96%8B%E5%82%AC%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0vol-97",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "9e85a5ee-87d4-46fe-96e5-12b0e77a3ea8",
@@ -10222,7 +10222,7 @@
     "id": "9f9a674d-a1b9-4427-b13b-77d47bb57615",
     "name": "第13回 宮崎鏡洲の森トレイル",
     "date": "2026-05-17",
-    "entry_start_date": "2024-05-19",
+    "entry_start_date": "2026-01-26",
     "entry_end_date": null,
     "entry_status": "受付中",
     "prefecture": "宮崎県",
@@ -11142,9 +11142,9 @@
     "id": "591a5d81-c129-4f20-9059-982b6dc2d7bf",
     "name": "秋吉台カルスト TRAILRUN 2026",
     "date": "2026-05-24",
-    "entry_start_date": null,
+    "entry_start_date": "2026-01-16",
     "entry_end_date": null,
-    "entry_status": "受付終了",
+    "entry_status": "受付中",
     "prefecture": "山口県",
     "city": "美祢市",
     "distance": [
