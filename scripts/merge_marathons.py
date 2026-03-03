@@ -80,7 +80,7 @@ def main():
                     "date": parsed_date,
                     "entry_start_date": None,
                     "entry_end_date": None,
-                    "entry_status": "エントリー前",
+                    "entry_status": "不明",
                     "prefecture": prefecture,
                     "city": city,
                     "distance": ["その他"],

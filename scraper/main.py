@@ -188,7 +188,7 @@ def extract_entry_period_from_url(url):
 
 def determine_entry_status(entry_start, entry_end, parsed_date, today_str):
     if not entry_start and not entry_end:
-        return "エントリー前"
+        return "不明"
 
     end_date_for_status = entry_end if entry_end else parsed_date
 
@@ -206,7 +206,7 @@ def determine_entry_status(entry_start, entry_end, parsed_date, today_str):
         else:
             return "受付終了"
 
-    return "エントリー前"
+    return "不明"
 
 def scrape_runners_bible_page(url, default_distance="フル"):
     """Scrape a single RunnersBible page."""

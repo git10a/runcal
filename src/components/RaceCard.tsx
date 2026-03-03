@@ -80,11 +80,13 @@ export default function RaceCard({ race }: RaceCardProps) {
             <div className="px-5 py-3 bg-muted/20 flex justify-between items-center mt-auto border-t border-border/40">
                 <span className={`text-[11px] font-bold px-2.5 py-1 rounded-md shrink-0 ${race.entry_status === '受付中' ? 'text-white bg-primary shadow-sm' :
                     race.entry_status === '受付終了' ? 'text-muted-foreground bg-muted-foreground/10' :
-                        'text-orange-700 bg-orange-100/50'
+                        race.entry_status === '不明' ? 'text-muted-foreground bg-muted/60' :
+                            'text-orange-700 bg-orange-100/50'
                     }`}>
                     {race.entry_status === '受付中' ? '🎌 受付中' :
                         race.entry_status === '受付終了' ? '🔒 受付終了' :
-                            '⏳ エントリー前'}
+                            race.entry_status === '不明' ? '❓ 不明' :
+                                '⏳ エントリー前'}
                 </span>
 
                 <div className="flex gap-1 justify-center items-center flex-1 mx-2">
