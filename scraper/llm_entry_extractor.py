@@ -103,8 +103,10 @@ def _fetch_with_playwright(url):
     try:
         from playwright.sync_api import sync_playwright
         with sync_playwright() as p:
+            # Use headless=True for automation (CI), but allow toggle via env var
+            is_headless = os.environ.get('PLAYWRIGHT_HEADLESS', 'true').lower() == 'true'
             browser = p.chromium.launch(
-                headless=False,
+                headless=is_headless,
                 args=['--disable-blink-features=AutomationControlled']
             )
             context = browser.new_context(

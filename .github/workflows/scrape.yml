@@ -28,9 +28,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f scraper/requirements.txt ]; then pip install -r scraper/requirements.txt; fi
+          playwright install chromium
 
-      - name: Run Scraper
+      - name: Run Main Scraper
         run: python scraper/main.py
+
+      - name: Run AI Entry Update
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PLAYWRIGHT_HEADLESS: 'true'
+        run: python scraper/update_races_info.py
 
       - name: Commit and Push changes
         run: |
@@ -38,4 +45,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/races.json
           # Only commit if there are changes
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of races.json" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of races.json (including AI entry status updates)" && git push)
