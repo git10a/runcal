@@ -1,8 +1,9 @@
-import { Race } from '@/lib/data';
+import { Race } from '@/types';
 import Image from 'next/image';
-import { Heart, MapPin, Calendar, Award, Footprints } from 'lucide-react';
+import { MapPin, Calendar, Award, Footprints } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
 import CalendarButton from './CalendarButton';
+import { formatRaceDate, getEntryStatusInfo } from '@/lib/utils';
 
 interface RaceCardProps {
     race: Race;
@@ -11,6 +12,7 @@ interface RaceCardProps {
 export default function RaceCard({ race }: RaceCardProps) {
     const { isFavorite, toggleFavorite } = useFavorites();
     const isFav = isFavorite(race.id);
+    const statusInfo = getEntryStatusInfo(race.entry_status);
 
     return (
         <div className="bg-card text-card-foreground rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 group flex flex-col justify-between h-full ring-1 ring-border/50 overflow-hidden relative">
@@ -54,10 +56,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                     <div className="space-y-1.5 text-xs sm:text-sm text-muted-foreground font-medium mt-auto">
                         <div className="flex items-center">
                             <Calendar size={14} className="mr-2 text-primary/80 shrink-0" />
-                            <span>{(() => {
-                                const [year, month, day] = race.date.split('-');
-                                return `${year}年${parseInt(month)}月${parseInt(day)}日`;
-                            })()}</span>
+                            <span>{formatRaceDate(race.date)}</span>
                         </div>
                         <div className="flex items-center">
                             <MapPin size={14} className="mr-2 text-primary/80 shrink-0" />
@@ -78,15 +77,8 @@ export default function RaceCard({ race }: RaceCardProps) {
             </div>
 
             <div className="px-5 py-3 bg-muted/20 flex justify-between items-center mt-auto border-t border-border/40">
-                <span className={`text-[11px] font-bold px-2.5 py-1 rounded-md shrink-0 ${race.entry_status === '受付中' ? 'text-white bg-primary shadow-sm' :
-                    race.entry_status === '受付終了' ? 'text-muted-foreground bg-muted-foreground/10' :
-                        race.entry_status === '不明' ? 'text-muted-foreground bg-muted/60' :
-                            'text-orange-700 bg-orange-100/50'
-                    }`}>
-                    {race.entry_status === '受付中' ? '🎌 受付中' :
-                        race.entry_status === '受付終了' ? '🔒 受付終了' :
-                            race.entry_status === '不明' ? '❓ 不明' :
-                                '⏳ エントリー前'}
+                <span className={`text-[11px] font-bold px-2.5 py-1 rounded-md shrink-0 ${statusInfo.className}`}>
+                    {statusInfo.label}
                 </span>
 
                 <div className="flex gap-1 justify-center items-center flex-1 mx-2">

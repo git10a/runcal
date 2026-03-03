@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from 'react';
-import { Race } from '@/lib/data';
+import { Race } from '@/types';
 import RaceCard from './RaceCard';
 import FilterBar from './FilterBar';
 import ViewToggle from './ViewToggle';

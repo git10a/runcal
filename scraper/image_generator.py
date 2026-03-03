@@ -26,17 +26,28 @@ def generate_and_save_race_image(event_name, output_path):
         return False
 
     prompt = f"""
-An isometric 3D miniature render of a floating island map, designed to represent the geographic shape and iconic course route of the {event_name}. The style is a sophisticated, highly detailed miniature diorama with rich PBR textures, prioritizing realism within a stylized form.
+{event_name}のコース（地理的形状を模したエリア）を、厚みの小さいスクエア型の台座の上に表現した、アイソメトリック3Dミニチュア・ジオラマ。
 
-Lighting is SOFT, DIFFUSED daylight, evoking a crisp, clear race-day morning. Shadows are present but gentle and soft, creating a natural and inviting atmosphere.
+スタイルは「洗練された、極めて詳細なミニチュア・ジオラマ」とし、リッチなPBRテクスチャを用いて、デフォルメされた造形の中にもリアリズムを追求してください。
 
-The marathon course loop is the most prominent feature, tracing the route of the {event_name} like a 3D topographic map. It is rendered as a clearly defined, slightly elevated ribbon of realistic asphalt material integrated into the landscape, showing realistic grain and subtle signs of wear. 
+ライティングは、柔らかく拡散した自然光とし、穏やかでナチュラルな雰囲気を作り出します。影は存在させつつも、コントラストの強い鋭いものではなく、優しくソフトな質感にします。
 
-To emphasize the event, the course features subtle, scaled-down race infrastructure: a realistic start/finish gantry, tiny water stations, and distance markers. The route is populated with a moderate number of miniature runners wearing race bibs, maintaining a sense of a focused race without feeling overly cluttered. 
+ジオラマの側面は、白く丁寧に仕上げられた「展示台」として表現してください。
 
-The surrounding environment is populated with scaled-down, realistic recognizable landmarks, terrains, and street elements specific to the location of the {event_name}. Miniature trees, tiny bridges, and buildings are rendered with architectural precision to evoke the actual atmosphere of running that specific race. A few scattered miniature spectators are cheering near key landmarks.
+ランニングコースは、「{event_name}」マラソンが開催される地域の特性に合わせて作ってください。大会コースの正式ルートに準拠はしなくて構いませんが、スタート地点のアーチは配置してください。
 
-The background is a clean, soft daylight sky gradient. The composition is square (1:1 aspect ratio). The floating island is centered with comfortable empty margins, ensuring the entire shape is visible. NO text, NO typography.
+コースは、景観に溶け込みつつも境界がはっきりした、「アスファルト素材」で表現します。アスファルトの質感はやわらかめに表現してください。
+
+コース上には、ミニチュアのランナーを20人ほどまばら配置してください。それぞれカラフルなウェアをきています。
+
+
+周囲の環境には、「{event_name}」マラソンの開催場所特有のリアルな特徴を縮小して配置しますが、それらの縮尺は実際より大きめにしてください。その地域の特徴ある建造物や自然、観光資源を優先的に配置してください。実際のコースにそれらがなくても、配置していいです。ただし、その地域にない資源は配置しないでください。ただ、木々を入れる場合は多くても全体の3割までとします。カラフルにコースを彩ってください。
+
+背景は、清潔感のある柔らかな日中の空のグラデーションにします。構図はスクエア（アスペクト比1:1）です。
+
+ジオラマ全体は中央に配置してください。
+
+テキストやタイポグラフィは一切含めないでください。
     """
 
     print(f"  Generating image for '{event_name}'...")

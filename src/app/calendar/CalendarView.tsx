@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from 'react';
-import { Race } from '@/lib/data';
+import { Race } from '@/types';
 import FilterBar from '@/components/FilterBar';
 import ViewToggle from '@/components/ViewToggle';
 import CalendarRaceList from '@/components/CalendarRaceList';

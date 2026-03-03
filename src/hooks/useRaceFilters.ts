@@ -1,4 +1,4 @@
-import { Race } from '@/lib/data';
+import { Race } from '@/types';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export function useRaceFilters(initialRaces: Race[]) {

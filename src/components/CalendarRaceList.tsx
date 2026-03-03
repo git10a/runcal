@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { Race } from '@/lib/data';
+import { Race } from '@/types';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface CalendarRaceListProps {

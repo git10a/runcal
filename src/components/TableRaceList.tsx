@@ -1,4 +1,4 @@
-import { Race } from '@/lib/data';
+import { Race } from '@/types';
 import Image from 'next/image';
 import { useFavorites } from '@/hooks/useFavorites';
 
