@@ -1,0 +1,48 @@
+name: Weekly Update Races Info
+
+on:
+  schedule:
+    # 毎週日曜日の日本時間午前3時（UTC 18:00）に実行
+    - cron: '0 18 * * 0'
+  # GitHubの画面から手動実行も可能にする
+  workflow_dispatch:
+
+jobs:
+  update-races:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests beautifulsoup4 google-genai playwright
+
+    - name: Install Playwright browsers
+      # xvfb などのシステム依存パッケージもインストール
+      run: |
+        playwright install chromium
+        playwright install-deps chromium
+
+    - name: Run update script
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      # xvfb-run を使って仮想ディスプレイ上でHeadedモードブラウザを走らせる（Cloudflare回避策）
+      run: |
+        xvfb-run --auto-servernum --server-args="-screen 0 1280x720x24" python scraper/update_races_info.py --limit 50
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add data/races.json
+        # 変更がある場合のみコミットしてプッシュ
+        git diff --quiet && git diff --staged --quiet || git commit -m "bot: エントリー日程・ステータスの自動更新 [skip ci]"
+        git push
