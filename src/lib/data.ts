@@ -18,6 +18,23 @@ export interface Race {
   updated_at: string;
 }
 
+export function getDistanceSortWeight(d: string): number {
+  if (d === "フル") return 42.195;
+  if (d === "ハーフ") return 21.0975;
+  if (d === "ウルトラ") return 100;
+  if (d === "リレー") return 1000; // Sort towards the end
+
+  // Check if it has a 'km' number
+  const kmMatch = d.match(/([\d.]+)km/);
+  if (kmMatch) {
+    return parseFloat(kmMatch[1]);
+  }
+
+  // Unrecognized values like "その他" drop to the very end
+  if (d === "その他") return 9999;
+  return 999;
+}
+
 export function getAllRaces(): Race[] {
   // Get today's date in JST (Asia/Tokyo)
   const now = new Date();
@@ -26,6 +43,10 @@ export function getAllRaces(): Race[] {
 
   // Filter out past events and sort by date ascending (upcoming races first)
   return (racesData as Race[])
+    .map(race => ({
+      ...race,
+      distance: [...race.distance].sort((a, b) => getDistanceSortWeight(a) - getDistanceSortWeight(b))
+    }))
     .filter(race => race.date >= todayStr)
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
@@ -79,23 +100,5 @@ export function getUniquePrefectures(): string[] {
 
 export function getUniqueDistances(): string[] {
   const distances = new Set(getAllRaces().flatMap(r => r.distance));
-
-  const getSortWeight = (d: string) => {
-    if (d === "フル") return 42.195;
-    if (d === "ハーフ") return 21.0975;
-    if (d === "ウルトラ") return 100;
-    if (d === "リレー") return 1000; // Sort towards the end
-
-    // Check if it has a 'km' number
-    const kmMatch = d.match(/([\d.]+)km/);
-    if (kmMatch) {
-      return parseFloat(kmMatch[1]);
-    }
-
-    // Unrecognized values like "その他" drop to the very end
-    if (d === "その他") return 9999;
-    return 999;
-  };
-
-  return Array.from(distances).sort((a, b) => getSortWeight(a) - getSortWeight(b));
+  return Array.from(distances).sort((a, b) => getDistanceSortWeight(a) - getDistanceSortWeight(b));
 }

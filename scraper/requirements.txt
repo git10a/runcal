@@ -4,4 +4,3 @@ python-dateutil==2.9.0.post0
 google-genai
 pillow
 python-dotenv
-playwright
