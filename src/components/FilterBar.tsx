@@ -341,12 +341,12 @@ export default function FilterBar({
                         </button>
                         {/* Tooltip */}
                         {showCertifiedTooltip && (
-                            <div className="absolute top-full right-0 mt-2 w-72 bg-foreground text-background text-xs rounded-xl p-3 shadow-lg z-50">
+                            <div className="absolute top-full -left-[75px] sm:left-auto sm:right-0 mt-2 w-[260px] sm:w-72 bg-foreground text-background text-xs rounded-xl p-3 shadow-lg z-50">
                                 <p className="font-bold mb-1">陸連公認とは？</p>
                                 <p className="leading-relaxed">
                                     日本陸上競技連盟（JAAF）が正式に計測・認定したコースで開催される大会です。公認大会で出した記録は公式記録として認められ、陸連登録者のランキングに反映されます。
                                 </p>
-                                <div className="absolute -top-1.5 right-4 w-3 h-3 bg-foreground rotate-45"></div>
+                                <div className="absolute -top-1.5 left-[140px] sm:left-auto sm:right-4 w-3 h-3 bg-foreground rotate-45"></div>
                             </div>
                         )}
                     </div>
