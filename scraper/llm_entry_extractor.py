@@ -34,60 +34,109 @@ def _get_client():
 
 MODEL = "gemini-2.5-flash"
 
-SYSTEM_PROMPT = """あなたはマラソン大会のウェブページからエントリー（参加申込）期間を抽出するアシスタントです。
+SYSTEM_PROMPT = """あなたはマラソン大会のウェブページからエントリー（参加申込）情報を抽出するアシスタントです。
 
 以下のルールに従ってください：
 1. ページ内容からエントリー受付開始日と受付終了日を探してください
 2. 日付は YYYY-MM-DD 形式で返してください
 3. 年が省略されている場合は、大会開催日から推測してください
-4. エントリー情報がページ内に見つからない場合は、ページ内のリンクからエントリーページのURLを特定してください
-5. 必ず以下のJSON形式で回答してください（余計なテキストは不要）：
+4. 日付が見つからなくても、以下のようなステータス情報があれば entry_status で返してください：
+   - 「エントリーは終了しました」「受付終了」「定員に達しました」「募集は締め切りました」→ entry_status: "受付終了"
+   - 「受付中」「エントリー受付中」「申込受付中」→ entry_status: "受付中"
+   - 「まもなく受付開始」「近日公開」→ entry_status: "エントリー前"
+5. エントリー情報がページ内に見つからない場合は、ページ内のリンクからエントリーページ（RUNNET、moshicom、sportsentry等）のURLを特定してください
+6. 必ず以下のJSON形式で回答してください（余計なテキストは不要）：
 
-見つかった場合：
-{"entry_start": "YYYY-MM-DD", "entry_end": "YYYY-MM-DD"}
+日付が見つかった場合：
+{"entry_start": "YYYY-MM-DD", "entry_end": "YYYY-MM-DD", "entry_status": null}
 
-開始日のみの場合：
-{"entry_start": "YYYY-MM-DD", "entry_end": null}
-
-終了日のみの場合：
-{"entry_start": null, "entry_end": "YYYY-MM-DD"}
+日付はないがステータスがわかる場合：
+{"entry_start": null, "entry_end": null, "entry_status": "受付終了"}
 
 エントリー情報がなくリンクを見つけた場合：
 {"entry_url": "https://..."}
 
 何も見つからない場合：
-{"entry_start": null, "entry_end": null}
+{"entry_start": null, "entry_end": null, "entry_status": null}
 """
 
 # ---------------------------------------------------------------------------
 # Page fetching
 # ---------------------------------------------------------------------------
 
+def _parse_html(html):
+    """Parse HTML and return (text, links_text)."""
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # Get readable text (limit to 4000 chars to save tokens)
+    text = soup.get_text(separator='\n')
+    lines = [line.strip() for line in text.split('\n') if line.strip()]
+    text = '\n'.join(lines)
+    if len(text) > 4000:
+        text = text[:4000]
+
+    # Get links with text
+    links = []
+    for a in soup.find_all('a', href=True):
+        href = a['href']
+        link_text = a.get_text(strip=True)
+        if href.startswith('http') and link_text:
+            links.append(f"[{link_text}]({href})")
+    links_text = '\n'.join(links[:30])
+
+    return text, links_text
+
+
+def _is_blocked(html):
+    """Check if the response is a Cloudflare block page."""
+    blocked_signals = [
+        'Attention Required! | Cloudflare',
+        'you have been blocked',
+        'cf-error-details',
+        'Enable JavaScript and cookies to continue',
+    ]
+    return any(s in html for s in blocked_signals)
+
+
+def _fetch_with_playwright(url):
+    """Fetch page using Chromium with anti-detection (bypasses Cloudflare)."""
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=False,
+                args=['--disable-blink-features=AutomationControlled']
+            )
+            context = browser.new_context(
+                user_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                viewport={'width': 1280, 'height': 720}
+            )
+            page = context.new_page()
+            page.goto(url, wait_until='domcontentloaded', timeout=20000)
+            page.wait_for_timeout(3000)
+            html = page.content()
+            browser.close()
+            return html
+    except Exception as e:
+        print(f"  Playwright error: {e}")
+        return None
+
+
 def _fetch_page(url):
-    """Fetch a page and return (text_content, links_text)."""
+    """Fetch a page and return (text_content, links_text).
+    Falls back to Playwright if Cloudflare blocks the request."""
     try:
         res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=15, allow_redirects=True)
         res.encoding = res.apparent_encoding
-        soup = BeautifulSoup(res.text, 'html.parser')
 
-        # Get readable text (limit to 4000 chars to save tokens)
-        text = soup.get_text(separator='\n')
-        # Clean up excessive whitespace
-        lines = [line.strip() for line in text.split('\n') if line.strip()]
-        text = '\n'.join(lines)
-        if len(text) > 4000:
-            text = text[:4000]
+        if _is_blocked(res.text):
+            print(f"  Cloudflare blocked, retrying with browser...")
+            html = _fetch_with_playwright(url)
+            if html:
+                return _parse_html(html)
+            return None, None
 
-        # Get links with text
-        links = []
-        for a in soup.find_all('a', href=True):
-            href = a['href']
-            link_text = a.get_text(strip=True)
-            if href.startswith('http') and link_text:
-                links.append(f"[{link_text}]({href})")
-        links_text = '\n'.join(links[:30])  # Limit to 30 links
-
-        return text, links_text
+        return _parse_html(res.text)
     except Exception as e:
         print(f"  Error fetching {url}: {e}")
         return None, None
@@ -99,9 +148,12 @@ def _fetch_page(url):
 
 def extract_entry_dates_with_llm(url, race_name, race_date):
     """
-    Use Gemini Flash to extract entry dates from a race page.
+    Use Gemini Flash to extract entry info from a race page.
     
-    Returns (entry_start, entry_end) as YYYY-MM-DD strings or None.
+    Returns (entry_start, entry_end, entry_status).
+    - entry_start/entry_end: YYYY-MM-DD strings or None
+    - entry_status: "受付中", "受付終了", "エントリー前", or None
+    
     Uses a 2-step approach:
     1. Analyze the main race page
     2. If an entry URL is found, follow it and analyze that page too
@@ -111,7 +163,7 @@ def extract_entry_dates_with_llm(url, race_name, race_date):
     # Step 1: Fetch and analyze main page
     text, links_text = _fetch_page(url)
     if not text:
-        return None, None
+        return None, None, None
 
     prompt = f"""大会名: {race_name}
 開催日: {race_date}
@@ -123,7 +175,7 @@ def extract_entry_dates_with_llm(url, race_name, race_date):
 --- ページ内のリンク ---
 {links_text}
 
-このページからエントリー（参加申込）の受付期間を抽出してください。"""
+このページからエントリー（参加申込）の受付期間やステータスを抽出してください。"""
 
     try:
         response = client.models.generate_content(
@@ -137,12 +189,14 @@ def extract_entry_dates_with_llm(url, race_name, race_date):
 
         result = _parse_response(response.text)
         if result is None:
-            return None, None
+            return None, None, None
 
-        # If we got dates, return them
-        if result.get('entry_start') or result.get('entry_end'):
-            print(f"  -> LLM found dates: {result.get('entry_start')} ~ {result.get('entry_end')}")
-            return result.get('entry_start'), result.get('entry_end')
+        # If we got dates or status, return them
+        has_dates = result.get('entry_start') or result.get('entry_end')
+        has_status = result.get('entry_status')
+        if has_dates or has_status:
+            print(f"  -> LLM found: {result.get('entry_start')} ~ {result.get('entry_end')} (status: {result.get('entry_status')})")
+            return result.get('entry_start'), result.get('entry_end'), result.get('entry_status')
 
         # Step 2: If we got an entry URL, follow it
         entry_url = result.get('entry_url')
@@ -154,14 +208,14 @@ def extract_entry_dates_with_llm(url, race_name, race_date):
     except Exception as e:
         print(f"  LLM error: {e}")
 
-    return None, None
+    return None, None, None
 
 
 def _extract_from_entry_page(client, entry_url, race_name, race_date):
-    """Step 2: Extract dates from the entry page itself."""
+    """Step 2: Extract dates/status from the entry page itself."""
     text, _ = _fetch_page(entry_url)
     if not text:
-        return None, None
+        return None, None, None
 
     prompt = f"""大会名: {race_name}
 開催日: {race_date}
@@ -170,7 +224,7 @@ def _extract_from_entry_page(client, entry_url, race_name, race_date):
 --- エントリーページ内容 ---
 {text}
 
-このエントリーページから受付期間（開始日・終了日）を抽出してください。"""
+このエントリーページから受付期間（開始日・終了日）やステータスを抽出してください。"""
 
     try:
         response = client.models.generate_content(
@@ -183,14 +237,17 @@ def _extract_from_entry_page(client, entry_url, race_name, race_date):
         )
 
         result = _parse_response(response.text)
-        if result and (result.get('entry_start') or result.get('entry_end')):
-            print(f"  -> LLM found dates from entry page: {result.get('entry_start')} ~ {result.get('entry_end')}")
-            return result.get('entry_start'), result.get('entry_end')
+        if result:
+            has_dates = result.get('entry_start') or result.get('entry_end')
+            has_status = result.get('entry_status')
+            if has_dates or has_status:
+                print(f"  -> LLM found from entry page: {result.get('entry_start')} ~ {result.get('entry_end')} (status: {result.get('entry_status')})")
+                return result.get('entry_start'), result.get('entry_end'), result.get('entry_status')
 
     except Exception as e:
         print(f"  LLM error on entry page: {e}")
 
-    return None, None
+    return None, None, None
 
 
 def _parse_response(text):

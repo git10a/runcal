@@ -77,7 +77,7 @@
     "date": "2026-03-07",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
@@ -87,7 +87,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://relaymarathon-jlsa.jimdofree.com/%E9%95%B7%E5%B1%85%E5%85%AC%E5%9C%92/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "8830c936-9d2b-44b9-bf86-c5bd940576bd",
@@ -122,13 +122,14 @@
     "prefecture": "山口県",
     "city": "宇部市",
     "distance": [
-      "その他"
+      "フル",
+      "10km"
     ],
     "is_jaaf_certified": false,
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/138126/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "591a8333-67fa-416a-84a8-b1c650f92b74",
@@ -334,9 +335,9 @@
     "id": "9e192fa4-52d0-4c79-be62-974c04136fe0",
     "name": "赤穂かきリレーマラソン2026",
     "date": "2026-03-08",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-10-31",
+    "entry_end_date": "2026-02-12",
+    "entry_status": "受付終了",
     "prefecture": "兵庫県",
     "city": "赤穂市",
     "distance": [
@@ -346,7 +347,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://ako-oysterrelaymarathon.jimdosite.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "e0b3763f-424e-4de7-9933-079501412746",
@@ -679,7 +680,7 @@
     "date": "2026-03-08",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "岐阜県",
     "city": "各務原市",
     "distance": [
@@ -689,7 +690,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.kakamigahara.lg.jp/kankobunka/sports/1005088/1025424.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "d3fe6dca-1997-4e45-8e25-0ed66e76f6c0",
@@ -1099,7 +1100,7 @@
     "date": "2026-03-08",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "石川県",
     "city": "七尾市",
     "distance": [
@@ -1109,7 +1110,7 @@
     "time_limit": "7時間",
     "features": null,
     "url": "https://www.city.nanao.lg.jp/koryu-s/event/marason.html",
-    "updated_at": "2026年03月02日",
+    "updated_at": "2026年03月03日",
     "image_url": "/images/races/race_a6b10e32c1a217872f2b715c7d4b3c2d.png"
   },
   {
@@ -1336,8 +1337,8 @@
     "name": "2026ジョギングフェスティバル in さざ",
     "date": "2026-03-08",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-01-09",
+    "entry_status": "受付終了",
     "prefecture": "長崎県",
     "city": "佐々町",
     "distance": [
@@ -1347,7 +1348,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.marathoninfo.net/saza/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "3bc81318-c1d6-432e-a5f8-8e298a445221",
@@ -1464,8 +1465,8 @@
     "name": "第15回 六甲縦走トレイルラン2026",
     "date": "2026-03-14",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-02-20",
+    "entry_status": "受付終了",
     "prefecture": "兵庫県",
     "city": "神戸市",
     "distance": [
@@ -1475,7 +1476,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/rokko-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "46901324-5d75-410f-bdc5-d39ab30bb620",
@@ -1910,9 +1911,9 @@
     "id": "a9aa9d3d-d07c-4cc2-a592-8944602e229a",
     "name": "第4回いなみ野ため池駅伝",
     "date": "2026-03-15",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-10-22",
+    "entry_end_date": "2026-02-11",
+    "entry_status": "受付終了",
     "prefecture": "兵庫県",
     "city": "稲美町",
     "distance": [
@@ -1922,7 +1923,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://kakoooike.jimdofree.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "c32f0e91-9136-4669-a69a-c740fe30ae1d",
@@ -1948,7 +1949,7 @@
     "date": "2026-03-15",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "埼玉県",
     "city": "入間市",
     "distance": [
@@ -1958,7 +1959,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.iruma.saitama.jp/soshiki/sportssuishinka/event/235/916.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "660229af-dd5c-4c71-a9c5-ee2b9296a37a",
@@ -2183,9 +2184,9 @@
     "id": "85874e97-4b2a-41f3-a1da-924f79681fea",
     "name": "刃物のまち関シティマラソン（ジョギング大会）",
     "date": "2026-03-15",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-12-02",
+    "entry_end_date": "2026-01-18",
+    "entry_status": "受付終了",
     "prefecture": "岐阜県",
     "city": "関市",
     "distance": [
@@ -2195,7 +2196,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.sekimarathon.net/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "96d09ee7-f21c-4f34-980f-c67d35fe1074",
@@ -2475,9 +2476,9 @@
     "id": "48018c1e-06e7-40f9-b84e-6649c45b9aea",
     "name": "第40回北下浦ふるさとマラソン大会",
     "date": "2026-03-15",
-    "entry_start_date": null,
+    "entry_start_date": "2025-12-12",
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "神奈川県",
     "city": "横須賀市",
     "distance": [
@@ -2487,7 +2488,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.kitashitaurafurusatomarathon.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "0c028a12-1842-4926-b05e-3be3df2dfc45",
@@ -2550,7 +2551,7 @@
     "date": "2026-03-15",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "福岡県",
     "city": "北九州市",
     "distance": [
@@ -2560,7 +2561,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.kitakyushu.lg.jp/kokuraminami/w3200181.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "0d9fc848-8275-4ec5-90c7-c18ba8b88c8d",
@@ -3270,7 +3271,7 @@
     "date": "2026-03-22",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "北海道",
     "city": "白糠町",
     "distance": [
@@ -3280,7 +3281,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://shiranukarikkyo.webnode.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "dfb3d683-64df-4b58-a0ac-bc0ffb453630",
@@ -3379,7 +3380,7 @@
     "date": "2026-03-22",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "枚方市",
     "distance": [
@@ -3389,7 +3390,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.ecomarathon.run/%E9%96%A2%E8%A5%BF/%E6%9E%9A%E6%96%B9/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "d6bb47d0-74a3-4fc2-9dde-b9fa6353b0b7",
@@ -3504,9 +3505,9 @@
     "id": "45842313-f440-4744-9563-8b9e061b7994",
     "name": "鈴木亜由子杯 穂の国・豊橋ハーフマラソン2026",
     "date": "2026-03-22",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2026-01-06",
+    "entry_end_date": "2026-01-30",
+    "entry_status": "受付終了",
     "prefecture": "愛知県",
     "city": "豊橋市",
     "distance": [
@@ -3516,7 +3517,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://honokuni-runner.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "3a00c4c1-69a7-446c-9c67-7e256eaae641",
@@ -3559,9 +3560,9 @@
     "id": "037757ac-1b0d-4d31-bb0c-af5404e6f62a",
     "name": "三河湖マラソン2026",
     "date": "2026-03-22",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2026-01-22",
+    "entry_end_date": "2026-03-02",
+    "entry_status": "受付終了",
     "prefecture": "愛知県",
     "city": "豊田市",
     "distance": [
@@ -3571,7 +3572,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://shimoyamasportsclub.jimdoweb.com/2026/01/28/%E7%AC%AC%EF%BC%92%EF%BC%98%E5%9B%9E-%E4%B8%89%E6%B2%B3%E6%B9%96%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3%E5%8B%9F%E9%9B%86%E9%96%8B%E5%A7%8B/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "2281b28d-e387-478f-aa6c-7cd8512bd64c",
@@ -3619,7 +3620,7 @@
     "prefecture": "東京都",
     "city": "渋谷区",
     "distance": [
-      "その他"
+      "10km"
     ],
     "is_jaaf_certified": false,
     "time_limit": null,
@@ -3781,9 +3782,9 @@
     "id": "0abe8789-872e-406e-acf0-0fa3a8cc87ec",
     "name": "第44回霞ケ城クロスカントリー",
     "date": "2026-03-22",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-12-05",
+    "entry_end_date": "2026-02-12",
+    "entry_status": "受付終了",
     "prefecture": "福島県",
     "city": "二本松市",
     "distance": [
@@ -3793,7 +3794,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://kasumi-kurokan.jimdo.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "f22202e7-66c0-4791-a610-24987c75c66d",
@@ -3891,8 +3892,8 @@
     "name": "第27回 長居公園ふれあいマラソン",
     "date": "2026-03-28",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-01",
+    "entry_status": "受付終了",
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
@@ -3902,7 +3903,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.jls-association.com/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3/%E9%95%B7%E5%B1%85%E5%85%AC%E5%9C%92%E3%81%B5%E3%82%8C%E3%81%82%E3%81%84%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "f9d6d6a5-0608-4be4-9533-4e66f1e324ba",
@@ -4261,9 +4262,9 @@
     "id": "67b85b43-565a-4171-b405-addbc4b8a7ec",
     "name": "第5回みやぎふぁんマラソン（旧ランナーズハイふぁんマラソン大会）",
     "date": "2026-03-29",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2023-10-17",
+    "entry_end_date": "2024-02-17",
+    "entry_status": "受付終了",
     "prefecture": "宮城県",
     "city": "川崎町",
     "distance": [
@@ -4273,15 +4274,15 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.runhigh1012.com/2025-%E3%81%B5%E3%81%81%E3%82%93%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3%E5%A4%A7%E4%BC%9A/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "cc8d36ff-563f-4992-bf71-d93ae953b6a1",
     "name": "第8回 石巻登山マラソン",
     "date": "2026-03-29",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-05",
+    "entry_status": "受付中",
     "prefecture": "宮城県",
     "city": "石巻市",
     "distance": [
@@ -4291,7 +4292,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://ishinomakitozanmarathon.apage.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "cb0c0969-063a-407d-b6df-ee1efca88467",
@@ -4299,7 +4300,7 @@
     "date": "2026-03-29",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "山梨県",
     "city": "南アルプス市",
     "distance": [
@@ -4309,7 +4310,7 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.minami-alps-sports.or.jp/marathon/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "06f0ed22-e693-4be9-9050-f8928e6bc7d6",
@@ -4670,8 +4671,8 @@
     "name": "第13回マリンポートかごしまミニマラソン",
     "date": "2026-03-29",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-21",
+    "entry_status": "受付中",
     "prefecture": "鹿児島県",
     "city": "鹿児島市",
     "distance": [
@@ -4681,7 +4682,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.smilelink-co.com/マリンポートかごしまミニマラソン/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "aeba98f3-5c57-4d66-bd40-2953daf126a3",
@@ -4912,8 +4913,8 @@
     "name": "淡路夢舞台リレーマラソン2026",
     "date": "2026-04-05",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-23",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "淡路市",
     "distance": [
@@ -4923,15 +4924,15 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.ts-agency.net/awajiyumebutai-relay/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "d37e544b-a51c-46c8-9073-cae5af251822",
     "name": "第23回 中山連山・北摂大峰山TRAINIC STAGE",
     "date": "2026-04-05",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-29",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "宝塚市",
     "distance": [
@@ -4941,7 +4942,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.jls-association.com/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/%E3%83%88%E3%83%AC%E3%82%A4%E3%83%AB%E3%83%A9%E3%83%B3%E3%83%8B%E3%83%B3%E3%82%B0/%E4%B8%AD%E5%B1%B1%E9%80%A3%E5%B1%B1-%E5%8C%97%E6%91%82%E5%A4%A7%E5%B3%B0%E5%B1%B1-trainic-stage/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -5004,7 +5005,7 @@
     "date": "2026-04-05",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "和歌山県",
     "city": "紀の川市",
     "distance": [
@@ -5014,7 +5015,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.kinokawa.lg.jp/045/2023-1222-1201-59.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "6e86d342-7004-406b-bbb3-4c9b3cb827ae",
@@ -5092,9 +5093,9 @@
     "id": "d6255f3c-9b91-46fd-82d7-7bf4c93b843c",
     "name": "第42回河北新報気仙沼つばきマラソン",
     "date": "2026-04-05",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-11-01",
+    "entry_end_date": "2026-01-11",
+    "entry_status": "受付終了",
     "prefecture": "宮城県",
     "city": "気仙沼市",
     "distance": [
@@ -5104,7 +5105,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.marathoninfo.net/kesennuma/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "4fa4e45b-30d6-42cd-8407-aed0a8fd7ded",
@@ -5129,8 +5130,8 @@
     "name": "第21回笛吹市桃の里マラソン",
     "date": "2026-04-05",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-02-13",
+    "entry_status": "受付終了",
     "prefecture": "山梨県",
     "city": "笛吹市",
     "distance": [
@@ -5140,7 +5141,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.marathoninfo.net/fuefuki",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "9c1eaf69-03c9-49f3-b2d5-4bc64ac91040",
@@ -5148,7 +5149,7 @@
     "date": "2026-04-05",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "エントリー前",
     "prefecture": "岡山県",
     "city": "総社市",
     "distance": [
@@ -5158,7 +5159,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://masakiyama-kagiyamatrail.localinfo.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "4c101d00-c5bd-4e95-afb8-fcfce635232f",
@@ -5516,8 +5517,8 @@
     "name": "第30回京都一周トレイルラン＜東山コース＞",
     "date": "2026-04-11",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-20",
+    "entry_status": "受付中",
     "prefecture": "京都府",
     "city": "京都市",
     "distance": [
@@ -5527,15 +5528,15 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/kyoto-higasiyama-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "36b39dda-52d1-4768-a2da-eb3d3fa45350",
     "name": "第3回 大文字・比叡山 ケーブルトレイルラン2026",
     "date": "2026-04-11",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-03-15",
+    "entry_status": "受付中",
     "prefecture": "京都府",
     "city": "京都市",
     "distance": [
@@ -5545,7 +5546,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/hieicable-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "267921f9-a43c-4c20-8749-8ea637d0d410",
@@ -5609,7 +5610,7 @@
     "date": "2026-04-11",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "大分県",
     "city": "別府市",
     "distance": [
@@ -5619,7 +5620,7 @@
     "time_limit": null,
     "features": null,
     "url": "http://beppu-event.jp/ikkitozan/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "b77d6ca4-eb05-4595-ba52-3fdd589739f0",
@@ -5864,7 +5865,7 @@
     "date": "2026-04-12",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "明石市",
     "distance": [
@@ -5874,7 +5875,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://info663681.wixsite.com/ookurakaigan-run",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "fe9dc0b4-cc79-403f-9e52-2d2591d84386",
@@ -5919,7 +5920,7 @@
     "date": "2026-04-12",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "エントリー前",
     "prefecture": "奈良県",
     "city": "葛城市",
     "distance": [
@@ -5929,7 +5930,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://sangaku-osaka.com/information/14317/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "0f0bd2c5-9928-4eb6-9cae-b1711d5c0799",
@@ -6456,7 +6457,9 @@
     "prefecture": "東京都",
     "city": "板橋区",
     "distance": [
-      "その他"
+      "ハーフ",
+      "5km",
+      "10km"
     ],
     "is_jaaf_certified": false,
     "time_limit": null,
@@ -7027,7 +7030,7 @@
     "prefecture": "新潟県",
     "city": "長岡市",
     "distance": [
-      "その他"
+      "5km"
     ],
     "is_jaaf_certified": false,
     "time_limit": null,
@@ -7204,7 +7207,7 @@
     "date": "2026-04-19",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "滋賀県",
     "city": "湖南市",
     "distance": [
@@ -7214,7 +7217,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://12boutrail.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "2516bf7d-e122-48ea-9ebe-454e5c72de41",
@@ -7460,8 +7463,8 @@
     "name": "第2回 グランドダイヤモンドトレイルラン2025",
     "date": "2026-04-25",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-04-06",
+    "entry_status": "受付中",
     "prefecture": "奈良県",
     "city": "葛城市",
     "distance": [
@@ -7471,7 +7474,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/diamond-gt/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "18c522c9-ad52-4274-abea-52bdeacc4435",
@@ -7755,9 +7758,9 @@
     "id": "c28b2fe5-96f8-4db3-a7fa-90b507565778",
     "name": "第9回 リバーサイドマラソン大和川大会",
     "date": "2026-04-26",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2026-01-07",
+    "entry_end_date": "2026-04-19",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
@@ -7767,7 +7770,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://riverside-marathon.jimdofree.com/%E5%A4%A7%E5%92%8C%E5%B7%9D%E5%A4%A7%E4%BC%9A/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "b77d6ca4-eb05-4595-ba52-3fdd589739f0",
@@ -7870,9 +7873,9 @@
     "id": "df010f79-3cb0-45ea-aa54-14d2c67ebcac",
     "name": "高橋尚子杯ぎふ清流ハーフマラソン2026Gifu Half Marathon 2026",
     "date": "2026-04-26",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2023-11-10",
+    "entry_end_date": "2024-03-29",
+    "entry_status": "受付終了",
     "prefecture": "岐阜県",
     "city": "岐阜市",
     "distance": [
@@ -7882,7 +7885,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.gifu-marathon.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "dc045b68-0316-4641-a8d8-825bc202d5b2",
@@ -8167,8 +8170,8 @@
     "name": "果物と自然の里第19回いしおかトレイルラン大会",
     "date": "2026-04-26",
     "entry_start_date": "2025-12-20",
-    "entry_end_date": null,
-    "entry_status": "受付中",
+    "entry_end_date": "2026-02-28",
+    "entry_status": "受付終了",
     "prefecture": "茨城県",
     "city": "石岡市",
     "distance": [
@@ -8442,8 +8445,8 @@
     "name": "第14回マリンポートかごしまミニマラソン",
     "date": "2026-04-29",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-04-19",
+    "entry_status": "受付中",
     "prefecture": "鹿児島県",
     "city": "鹿児島市",
     "distance": [
@@ -8453,7 +8456,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.smilelink-co.com/マリンポートかごしまミニマラソン/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "4d79d1a2-1b7f-4f71-a3aa-45b8a7139cbf",
@@ -9072,7 +9075,7 @@
     "date": "2026-05-09",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "エントリー前",
     "prefecture": "北海道",
     "city": "名寄市",
     "distance": [
@@ -9082,7 +9085,7 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.city.nayoro.lg.jp/section/sportscamp/prkeql000002u5bp.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "b8f92f70-70fc-43b7-b386-2f5d8eed6695",
@@ -9181,9 +9184,9 @@
     "id": "a86be0e3-c3ea-4758-ac87-6c344a7a0d66",
     "name": "第4回東京BayAreaマラソン",
     "date": "2026-05-09",
-    "entry_start_date": "2026-03-09",
+    "entry_start_date": "2025-09-11",
     "entry_end_date": "2026-05-05",
-    "entry_status": "エントリー前",
+    "entry_status": "受付中",
     "prefecture": "東京都",
     "city": "江東区",
     "distance": [
@@ -9514,7 +9517,7 @@
     "date": "2026-05-10",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "愛知県",
     "city": "尾張旭市",
     "distance": [
@@ -9524,7 +9527,7 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.owariasahi-rc.sakura.ne.jp/charity/index.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "1be99b91-3d5e-472b-b0e5-22c06677c0d2",
@@ -9875,7 +9878,7 @@
     "date": "2026-05-16",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "エントリー前",
     "prefecture": "宮城県",
     "city": "仙台市",
     "distance": [
@@ -9885,7 +9888,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://sendainoharashinrin.jimdofree.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "a779bccd-5910-482a-b699-fcbe4844d1ea",
@@ -10219,7 +10222,7 @@
     "id": "9f9a674d-a1b9-4427-b13b-77d47bb57615",
     "name": "第13回 宮崎鏡洲の森トレイル",
     "date": "2026-05-17",
-    "entry_start_date": "2026-01-26",
+    "entry_start_date": "2024-05-19",
     "entry_end_date": null,
     "entry_status": "受付中",
     "prefecture": "宮崎県",
@@ -10384,7 +10387,7 @@
     "name": "2026 DA MONDE TRAIL Challenge Spring",
     "date": "2026-05-17",
     "entry_start_date": "2026-02-01",
-    "entry_end_date": null,
+    "entry_end_date": "2026-03-31",
     "entry_status": "受付中",
     "prefecture": "愛知県",
     "city": "新城市",
@@ -10771,8 +10774,8 @@
     "name": "第9回能勢妙見山パワートレイルラン2026",
     "date": "2026-05-23",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-05-01",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "能勢町",
     "distance": [
@@ -10782,7 +10785,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/nose-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "842558e4-c21d-49dc-82c6-e66abf33f436",
@@ -10901,7 +10904,7 @@
     "date": "2026-05-23",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "神奈川県",
     "city": "川崎市",
     "distance": [
@@ -10912,7 +10915,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://linkup.yaaas.run/kanagawa/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "f368900c-bfea-4ca5-95a5-275dea214762",
@@ -11011,9 +11014,9 @@
     "id": "7b7ce6e7-04ec-48c5-8562-e1c40f31c8b2",
     "name": "第10回いながわ里山猪道（ししみち）トレイルラン",
     "date": "2026-05-24",
-    "entry_start_date": null,
+    "entry_start_date": "2026-02-16",
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "猪名川町",
     "distance": [
@@ -11023,7 +11026,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://inagawa-trail.jimdofree.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "b0e9101a-3378-4c80-9816-3a57fd923049",
@@ -11103,8 +11106,8 @@
     "name": "第15回リバーサイドマラソン淀川大会",
     "date": "2026-05-24",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-05-17",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
@@ -11114,7 +11117,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://riverside-marathon.jimdofree.com/%E6%B7%80%E5%B7%9D%E5%A4%A7%E4%BC%9A-%E4%B8%8A%E6%B5%81%E3%82%B3%E3%83%BC%E3%82%B9/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "b91ff8a0-95a3-44f5-8f37-d89290c44afa",
@@ -11141,7 +11144,7 @@
     "date": "2026-05-24",
     "entry_start_date": null,
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付終了",
     "prefecture": "山口県",
     "city": "美祢市",
     "distance": [
@@ -11151,7 +11154,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://akiyoshidai-trail.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "1839decd-af5f-45b6-a51a-43ada197cb3c",
@@ -11783,8 +11786,8 @@
     "name": "第46回スポニチ山中湖ロードレース",
     "date": "2026-05-31",
     "entry_start_date": "2025-12-01",
-    "entry_end_date": null,
-    "entry_status": "受付中",
+    "entry_end_date": "2026-02-27",
+    "entry_status": "受付終了",
     "prefecture": "山梨県",
     "city": "山中湖村",
     "distance": [
@@ -12465,7 +12468,7 @@
     "name": "第5回LOVE熊本！走RUNね！たまねぎリレーマラソンin熊本県農業公園カントリーパーク",
     "date": "2026-06-07",
     "entry_start_date": "2026-03-05",
-    "entry_end_date": null,
+    "entry_end_date": "2026-05-25",
     "entry_status": "エントリー前",
     "prefecture": "熊本県",
     "city": "合志市",
@@ -13675,9 +13678,9 @@
     "id": "38a5dab7-527c-4ba5-8a45-33d4f8f587a0",
     "name": "DEEP ECHIZEN TRAIL 2026（ディープエチゼントレイル）",
     "date": "2026-06-28",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2025-12-26",
+    "entry_end_date": "2026-05-31",
+    "entry_status": "受付中",
     "prefecture": "福井県",
     "city": "大野市",
     "distance": [
@@ -13687,7 +13690,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.satoyamaworks.com/event/deep-echizen-trail/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "cd5fdc5f-78a9-4d23-827a-c73d43adf1a1",
@@ -13712,8 +13715,8 @@
     "name": "第4回 貝月山白龍トレイルラン",
     "date": "2026-07-04",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-06-10",
+    "entry_status": "受付中",
     "prefecture": "岐阜県",
     "city": "揖斐川町",
     "distance": [
@@ -13723,13 +13726,13 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/kaidukiyama-hakuryu-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "d1560e4a-f125-4ad2-816d-f45accb7eadb",
     "name": "“ROCKIN’ BEAR” 妙高トレイルランニングレース",
     "date": "2026-07-04",
-    "entry_start_date": "2025-03-01",
+    "entry_start_date": "2026-03-01",
     "entry_end_date": null,
     "entry_status": "受付中",
     "prefecture": "新潟県",
@@ -14135,8 +14138,8 @@
     "name": "第24回生駒トレイルラン＜夏山＞",
     "date": "2026-07-25",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-07-03",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "交野市",
     "distance": [
@@ -14146,7 +14149,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/ikoma-natsuyama/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "f0819da9-8695-4839-a974-77a57049b772",
@@ -14280,8 +14283,8 @@
     "name": "第11回Mt.六甲トレイルランサマーピクニック",
     "date": "2026-08-11",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-07-24",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "神戸市",
     "distance": [
@@ -14291,7 +14294,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/mt-rokko-picnic/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "52ec627c-cf24-45e1-a947-390dce727524",
@@ -14316,8 +14319,8 @@
     "name": "第15回 世界ジオパークトレラン＆クロカン（神鍋高原）",
     "date": "2026-08-16",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-07-24",
+    "entry_status": "受付中",
     "prefecture": "兵庫県",
     "city": "豊岡市",
     "distance": [
@@ -14327,7 +14330,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/geopark-kannabe/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "52ec627c-cf24-45e1-a947-390dce727524",
@@ -14483,8 +14486,8 @@
     "name": "第10回 富良野トレイルラン2026",
     "date": "2026-09-27",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-08-22",
+    "entry_status": "受付中",
     "prefecture": "北海道",
     "city": "富良野市",
     "distance": [
@@ -14494,15 +14497,15 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/hurano-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "fed95daf-8d32-4a73-845f-52647149725d",
     "name": "第7回 比良びわ湖ビュートレイルラン 2026",
     "date": "2026-10-03",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-09-11",
+    "entry_status": "受付中",
     "prefecture": "滋賀県",
     "city": "大津市",
     "distance": [
@@ -14512,7 +14515,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/hira-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "98033cfa-191d-4ec2-bb75-08e7f89a25c0",
@@ -14537,8 +14540,8 @@
     "name": "第31回 京都一周トレイルラン<北山コース>2026",
     "date": "2026-10-17",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-09-27",
+    "entry_status": "受付中",
     "prefecture": "京都府",
     "city": "京都市",
     "distance": [
@@ -14548,7 +14551,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/kyoto-kitayama/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "f661c4ed-1065-4844-96e9-3e614f069866",
@@ -14610,8 +14613,8 @@
     "name": "第15回ダイヤモンドトレイルラン チャンピオンシップ2026",
     "date": "2026-11-07",
     "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_end_date": "2026-10-18",
+    "entry_status": "受付中",
     "prefecture": "奈良県",
     "city": "葛城市",
     "distance": [
@@ -14621,7 +14624,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/diamond-trailrun/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "28f2c14f-4a3a-461c-9234-9df437389c7c",
@@ -14645,9 +14648,9 @@
     "id": "c28b2fe5-96f8-4db3-a7fa-90b507565778",
     "name": "第10回 リバーサイドマラソン大和川大会",
     "date": "2026-11-29",
-    "entry_start_date": null,
-    "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_start_date": "2026-01-07",
+    "entry_end_date": "2026-11-22",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "大阪市",
     "distance": [
@@ -14657,7 +14660,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://riverside-marathon.jimdofree.com/%E5%A4%A7%E5%92%8C%E5%B7%9D%E5%A4%A7%E4%BC%9A/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   },
   {
     "id": "28e563c1-4add-497c-ba08-8e6e76e048b6",
@@ -14681,9 +14684,9 @@
     "id": "e890b10d-4916-48d2-8d81-cf0531b67d2f",
     "name": "第5回八尾シティマラソン",
     "date": "2026-12-19",
-    "entry_start_date": null,
+    "entry_start_date": "2026-01-05",
     "entry_end_date": null,
-    "entry_status": "不明",
+    "entry_status": "受付中",
     "prefecture": "大阪府",
     "city": "八尾市",
     "distance": [
@@ -14693,6 +14696,6 @@
     "time_limit": null,
     "features": null,
     "url": "https://yaocitymarathon.jimdofree.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月03日"
   }
 ]

@@ -110,11 +110,16 @@ def process_race(race, today_str, use_llm=True):
         if not updated and use_llm and LLM_AVAILABLE:
             print(f"[LLM] {race['name']}")
             try:
-                start, end = extract_entry_dates_with_llm(url, race['name'], race.get('date', ''))
+                start, end, llm_status = extract_entry_dates_with_llm(url, race['name'], race.get('date', ''))
                 if start or end:
                     updated = _apply_entry_dates(race, start, end, today_str)
                     if updated:
                         print(f"  -> LLM found: {start} ~ {end} (Status: {race['entry_status']})")
+                elif llm_status and llm_status != race.get('entry_status'):
+                    # LLM found status only (e.g. "エントリーは終了しました")
+                    race['entry_status'] = llm_status
+                    updated = True
+                    print(f"  -> LLM status: {llm_status}")
                 time.sleep(1)  # LLM rate limiting
             except Exception as e:
                 print(f"  -> LLM error: {e}")
