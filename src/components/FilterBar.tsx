@@ -81,8 +81,7 @@ export default function FilterBar({
                         selectedDistance={selectedDistance}
                         isOpen={openDropdown === 'distance'}
                         onToggle={() => setOpenDropdown(prev => prev === 'distance' ? null : 'distance')}
-                        onSelect={(val) => { onFilterChange('distance', val); }}
-                        onClose={() => setOpenDropdown(null)}
+                        onSelect={(val) => { onFilterChange('distance', val); setOpenDropdown(null); }}
                     />
 
                     {/* Only Open Toggle */}
