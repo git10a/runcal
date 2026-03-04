@@ -2,7 +2,6 @@
 
 import { MapPin, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { FilterType } from '@/types';
 
 interface PrefectureFilterProps {
     prefectures: string[];

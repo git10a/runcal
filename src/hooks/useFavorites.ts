@@ -11,8 +11,9 @@ export function useFavorites() {
         const stored = localStorage.getItem('rankaru_favorites');
         if (stored) {
             try {
+                // eslint-disable-next-line react-hooks/set-state-in-effect
                 setFavorites(JSON.parse(stored));
-            } catch (e) {
+            } catch {
                 console.error('Failed to parse favorites from local storage');
             }
         }

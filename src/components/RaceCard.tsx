@@ -1,5 +1,6 @@
 import { Race } from '@/types';
 import Image from 'next/image';
+import Link from 'next/link';
 import { MapPin, Calendar, Award, Footprints } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
 import CalendarButton from './CalendarButton';
@@ -16,7 +17,7 @@ export default function RaceCard({ race }: RaceCardProps) {
 
     return (
         <div className="bg-card text-card-foreground rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 group flex flex-col justify-between h-full ring-1 ring-border/50 overflow-hidden relative">
-            <div className="flex p-4 gap-4 sm:gap-5">
+            <Link href={`/races/${race.id}`} className="flex p-4 gap-4 sm:gap-5 flex-1">
                 {/* Image & Buttons Section */}
                 <div className="w-24 sm:w-28 shrink-0 flex flex-col gap-2 relative">
                     <div className="w-full h-24 sm:h-28 relative overflow-hidden bg-muted/50 rounded-2xl">
@@ -74,7 +75,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
 
             <div className="px-5 py-3 bg-muted/20 flex justify-between items-center mt-auto border-t border-border/40">
                 <span className={`text-[11px] font-bold px-2.5 py-1 rounded-md shrink-0 ${statusInfo.className}`}>

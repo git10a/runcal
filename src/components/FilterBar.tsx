@@ -16,7 +16,7 @@ interface FilterBarProps {
     selectedMonth: string | null;
     showOnlyOpen: boolean;
     showOnlyCertified: boolean;
-    onFilterChange: (type: FilterType, value: any) => void;
+    onFilterChange: (type: FilterType, value: string | boolean | null) => void;
     onClearAll: () => void;
     totalResults: number;
 }
@@ -42,7 +42,7 @@ export default function FilterBar({
         return selectedPrefecture !== null ||
             selectedDistance !== null ||
             selectedMonth !== null ||
-            showOnlyOpen ||
+            showOnlyOpen === false ||
             showOnlyCertified;
     }, [selectedPrefecture, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
 

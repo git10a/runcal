@@ -1,4 +1,5 @@
 import { getAllRaces } from '@/lib/data';
+import Link from 'next/link';
 
 export default function Footer() {
     const races = getAllRaces();
@@ -15,11 +16,15 @@ export default function Footer() {
                         </span>
                     </div>
                 </div>
-                {lastUpdate && (
-                    <p className="text-xs font-bold text-muted-foreground">
-                        最終更新: {lastUpdate}
-                    </p>
-                )}
+                <div className="flex flex-col items-center gap-4 text-xs font-semibold text-muted-foreground md:items-end">
+                    <div className="flex gap-6">
+                        <Link href="/terms" className="hover:text-foreground transition-colors">利用規約</Link>
+                        <Link href="/privacy" className="hover:text-foreground transition-colors">プライバシーポリシー</Link>
+                    </div>
+                    {lastUpdate && (
+                        <p>最終更新: {lastUpdate}</p>
+                    )}
+                </div>
             </div>
         </footer>
     );

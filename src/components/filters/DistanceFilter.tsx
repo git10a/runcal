@@ -3,7 +3,6 @@
 import { useMemo } from 'react';
 import { Ruler, ChevronDown, PersonStanding } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { FilterType } from '@/types';
 
 interface DistanceFilterProps {
     distances: string[];

@@ -3,7 +3,6 @@
 import { useMemo } from 'react';
 import { Calendar, ChevronDown, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { FilterType } from '@/types';
 
 interface MonthFilterProps {
     selectedMonth: string | null;

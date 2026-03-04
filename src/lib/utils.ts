@@ -12,6 +12,14 @@ export function formatRaceDate(dateString: string): string {
     return `${year}年${parseInt(month, 10)}月${parseInt(day, 10)}日`;
 }
 
+export function normalizeRaceName(name: string): string {
+    return name
+        .replace(/第\d+回(記念)?/g, '')
+        .replace(/20\d{2}/g, '')
+        .replace(/令和\d+年(度)?/g, '')
+        .trim();
+}
+
 export function getEntryStatusInfo(status?: string): { label: string, className: string } {
     switch (status) {
         case '受付中':

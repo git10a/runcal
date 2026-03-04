@@ -8,20 +8,23 @@ export function useRaceFilters(initialRaces: Race[]) {
     const selectedPrefecture = searchParams.get('prefecture');
     const selectedDistance = searchParams.get('distance');
     const selectedMonth = searchParams.get('month');
-    const showOnlyOpen = searchParams.get('open') === 'true';
+    const openParam = searchParams.get('open');
+    const showOnlyOpen = openParam === null ? true : openParam === 'true';
     const showOnlyCertified = searchParams.get('certified') === 'true';
 
     const updateFilterParams = (key: string, value: string | null | boolean) => {
         const params = new URLSearchParams(searchParams.toString());
-        if (value === null || value === false || value === '') {
+        if (value === null || value === '') {
             params.delete(key);
+        } else if (value === false) {
+            params.set(key, 'false');
         } else {
             params.set(key, String(value));
         }
         router.push(`?${params.toString()}`);
     };
 
-    const handleFilterChange = (type: 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified', value: any) => {
+    const handleFilterChange = (type: 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified', value: string | boolean | null) => {
         switch (type) {
             case 'prefecture':
                 updateFilterParams('prefecture', value);
