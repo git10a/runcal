@@ -167,9 +167,11 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                         <div key={i} className="border-l-2 border-primary/40 pl-3">
                                             <div className="flex items-center flex-wrap gap-2 mb-1">
                                                 <p className="font-bold text-foreground">{s.name}</p>
-                                                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-md hover:bg-primary/20 transition-colors">
-                                                    <MapPin size={12} className="mr-1" />
-                                                    Mapで見る
+                                                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.name)}`} target="_blank" rel="noopener noreferrer" title="Google Mapで見る" className="inline-flex items-center opacity-60 hover:opacity-100 transition-opacity">
+                                                    <img src="/images/google_maps_pin.png" alt="Google Map" width={16} height={16} />
+                                                </a>
+                                                <a href={`https://www.tiktok.com/search?q=${encodeURIComponent(s.name)}`} target="_blank" rel="noopener noreferrer" title="TikTokで検索" className="inline-flex items-center opacity-60 hover:opacity-100 transition-opacity">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.48a8.27 8.27 0 0 0 4.85 1.56V7.6a4.83 4.83 0 0 1-1.09-.91z" /></svg>
                                                 </a>
                                             </div>
                                             <p className="text-sm mt-1">{s.description}</p>
@@ -186,20 +188,25 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                     <div className="text-foreground/90 text-sm sm:text-base leading-loose space-y-3">
                                         {tGourmet.map((g: { name: string, description: string, famous_store?: string }, i: number) => (
                                             <div key={i} className="bg-muted/30 p-4 rounded-lg border border-border/30">
-                                                <p className="font-bold text-foreground text-lg mb-1 leading-normal">{g.name}</p>
+                                                <div className="flex items-center flex-wrap gap-2 mb-1">
+                                                    <p className="font-bold text-foreground text-lg leading-normal">{g.name}</p>
+                                                    <a href={`https://www.tiktok.com/search?q=${encodeURIComponent(g.name)}`} target="_blank" rel="noopener noreferrer" title="TikTokで検索" className="inline-flex items-center opacity-60 hover:opacity-100 transition-opacity">
+                                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.89 2.89 2.89 0 0 1 2.88-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.48a8.27 8.27 0 0 0 4.85 1.56V7.6a4.83 4.83 0 0 1-1.09-.91z" /></svg>
+                                                    </a>
+                                                </div>
                                                 <p className="text-sm mb-3">{g.description}</p>
-                                                {g.famous_store && (
-                                                    <div className="bg-background rounded-md p-3 border border-border/40 flex items-center justify-between leading-normal">
-                                                        <div className="flex items-center">
-                                                            <Store size={16} className="text-muted-foreground mr-2" />
-                                                            <span className="font-medium text-sm text-foreground">{g.famous_store}</span>
+                                                {g.famous_store && (() => {
+                                                    const storeName = g.famous_store.split(/[、，]/)[0].replace(/[（(][^）)]*[）)]/g, '').trim();
+                                                    return (
+                                                        <div className="flex items-center flex-wrap gap-2 text-sm mt-1">
+                                                            <span className="text-xs text-muted-foreground bg-muted/60 px-2 py-0.5 rounded-full">有名なお店</span>
+                                                            <span className="font-medium text-foreground">{storeName}</span>
+                                                            <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(storeName)}`} target="_blank" rel="noopener noreferrer" title="Google Mapで見る" className="inline-flex items-center opacity-60 hover:opacity-100 transition-opacity">
+                                                                <img src="/images/google_maps_pin.png" alt="Google Map" width={16} height={16} />
+                                                            </a>
                                                         </div>
-                                                        <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(g.famous_store)}`} target="_blank" rel="noopener noreferrer" className="shrink-0 inline-flex items-center text-xs font-medium bg-primary/10 text-primary px-2 py-1.5 rounded-md hover:bg-primary/20 transition-colors ml-2">
-                                                            <MapPin size={12} className="mr-1" />
-                                                            Map
-                                                        </a>
-                                                    </div>
-                                                )}
+                                                    );
+                                                })()}
                                             </div>
                                         ))}
                                     </div>
@@ -214,13 +221,7 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                     <div className="text-foreground/90 text-sm sm:text-base leading-loose space-y-3">
                                         {tOmiyage.map((o: { name: string, description: string }, i: number) => (
                                             <div key={i} className="bg-muted/30 p-4 rounded-lg border border-border/30">
-                                                <div className="flex items-center flex-wrap gap-2 mb-1">
-                                                    <p className="font-bold text-foreground leading-normal">{o.name}</p>
-                                                    <a href={`https://www.tiktok.com/tag/${encodeURIComponent(o.name.replace(/\\s+/g, ''))}`} target="_blank" rel="noopener noreferrer" title="※TikTokアプリで開くためハッシュタグ検索を使用" className="inline-flex items-center text-xs font-medium bg-zinc-900 text-white px-2 py-1 rounded-md hover:bg-zinc-800 transition-colors dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white">
-                                                        <Video size={12} className="mr-1" />
-                                                        TikTokで見る
-                                                    </a>
-                                                </div>
+                                                <p className="font-bold text-foreground leading-normal mb-1">{o.name}</p>
                                                 <p className="text-sm mt-1">{o.description}</p>
                                             </div>
                                         ))}
@@ -269,9 +270,9 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                                 <div className="text-foreground text-sm leading-relaxed mb-2">
                                                     {testData.race_details.venue}
                                                 </div>
-                                                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(testData.race_details.venue)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-md hover:bg-primary/20 transition-colors">
-                                                    <MapPin size={12} className="mr-1" />
-                                                    Mapで見る
+                                                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(testData.race_details.venue)}`} target="_blank" rel="noopener noreferrer" title="Google Mapで見る" className="inline-flex items-center gap-1.5 text-xs font-medium text-primary hover:text-primary-hover transition-colors">
+                                                    <img src="/images/google_maps_pin.png" alt="Google Map" width={16} height={16} />
+                                                    マップを見る
                                                 </a>
                                             </div>
                                         </li>
