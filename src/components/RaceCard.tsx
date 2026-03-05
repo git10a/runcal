@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Race } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +12,7 @@ interface RaceCardProps {
     showCalendarButton?: boolean;
 }
 
-export default function RaceCard({ race, showCalendarButton = false }: RaceCardProps) {
+function RaceCardInner({ race, showCalendarButton = false }: RaceCardProps) {
     const { isFavorite, toggleFavorite } = useFavorites();
     const isFav = isFavorite(race.id);
     const statusInfo = getEntryStatusInfo(race.entry_status);
@@ -128,3 +129,6 @@ export default function RaceCard({ race, showCalendarButton = false }: RaceCardP
         </div>
     );
 }
+
+const RaceCard = memo(RaceCardInner);
+export default RaceCard;

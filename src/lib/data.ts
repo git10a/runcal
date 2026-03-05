@@ -26,11 +26,20 @@ export function getAllRaces(): Race[] {
 
   // Filter out past events and sort by date ascending (upcoming races first)
   return (racesData as Race[])
-    .map(race => ({
-      ...race,
-      distance: [...race.distance].sort((a, b) => getDistanceSortWeight(a) - getDistanceSortWeight(b))
-    }))
     .filter(race => race.date >= todayStr)
+    .map(race => ({
+      id: race.id,
+      name: race.name,
+      date: race.date,
+      entry_status: race.entry_status,
+      prefecture: race.prefecture,
+      city: race.city,
+      distance: [...race.distance].sort((a, b) => getDistanceSortWeight(a) - getDistanceSortWeight(b)),
+      is_jaaf_certified: race.is_jaaf_certified,
+      tags: race.tags,
+      url: race.url,
+      image_url: race.image_url,
+    } as Race))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }
 

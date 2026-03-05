@@ -3,12 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Calendar, Award, Footprints, Clock, ChevronLeft, ExternalLink, Store, Video, Navigation, Map, Tag } from 'lucide-react';
 import racesData from '../../../../data/races.json';
+import raceDetailsData from '../../../../data/race_details.json';
 import { Race } from '@/types';
 import { formatRaceDate, getEntryStatusInfo, normalizeRaceName } from '@/lib/utils';
 import CalendarButton from '@/components/CalendarButton';
 import FavoriteButton from './FavoriteButton';
-import fs from 'fs';
-import path from 'path';
 
 interface PageProps {
     params: Promise<{ id: string }>;
@@ -32,20 +31,15 @@ export default async function RaceDetailPage({ params }: PageProps) {
 
     const statusInfo = getEntryStatusInfo(race.entry_status);
 
-    // Fetch LLM generated content with caching
-    // const { features, spots } = await generateRaceContent(race.id, race.name, race.prefecture, race.city);
-
     // Fetch AI generated content if available
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let testData: any = null;
     try {
-        const jp = path.resolve(process.cwd(), 'data/race_details.json');
-        if (fs.existsSync(jp)) {
-            const allDetails = JSON.parse(fs.readFileSync(jp, 'utf-8'));
-            const normalizedName = normalizeRaceName(race.name);
-            if (allDetails[normalizedName]) {
-                testData = allDetails[normalizedName];
-            }
+        const normalizedName = normalizeRaceName(race.name);
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if ((raceDetailsData as any)[normalizedName]) {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            testData = (raceDetailsData as any)[normalizedName];
         }
     } catch (e) { console.error("Could not load race details", e); }
 
