@@ -7,6 +7,7 @@ import { FilterType } from '@/types';
 import MonthFilter from './filters/MonthFilter';
 import PrefectureFilter from './filters/PrefectureFilter';
 import DistanceFilter from './filters/DistanceFilter';
+import TagsFilter from './filters/TagsFilter';
 
 interface FilterBarProps {
     prefectures: string[];
@@ -14,9 +15,10 @@ interface FilterBarProps {
     selectedPrefecture: string | null;
     selectedDistance: string | null;
     selectedMonth: string | null;
+    selectedTags: string[];
     showOnlyOpen: boolean;
     showOnlyCertified: boolean;
-    onFilterChange: (type: FilterType, value: string | boolean | null) => void;
+    onFilterChange: (type: FilterType, value: string | string[] | boolean | null) => void;
     onClearAll: () => void;
     totalResults: number;
 }
@@ -27,13 +29,14 @@ export default function FilterBar({
     selectedPrefecture,
     selectedDistance,
     selectedMonth,
+    selectedTags,
     showOnlyOpen,
     showOnlyCertified,
     onFilterChange,
     onClearAll,
     totalResults
 }: FilterBarProps) {
-    const [openDropdown, setOpenDropdown] = useState<'prefecture' | 'distance' | 'month' | null>(null);
+    const [openDropdown, setOpenDropdown] = useState<'prefecture' | 'distance' | 'month' | 'tags' | null>(null);
     const [showCertifiedTooltip, setShowCertifiedTooltip] = useState(false);
     const filterRef = useRef<HTMLDivElement>(null);
 
@@ -42,9 +45,10 @@ export default function FilterBar({
         return selectedPrefecture !== null ||
             selectedDistance !== null ||
             selectedMonth !== null ||
+            selectedTags.length > 0 ||
             showOnlyOpen === false ||
             showOnlyCertified;
-    }, [selectedPrefecture, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
+    }, [selectedPrefecture, selectedDistance, selectedMonth, selectedTags, showOnlyOpen, showOnlyCertified]);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -82,6 +86,22 @@ export default function FilterBar({
                         isOpen={openDropdown === 'distance'}
                         onToggle={() => setOpenDropdown(prev => prev === 'distance' ? null : 'distance')}
                         onSelect={(val) => { onFilterChange('distance', val); setOpenDropdown(null); }}
+                    />
+
+                    <TagsFilter
+                        selectedTags={selectedTags}
+                        isOpen={openDropdown === 'tags'}
+                        onToggle={() => setOpenDropdown(prev => prev === 'tags' ? null : 'tags')}
+                        onSelect={(val) => {
+                            if (val === null) {
+                                onFilterChange('tags', []);
+                            } else {
+                                const newTags = selectedTags.includes(val)
+                                    ? selectedTags.filter(t => t !== val)
+                                    : [...selectedTags, val];
+                                onFilterChange('tags', newTags);
+                            }
+                        }}
                     />
 
                     {/* Only Open Toggle */}

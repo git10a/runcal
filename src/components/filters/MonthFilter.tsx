@@ -42,8 +42,8 @@ export default function MonthFilter({ selectedMonth, isOpen, onToggle, onSelect 
             </button>
 
             {isOpen && (
-                <div className="absolute top-full left-0 mt-2 w-full sm:w-48 bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 z-50 max-h-64 overflow-y-auto">
-                    <div className="flex flex-col gap-1">
+                <div className="absolute top-full left-0 mt-2 w-full sm:w-48 bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 z-50">
+                    <div className="flex flex-col gap-1 max-h-64 overflow-y-auto overscroll-contain">
                         <button
                             onClick={() => onSelect(null)}
                             className={cn("flex items-center justify-between px-3 py-2.5 text-sm rounded-xl font-bold transition-colors cursor-pointer", selectedMonth === null ? "bg-primary text-primary-foreground" : "hover:bg-muted text-foreground")}

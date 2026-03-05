@@ -11,9 +11,10 @@ export interface Race {
     is_jaaf_certified: boolean;
     time_limit?: string;
     features?: string;
+    tags?: string[];
     url: string;
     image_url?: string;
     updated_at: string;
 }
 
-export type FilterType = 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified';
+export type FilterType = 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags';

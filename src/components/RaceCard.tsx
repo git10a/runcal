@@ -1,7 +1,7 @@
 import { Race } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Calendar, Award, Footprints } from 'lucide-react';
+import { MapPin, Calendar, Award, Footprints, Tag } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
 import CalendarButton from './CalendarButton';
 import { formatRaceDate, getEntryStatusInfo } from '@/lib/utils';
@@ -66,7 +66,7 @@ export default function RaceCard({ race, showCalendarButton = false }: RaceCardP
                         </div>
                         <div className="flex items-start">
                             <Footprints size={14} className="mr-2 mt-0.5 text-primary/80 shrink-0" />
-                            <div className="flex gap-1.5 flex-wrap">
+                            <div className="flex gap-1.5 flex-wrap w-full">
                                 {race.distance.map(d => (
                                     <span key={d} className="bg-muted text-foreground px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold leading-none">
                                         {d}
@@ -74,6 +74,21 @@ export default function RaceCard({ race, showCalendarButton = false }: RaceCardP
                                 ))}
                             </div>
                         </div>
+                        {race.tags && race.tags.length > 0 && (
+                            <div className="flex items-start">
+                                <Tag size={14} className="mr-2 mt-0.5 text-primary/80 shrink-0" />
+                                <div className="flex gap-1.5 flex-wrap w-full">
+                                    {race.tags.map(t => {
+                                        const textWithoutEmoji = t.replace(/^.*? /, '');
+                                        return (
+                                            <span key={t} className="bg-muted text-foreground px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold leading-none">
+                                                {textWithoutEmoji}
+                                            </span>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </Link>

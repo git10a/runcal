@@ -48,7 +48,7 @@ export default function PrefectureFilter({ prefectures, selectedPrefecture, isOp
                             すべて
                         </button>
 
-                        <div className="flex flex-col gap-4 max-h-[60vh] overflow-y-auto pr-2">
+                        <div className="flex flex-col gap-4 max-h-[60vh] overflow-y-auto overscroll-contain pr-2">
                             {REGIONS.map(region => {
                                 const availablePrefs = region.prefs.filter(p => prefectures.includes(p));
                                 if (availablePrefs.length === 0) return null;

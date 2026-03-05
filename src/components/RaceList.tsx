@@ -19,6 +19,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
         selectedPrefecture,
         selectedDistance,
         selectedMonth,
+        selectedTags,
         showOnlyOpen,
         showOnlyCertified,
         handleFilterChange,
@@ -45,6 +46,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                 selectedPrefecture={selectedPrefecture}
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
+                selectedTags={selectedTags}
                 showOnlyOpen={showOnlyOpen}
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={(type, val) => {

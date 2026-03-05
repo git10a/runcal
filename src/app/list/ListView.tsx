@@ -19,6 +19,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
         selectedPrefecture,
         selectedDistance,
         selectedMonth,
+        selectedTags,
         showOnlyOpen,
         showOnlyCertified,
         handleFilterChange,
@@ -50,6 +51,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
                 selectedPrefecture={selectedPrefecture}
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
+                selectedTags={selectedTags}
                 showOnlyOpen={showOnlyOpen}
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={(type, val) => {

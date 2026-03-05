@@ -19,6 +19,7 @@ export default function CalendarView({ initialRaces, prefectures, distances }: C
         selectedPrefecture,
         selectedDistance,
         selectedMonth,
+        selectedTags,
         showOnlyOpen,
         showOnlyCertified,
         handleFilterChange,
@@ -36,6 +37,7 @@ export default function CalendarView({ initialRaces, prefectures, distances }: C
                 selectedPrefecture={selectedPrefecture}
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
+                selectedTags={selectedTags}
                 showOnlyOpen={showOnlyOpen}
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={handleFilterChange}

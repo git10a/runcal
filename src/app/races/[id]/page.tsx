@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Calendar, Award, Footprints, Clock, ChevronLeft, ExternalLink, Store, Video, Navigation, Map } from 'lucide-react';
+import { MapPin, Calendar, Award, Footprints, Clock, ChevronLeft, ExternalLink, Store, Video, Navigation, Map, Tag } from 'lucide-react';
 import racesData from '../../../../data/races.json';
 import { Race } from '@/types';
 import { formatRaceDate, getEntryStatusInfo, normalizeRaceName } from '@/lib/utils';
@@ -307,6 +307,24 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                             </div>
                                         </div>
                                     </li>
+
+                                    {race.tags && race.tags.length > 0 && (
+                                        <li className="flex items-start">
+                                            <Tag className="w-5 h-5 mr-3 text-primary/80 shrink-0 mt-0.5" />
+                                            <div className="flex-1">
+                                                <div className="flex gap-1.5 flex-wrap">
+                                                    {race.tags.map((t) => {
+                                                        const textWithoutEmoji = t.replace(/^.*? /, '');
+                                                        return (
+                                                            <span key={t} className="bg-muted text-foreground px-2.5 py-1 rounded text-xs font-bold">
+                                                                {textWithoutEmoji}
+                                                            </span>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        </li>
+                                    )}
 
                                     {timeLimitDetails && (
                                         <li className="flex items-center">
