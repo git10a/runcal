@@ -16,7 +16,7 @@ interface Race {
     date: string;
     prefecture: string;
     city?: string;
-    distances: string[];
+    distance: string[]; // races.json に合わせる
     entry_status: string;
     entry_url?: string;
     official_url?: string;
@@ -61,7 +61,8 @@ function getUpcomingRaces(races: Race[], days: number = 30): Race[] {
 }
 
 async function main() {
-    const dryRun = process.env.DRY_RUN === 'true';
+    const dryRunEnv = process.env.DRY_RUN;
+    const dryRun = dryRunEnv === 'true' || dryRunEnv === 'yes';
     console.log(`Starting X autopost... (Dry Run: ${dryRun})`);
 
     // Load data
@@ -147,7 +148,7 @@ function buildPrompt(category: string, race: Race | undefined, detailsContext: s
 - 大会名: ${race.name}
 - 開催日: ${race.date}
 - 場所: ${race.prefecture}${race.city ? ' ' + race.city : ''}
-- 種目: ${race.distances.join(', ')}
+- 種目: ${race.distance.join(', ')}
 - エントリー状況: ${race.entry_status}
 - サイトURL: https://runcal.com/races/${race.id}
 ${race.tags ? `- タグ: ${race.tags.join(', ')}` : ''}
