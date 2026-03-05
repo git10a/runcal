@@ -12,13 +12,13 @@ on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run (Generate but don\'t post)'
+        description: 'Dry run (Generate but do not post)'
         required: true
-        default: 'true'
+        default: 'yes'
         type: choice
         options:
-          - 'true'
-          - 'false'
+          - 'yes'
+          - 'no'
 
 jobs:
   autopost:
@@ -48,7 +48,7 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           CLAUDE_MODEL: 'claude-3-5-sonnet-20241022'
-          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run == 'yes' && 'true' || 'false' }}
 
       - name: Commit and push changes
         if: env.DRY_RUN != 'true'
