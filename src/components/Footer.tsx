@@ -18,6 +18,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col items-center gap-4 text-xs font-semibold text-muted-foreground md:items-end">
                     <div className="flex gap-6">
+                        <Link href="/about" className="hover:text-foreground transition-colors">ランカレについて</Link>
                         <Link href="/terms" className="hover:text-foreground transition-colors">利用規約</Link>
                         <Link href="/privacy" className="hover:text-foreground transition-colors">プライバシーポリシー</Link>
                     </div>
