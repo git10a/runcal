@@ -60,7 +60,7 @@ export default function FilterBar({
         <div ref={filterRef} className="bg-background/95 backdrop-blur-sm sticky top-16 z-40 py-4 mb-2 border-b border-border/50">
             <div className="container mx-auto px-4">
                 {/* Filter Buttons */}
-                <div className="flex flex-wrap items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2 relative">
                     <MonthFilter
                         selectedMonth={selectedMonth}
                         isOpen={openDropdown === 'month'}

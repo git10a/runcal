@@ -34,7 +34,7 @@ export default function DistanceFilter({ distances, selectedDistance, isOpen, on
     }, [distances]);
 
     return (
-        <div className="relative">
+        <div className="static sm:relative">
             <button
                 onClick={onToggle}
                 className={cn(
@@ -50,7 +50,7 @@ export default function DistanceFilter({ distances, selectedDistance, isOpen, on
             </button>
 
             {isOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 sm:w-80 bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 z-50">
+                <div className="absolute top-full left-0 mt-2 w-full sm:w-80 bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 z-50">
                     <div className="flex flex-col gap-3">
                         <button
                             onClick={() => onSelect(null)}

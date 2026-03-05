@@ -26,7 +26,7 @@ export default function MonthFilter({ selectedMonth, isOpen, onToggle, onSelect 
     }, []);
 
     return (
-        <div className="relative">
+        <div className="static sm:relative">
             <button
                 onClick={onToggle}
                 className={cn(
@@ -42,7 +42,7 @@ export default function MonthFilter({ selectedMonth, isOpen, onToggle, onSelect 
             </button>
 
             {isOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 z-50 max-h-64 overflow-y-auto">
+                <div className="absolute top-full left-0 mt-2 w-full sm:w-48 bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-3 z-50 max-h-64 overflow-y-auto">
                     <div className="flex flex-col gap-1">
                         <button
                             onClick={() => onSelect(null)}

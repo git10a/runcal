@@ -23,7 +23,7 @@ const REGIONS = [
 
 export default function PrefectureFilter({ prefectures, selectedPrefecture, isOpen, onToggle, onSelect }: PrefectureFilterProps) {
     return (
-        <div className="relative">
+        <div className="static sm:relative">
             <button
                 onClick={onToggle}
                 className={cn(
@@ -39,7 +39,7 @@ export default function PrefectureFilter({ prefectures, selectedPrefecture, isOp
             </button>
 
             {isOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[calc(100vw-2rem)] sm:w-[24rem] bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 z-50">
+                <div className="absolute top-full left-0 mt-2 w-full sm:w-[24rem] bg-card rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-4 z-50">
                     <div className="flex flex-wrap gap-2">
                         <button
                             onClick={() => onSelect(null)}
