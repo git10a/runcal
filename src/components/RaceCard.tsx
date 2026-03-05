@@ -30,7 +30,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     sizes="112px"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                             </>
                         ) : (
                             <div className="absolute inset-0 flex items-center justify-center bg-primary/5">
@@ -39,7 +39,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                         )}
 
                         {race.is_jaaf_certified && (
-                            <div className="absolute top-2 left-2 z-10 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-primary-hover" title="陸連公認">
+                            <div className="absolute top-2 left-2 z-10 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-primary-hover pointer-events-none" title="陸連公認">
                                 <Award size={14} />
                             </div>
                         )}

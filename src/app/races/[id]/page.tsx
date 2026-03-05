@@ -93,7 +93,7 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                     </div>
                                 )}
                                 {race.is_jaaf_certified && (
-                                    <div className="absolute top-4 left-4 z-10 flex items-center justify-center rounded-full bg-white/95 backdrop-blur-md w-10 h-10 shadow-md text-primary-hover" title="陸連公認">
+                                    <div className="absolute top-4 left-4 z-10 flex items-center justify-center rounded-full bg-white/95 backdrop-blur-md w-10 h-10 shadow-md text-primary-hover pointer-events-none" title="陸連公認">
                                         <Award size={20} />
                                     </div>
                                 )}
