@@ -93,7 +93,7 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                     </div>
                                 )}
                                 {race.is_jaaf_certified && (
-                                    <div className="absolute top-4 left-4 z-10 flex items-center justify-center rounded-full bg-white/95 backdrop-blur-md w-10 h-10 shadow-md text-primary-hover pointer-events-none" title="陸連公認">
+                                    <div className="absolute top-4 left-4 z-10 flex items-center justify-center rounded-full bg-white/95 backdrop-blur-md w-10 h-10 shadow-md text-primary-hover" title="陸連公認">
                                         <Award size={20} />
                                     </div>
                                 )}
@@ -222,7 +222,7 @@ export default async function RaceDetailPage({ params }: PageProps) {
                                             <div key={i} className="bg-muted/30 p-4 rounded-lg border border-border/30">
                                                 <div className="flex items-center flex-wrap gap-2 mb-1">
                                                     <p className="font-bold text-foreground leading-normal">{o.name}</p>
-                                                    <a href={`https://www.tiktok.com/search?q=${encodeURIComponent(o.name)}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs font-medium bg-zinc-900 text-white px-2 py-1 rounded-md hover:bg-zinc-800 transition-colors dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white">
+                                                    <a href={`https://www.tiktok.com/tag/${encodeURIComponent(o.name.replace(/\\s+/g, ''))}`} target="_blank" rel="noopener noreferrer" title="※TikTokアプリで開くためハッシュタグ検索を使用" className="inline-flex items-center text-xs font-medium bg-zinc-900 text-white px-2 py-1 rounded-md hover:bg-zinc-800 transition-colors dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-white">
                                                         <Video size={12} className="mr-1" />
                                                         TikTokで見る
                                                     </a>
