@@ -39,6 +39,7 @@ export function getAllRaces(): Race[] {
       tags: race.tags,
       url: race.url,
       image_url: race.image_url,
+      is_hot: race.is_hot,
     } as Race))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 }

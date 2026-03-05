@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Race } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Calendar, Award, Footprints, Tag } from 'lucide-react';
+import { MapPin, Calendar, Award, Footprints, Tag, Flame } from 'lucide-react';
 import { useFavorites } from '@/hooks/useFavorites';
 import CalendarButton from './CalendarButton';
 import { formatRaceDate, getEntryStatusInfo } from '@/lib/utils';
@@ -40,11 +40,21 @@ function RaceCardInner({ race, showCalendarButton = false }: RaceCardProps) {
                             </div>
                         )}
 
-                        {race.is_jaaf_certified && (
-                            <div className="absolute top-2 left-2 z-10 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-primary-hover" title="陸連公認">
-                                <Award size={14} />
-                            </div>
-                        )}
+                        <div className="absolute top-2 left-2 z-10 flex gap-1.5 items-start">
+                            {race.is_jaaf_certified && (
+                                <div className="flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-primary-hover" title="陸連公認">
+                                    <Award size={14} />
+                                </div>
+                            )}
+                        </div>
+
+                        <div className="absolute top-2 right-2 z-10 flex gap-1.5 items-start">
+                            {race.is_hot && (
+                                <div className="flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-orange-500" title="人気の大会">
+                                    <Flame size={14} />
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
 

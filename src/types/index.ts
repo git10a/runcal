@@ -15,6 +15,7 @@ export interface Race {
     url: string;
     image_url?: string;
     updated_at: string;
+    is_hot?: boolean;
 }
 
 export type FilterType = 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags';

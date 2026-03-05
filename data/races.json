@@ -77,7 +77,8 @@
     "url": "https://www.konosupansymarathon.com/",
     "updated_at": "2026年03月03日",
     "image_url": "/images/races/d4c0f1fb-8831-4451-839c-f6b8a4ebeda2.jpg",
-    "tags": []
+    "tags": [],
+    "is_hot": true
   },
   {
     "id": "435ef4a7-6c3d-4680-8ccf-7ec868cd49f3",
@@ -222,7 +223,8 @@
     "image_url": "/images/races/a5fe2ea9-0138-422f-8ddb-08b7d29b82a5.jpg",
     "tags": [
       "🏆 タイムが狙いやすい"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -281,7 +283,8 @@
     "url": "https://www.city.kamiamakusa.kumamoto.jp/q/list/343.html",
     "updated_at": "2026年03月03日",
     "image_url": "/images/races/1ee0ce20-d4ce-4c82-aa66-682ea913499d.jpg",
-    "tags": []
+    "tags": [],
+    "is_hot": true
   },
   {
     "id": "73b26da9-688b-4087-9391-28b476d297e1",
@@ -320,7 +323,8 @@
     "features": null,
     "url": "https://fmfukuoka.co.jp/harukaze/",
     "updated_at": "2026年03月03日",
-    "image_url": "/images/races/dab96e16-daa3-43d8-b0fe-cebe7b51b763.jpg"
+    "image_url": "/images/races/dab96e16-daa3-43d8-b0fe-cebe7b51b763.jpg",
+    "is_hot": true
   },
   {
     "id": "262aa6d3-2f8c-4adc-92fd-4ebb733dbec3",
@@ -381,7 +385,8 @@
     "features": null,
     "url": "https://ako-oysterrelaymarathon.jimdosite.com/",
     "updated_at": "2026年03月03日",
-    "image_url": "/images/races/9e192fa4-52d0-4c79-be62-974c04136fe0.jpg"
+    "image_url": "/images/races/9e192fa4-52d0-4c79-be62-974c04136fe0.jpg",
+    "is_hot": true
   },
   {
     "id": "e0b3763f-424e-4de7-9933-079501412746",
@@ -865,7 +870,8 @@
     "features": null,
     "url": "https://womens-marathon.nagoya/",
     "updated_at": "2026年03月04日",
-    "image_url": "/images/races/race_3e34199e4d232f2fd4daa16315923b55.webp"
+    "image_url": "/images/races/race_3e34199e4d232f2fd4daa16315923b55.webp",
+    "is_hot": true
   },
   {
     "id": "d68daf43-c16d-4637-a2a9-5431b7f7b46d",
@@ -1071,7 +1077,8 @@
     "url": "https://up-run.jp/events/mate-higashiooshima82/",
     "updated_at": "2026年03月02日",
     "image_url": "/images/races/7597139b-79a8-4152-96cc-08132860e40e.jpg",
-    "tags": []
+    "tags": [],
+    "is_hot": true
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -1485,7 +1492,8 @@
     "url": "https://universal-field.com/event/sendaigawa-kakou/",
     "updated_at": "2026年03月03日",
     "image_url": "/images/races/c3a11e9d-db4c-4ff7-b534-f626ed7151aa.jpg",
-    "tags": []
+    "tags": [],
+    "is_hot": true
   },
   {
     "id": "e708bc8f-9b2b-4004-8d23-e275b01299c7",
@@ -1760,7 +1768,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "cd01f507-14a9-4989-8c6a-d46d9b091a98",
@@ -2429,7 +2438,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "46346d21-f471-4e72-b9b0-e1be97b0e083",
@@ -2642,7 +2652,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "1a423fc1-9498-472b-84b9-8555a347c018",
@@ -3281,7 +3292,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "d16995dc-ec1d-47d4-a8a5-fec101e32f47",
@@ -3360,7 +3372,8 @@
     "features": null,
     "url": "https://team-mk.net/mkdc/",
     "updated_at": "2026年03月02日",
-    "image_url": "/images/races/a5fe2ea9-0138-422f-8ddb-08b7d29b82a5.jpg"
+    "image_url": "/images/races/a5fe2ea9-0138-422f-8ddb-08b7d29b82a5.jpg",
+    "is_hot": true
   },
   {
     "id": "7403bff1-06bb-4e7a-a6c5-f0090d374b13",
@@ -3443,7 +3456,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "a785d5a2-0a8f-4908-ade1-14f6b6d6b87f",
@@ -3929,7 +3943,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "f081db43-4ee4-4903-b208-c91e7f727748",
@@ -5162,7 +5177,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "73b26da9-688b-4087-9391-28b476d297e1",
@@ -5506,7 +5522,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "d6255f3c-9b91-46fd-82d7-7bf4c93b843c",
@@ -5662,7 +5679,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "95e0ccda-dc52-4ef4-adc7-d4f847798b55",
@@ -5891,7 +5909,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "39be5121-fafa-49f6-ad5e-d8e1bfad4332",
@@ -6180,7 +6199,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "348d12cd-1bcd-46ea-a482-b4cc7e0e4e14",
@@ -6285,7 +6305,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "d08e63a0-d3b8-4460-8084-e65921ea5c22",
@@ -6713,7 +6734,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -7022,7 +7044,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "043ae16d-9270-4946-aeb5-0332c9dd3cdc",
@@ -7354,7 +7377,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "1c576ecf-c503-49ec-8147-b709d9edf740",
@@ -7424,7 +7448,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "ec62a901-81c7-47ac-bd50-f9e9a21886e7",
@@ -7769,7 +7794,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "3c79b561-c4d2-45d7-9785-e80135dfd6c4",
@@ -8133,7 +8159,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.runnersbible.info/DB/08/0820080401.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "is_hot": true
   },
   {
     "id": "7affe71a-ce34-4304-a404-a909722151eb",
@@ -8353,7 +8380,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "f2965dc1-41aa-455d-96e9-2d318640f098",
@@ -8462,7 +8490,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "e47fa9ca-a8eb-409c-a191-6358986dc6b9",
@@ -8508,7 +8537,8 @@
     "tags": [
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "b80ad040-a94a-4ad2-9577-f5b4a6d41625",
@@ -8834,7 +8864,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "423efa2e-1a76-4a03-95a4-b6157d6797e5",
@@ -9040,7 +9071,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "9d02e164-1c83-4761-8b60-e6cb1cf49f08",
@@ -9086,7 +9118,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "d7498dfa-f4cb-4ef4-88dd-223c34adc188",
@@ -9301,7 +9334,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "990eec57-faee-4d8a-a8c4-4a8531642007",
@@ -9520,7 +9554,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "73b26da9-688b-4087-9391-28b476d297e1",
@@ -9614,7 +9649,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "c4c82ac9-bdba-4dd1-9376-263bb6db578b",
@@ -9806,7 +9842,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "64133b8f-6f79-432e-9e53-37e06e1d69fa",
@@ -10080,7 +10117,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "ff6a73ac-271c-43cc-b7d9-464d1656bc84",
@@ -10230,7 +10268,8 @@
     "image_url": "/images/races/1a2b065f-6864-4b3b-abe4-ffa05670c9aa.jpg",
     "tags": [
       "⛰️ タフなコース"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "7f34709d-b59e-4a33-bac6-c8d2b7abff06",
@@ -10274,7 +10313,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "a04e0b21-b8fe-4ec3-96d2-f37d0e611d5f",
@@ -10316,7 +10356,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "fa699a76-4ad1-452a-98c2-17bf122e5647",
@@ -10520,7 +10561,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "101939c8-36f2-4e0a-a9f6-7b6271e55e99",
@@ -10587,7 +10629,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "fa1bda56-9f8d-42c7-8b35-e320dbf9348f",
@@ -11041,7 +11084,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "2487984d-aa34-4c10-9644-a4da8b2b6737",
@@ -11231,7 +11275,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -11409,7 +11454,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "8da6f959-a2fc-488c-89ba-9b9d4487b538",
@@ -11433,7 +11479,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "532db2c7-c172-44bd-a8a3-7ec5296b497d",
@@ -12603,7 +12650,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "8d641f70-679f-4755-adb5-6d87499d8092",
@@ -13395,7 +13443,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "is_hot": true
   },
   {
     "id": "c8c9dcab-9a2b-4e6f-89ad-ae24c0f624b4",
@@ -14853,7 +14902,8 @@
     "features": null,
     "url": "http://sportsaid-japan.org/",
     "updated_at": "2026年03月02日",
-    "image_url": "/images/races/00f40626-1ed6-4613-8e03-50cf2ab01615.jpg"
+    "image_url": "/images/races/00f40626-1ed6-4613-8e03-50cf2ab01615.jpg",
+    "is_hot": true
   },
   {
     "id": "ff45cff0-8896-4237-bc5a-fcd484e6a067",
