@@ -14,6 +14,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime, timezone, timedelta
+from urllib.parse import urljoin
 
 # Re-use logic from the original scraper where applicable
 from main import (
@@ -32,6 +33,41 @@ except ImportError:
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
 RACES_JSON_PATH = os.path.join(DATA_DIR, 'races.json')
+
+ENTRY_SITE_DOMAINS = (
+    'runnet.jp',
+    'sportsentry.ne.jp',
+    'moshicom.com',
+    'e-moshicom.com',
+)
+
+ENTRY_STATUS_KEYWORDS = {
+    "受付終了": (
+        'エントリーは終了',
+        '受付終了',
+        '申込終了',
+        '募集終了',
+        '締め切り',
+        '締切',
+        '定員に達',
+        'キャンセル待ち',
+    ),
+    "受付中": (
+        'エントリー受付中',
+        '申込受付中',
+        '現在受付中',
+        '募集中',
+        'エントリーする',
+        '今すぐエントリー',
+    ),
+    "エントリー前": (
+        'エントリー開始前',
+        '受付開始前',
+        'まもなく受付開始',
+        '近日受付開始',
+        '受付開始予定',
+    ),
+}
 
 def extract_distances_from_text(text, current_distances):
     """
@@ -80,6 +116,78 @@ def _apply_entry_dates(race, start, end, today_str):
             updated = True
     return updated
 
+def _detect_status_from_text(text):
+    compact = text.replace('\u3000', ' ')
+
+    # Closed has priority over open because some pages show both terms in archives.
+    for keyword in ENTRY_STATUS_KEYWORDS["受付終了"]:
+        if keyword in compact:
+            return "受付終了"
+    for keyword in ENTRY_STATUS_KEYWORDS["エントリー前"]:
+        if keyword in compact:
+            return "エントリー前"
+    for keyword in ENTRY_STATUS_KEYWORDS["受付中"]:
+        if keyword in compact:
+            return "受付中"
+    return None
+
+def _find_external_entry_links(url):
+    try:
+        res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10, allow_redirects=True)
+        res.encoding = res.apparent_encoding
+        soup = BeautifulSoup(res.text, 'html.parser')
+    except Exception:
+        return []
+
+    links = []
+    seen = set()
+    for a_tag in soup.find_all('a', href=True):
+        href = a_tag.get('href')
+        if not href:
+            continue
+        full_url = urljoin(url, href)
+        if any(domain in full_url for domain in ENTRY_SITE_DOMAINS):
+            if full_url not in seen:
+                seen.add(full_url)
+                links.append(full_url)
+    return links
+
+def _detect_status_from_entry_sites(official_url):
+    links = _find_external_entry_links(official_url)
+    for link in links[:6]:
+        try:
+            res = requests.get(link, headers={'User-Agent': 'Mozilla/5.0'}, timeout=10, allow_redirects=True)
+            res.encoding = res.apparent_encoding
+            soup = BeautifulSoup(res.text, 'html.parser')
+            page_text = soup.get_text(separator=' ')
+            status = _detect_status_from_text(page_text)
+            if status:
+                return status, link
+        except Exception:
+            continue
+    return None, None
+
+def _refresh_status_from_known_dates(race, today_str):
+    """
+    Recompute status from known entry dates.
+    Only applies when at least one entry date exists, to avoid overwriting
+    status-only signals (e.g. LLM detected "受付終了" without dates).
+    """
+    if not race.get('entry_start_date') and not race.get('entry_end_date'):
+        return False
+
+    new_status = determine_entry_status(
+        race.get('entry_start_date'),
+        race.get('entry_end_date'),
+        race.get('date'),
+        today_str
+    )
+    if new_status and race.get('entry_status') != new_status:
+        race['entry_status'] = new_status
+        race['updated_at'] = datetime.now().strftime("%Y年%m月%d日")
+        return True
+    return False
+
 def process_race(race, today_str, use_llm=True):
     """
     Attempt to scrape and update a single race's info.
@@ -105,7 +213,16 @@ def process_race(race, today_str, use_llm=True):
             updated = _apply_entry_dates(race, start, end, today_str)
             if updated:
                 print(f"  -> Regex found: {start} ~ {end} (Status: {race['entry_status']})")
-        
+
+        # Tier 1.5: If date extraction failed, follow external entry links
+        # and infer status from the entry site's current state.
+        if not updated:
+            status_from_entry, entry_link = _detect_status_from_entry_sites(url)
+            if status_from_entry and status_from_entry != race.get('entry_status'):
+                race['entry_status'] = status_from_entry
+                updated = True
+                print(f"  -> Entry site status: {status_from_entry} ({entry_link})")
+
         # Tier 2: If regex failed, try LLM
         if not updated and use_llm and LLM_AVAILABLE:
             print(f"[LLM] {race['name']}")
@@ -168,10 +285,16 @@ def main():
     
     updated_count = 0
     
-    # Target: races with unknown/missing entry info, or missing distances
+    # First pass: normalize status from already-known dates.
+    for race in races:
+        if _refresh_status_from_known_dates(race, today_str):
+            updated_count += 1
+
+    # Target: races with unknown/missing entry info, missing end date, or missing distances
     target_races = [
         r for r in races 
         if r.get('entry_status') in ('不明', 'エントリー前')
+        or not r.get('entry_end_date')
         or not r.get('distance') 
         or r.get('distance') == ['その他']
     ]

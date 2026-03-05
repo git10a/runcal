@@ -65,7 +65,7 @@
     "date": "2026-03-07",
     "entry_start_date": "2025-10-31",
     "entry_end_date": null,
-    "entry_status": "受付中",
+    "entry_status": "受付終了",
     "prefecture": "埼玉県",
     "city": "鴻巣市",
     "distance": [
@@ -75,7 +75,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.konosupansymarathon.com/",
-    "updated_at": "2026年03月03日",
+    "updated_at": "2026年03月05日",
     "tags": [],
     "is_hot": true,
     "image_url": "/images/races/d4c0f1fb-8831-4451-839c-f6b8a4ebeda2.jpg"

@@ -11,6 +11,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from google import genai
+from urllib.parse import urljoin
 
 # ---------------------------------------------------------------------------
 # Gemini client setup
@@ -33,6 +34,7 @@ def _get_client():
 
 
 MODEL = "gemini-2.5-flash"
+ENTRY_SITE_DOMAINS = ('runnet.jp', 'sportsentry.ne.jp', 'moshicom.com', 'e-moshicom.com')
 
 SYSTEM_PROMPT = """あなたはマラソン大会のウェブページからエントリー（参加申込）情報を抽出するアシスタントです。
 
@@ -76,7 +78,6 @@ def _parse_html(html, base_url):
         text = text[:4000]
 
     # Get links with text
-    from urllib.parse import urljoin
     links = []
     for a in soup.find_all('a', href=True):
         href = a['href']
@@ -87,8 +88,16 @@ def _parse_html(html, base_url):
             if img:
                 link_text = img.get('alt', '').strip()
                 
-        if link_text and not href.startswith('javascript:'):
-            full_url = urljoin(base_url, href)
+        if href.startswith('javascript:'):
+            continue
+
+        full_url = urljoin(base_url, href)
+
+        # If no visible text (image button, icon link), still keep known entry links.
+        if not link_text and any(domain in full_url for domain in ENTRY_SITE_DOMAINS):
+            link_text = "entry-link"
+
+        if link_text:
             links.append(f"[{link_text}]({full_url})")
     links_text = '\n'.join(links[:30])
 
