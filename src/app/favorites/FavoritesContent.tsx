@@ -29,7 +29,7 @@ export default function FavoritesContent() {
             ) : favoriteRaces.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {favoriteRaces.map(race => (
-                        <RaceCard key={race.id} race={race} />
+                        <RaceCard key={race.id} race={race} showCalendarButton />
                     ))}
                 </div>
             ) : (

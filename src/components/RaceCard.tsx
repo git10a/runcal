@@ -8,9 +8,10 @@ import { formatRaceDate, getEntryStatusInfo } from '@/lib/utils';
 
 interface RaceCardProps {
     race: Race;
+    showCalendarButton?: boolean;
 }
 
-export default function RaceCard({ race }: RaceCardProps) {
+export default function RaceCard({ race, showCalendarButton = false }: RaceCardProps) {
     const { isFavorite, toggleFavorite } = useFavorites();
     const isFav = isFavorite(race.id);
     const statusInfo = getEntryStatusInfo(race.entry_status);
@@ -30,7 +31,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     sizes="112px"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                             </>
                         ) : (
                             <div className="absolute inset-0 flex items-center justify-center bg-primary/5">
@@ -39,7 +40,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                         )}
 
                         {race.is_jaaf_certified && (
-                            <div className="absolute top-2 left-2 z-10 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-primary-hover pointer-events-none" title="陸連公認">
+                            <div className="absolute top-2 left-2 z-10 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm w-6 h-6 shadow-[0_2px_8px_rgb(0,0,0,0.12)] text-primary-hover" title="陸連公認">
                                 <Award size={14} />
                             </div>
                         )}
@@ -83,7 +84,7 @@ export default function RaceCard({ race }: RaceCardProps) {
                 </span>
 
                 <div className="flex gap-1 justify-center items-center flex-1 mx-2">
-                    <CalendarButton race={race} />
+                    {showCalendarButton && <CalendarButton race={race} />}
                     <button
                         onClick={() => toggleFavorite(race.id)}
                         className={`transition-all p-2 rounded-full shrink-0 cursor-pointer flex items-center justify-center ${isFav ? 'bg-orange-50 hover:bg-orange-100 ring-1 ring-orange-200' : 'hover:bg-muted'}`}
