@@ -17,6 +17,7 @@ export default function CalendarView({ initialRaces, prefectures, distances }: C
     const {
         filteredRaces,
         selectedPrefecture,
+        selectedRegion,
         selectedDistance,
         selectedMonth,
         selectedTags,
@@ -35,6 +36,7 @@ export default function CalendarView({ initialRaces, prefectures, distances }: C
                 prefectures={prefectures}
                 distances={distances}
                 selectedPrefecture={selectedPrefecture}
+                selectedRegion={selectedRegion}
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
                 selectedTags={selectedTags}

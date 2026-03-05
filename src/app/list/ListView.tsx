@@ -17,6 +17,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
     const {
         filteredRaces,
         selectedPrefecture,
+        selectedRegion,
         selectedDistance,
         selectedMonth,
         selectedTags,
@@ -38,7 +39,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
     useEffect(() => {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setCurrentPage(1);
-    }, [selectedPrefecture, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
+    }, [selectedPrefecture, selectedRegion, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
 
     const totalPages = Math.ceil(filteredRaces.length / ITEMS_PER_PAGE);
     const paginatedRaces = filteredRaces.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
@@ -49,6 +50,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
                 prefectures={prefectures}
                 distances={distances}
                 selectedPrefecture={selectedPrefecture}
+                selectedRegion={selectedRegion}
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
                 selectedTags={selectedTags}

@@ -13,6 +13,7 @@ interface FilterBarProps {
     prefectures: string[];
     distances: string[];
     selectedPrefecture: string | null;
+    selectedRegion: string | null;
     selectedDistance: string | null;
     selectedMonth: string | null;
     selectedTags: string[];
@@ -27,6 +28,7 @@ export default function FilterBar({
     prefectures,
     distances,
     selectedPrefecture,
+    selectedRegion,
     selectedDistance,
     selectedMonth,
     selectedTags,
@@ -43,12 +45,13 @@ export default function FilterBar({
     // Check if any filter is active
     const hasActiveFilters = useMemo(() => {
         return selectedPrefecture !== null ||
+            selectedRegion !== null ||
             selectedDistance !== null ||
             selectedMonth !== null ||
             selectedTags.length > 0 ||
             showOnlyOpen === false ||
             showOnlyCertified;
-    }, [selectedPrefecture, selectedDistance, selectedMonth, selectedTags, showOnlyOpen, showOnlyCertified]);
+    }, [selectedPrefecture, selectedRegion, selectedDistance, selectedMonth, selectedTags, showOnlyOpen, showOnlyCertified]);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -75,9 +78,11 @@ export default function FilterBar({
                     <PrefectureFilter
                         prefectures={prefectures}
                         selectedPrefecture={selectedPrefecture}
+                        selectedRegion={selectedRegion}
                         isOpen={openDropdown === 'prefecture'}
                         onToggle={() => setOpenDropdown(prev => prev === 'prefecture' ? null : 'prefecture')}
-                        onSelect={(val) => { onFilterChange('prefecture', val); setOpenDropdown(null); }}
+                        onSelectPrefecture={(val) => { onFilterChange('prefecture', val); setOpenDropdown(null); }}
+                        onSelectRegion={(val) => { onFilterChange('region', val); setOpenDropdown(null); }}
                     />
 
                     <DistanceFilter

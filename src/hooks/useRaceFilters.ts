@@ -1,11 +1,13 @@
 import { Race } from '@/types';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { getPrefecturesByRegion } from '@/lib/data';
 
 export function useRaceFilters(initialRaces: Race[]) {
     const router = useRouter();
     const searchParams = useSearchParams();
 
     const selectedPrefecture = searchParams.get('prefecture');
+    const selectedRegion = searchParams.get('region');
     const selectedDistance = searchParams.get('distance');
     const selectedMonth = searchParams.get('month');
     const selectedTags = searchParams.getAll('tags');
@@ -28,10 +30,15 @@ export function useRaceFilters(initialRaces: Race[]) {
         router.push(`?${params.toString()}`);
     };
 
-    const handleFilterChange = (type: 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags', value: string | string[] | boolean | null) => {
+    const handleFilterChange = (type: 'prefecture' | 'region' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags', value: string | string[] | boolean | null) => {
         switch (type) {
             case 'prefecture':
                 updateFilterParams('prefecture', value);
+                updateFilterParams('region', null); // 都道府県選択時は地方をクリア
+                break;
+            case 'region':
+                updateFilterParams('region', value);
+                updateFilterParams('prefecture', null); // 地方選択時は都道府県をクリア
                 break;
             case 'distance':
                 updateFilterParams('distance', value);
@@ -60,7 +67,10 @@ export function useRaceFilters(initialRaces: Race[]) {
     if (selectedMonth) {
         filteredRaces = filteredRaces.filter(r => r.date.startsWith(selectedMonth));
     }
-    if (selectedPrefecture) {
+    if (selectedRegion) {
+        const regionPrefs = getPrefecturesByRegion(selectedRegion);
+        filteredRaces = filteredRaces.filter(r => regionPrefs.includes(r.prefecture));
+    } else if (selectedPrefecture) {
         filteredRaces = filteredRaces.filter(r => r.prefecture === selectedPrefecture);
     }
     if (selectedDistance) {
@@ -82,6 +92,7 @@ export function useRaceFilters(initialRaces: Race[]) {
     return {
         filteredRaces,
         selectedPrefecture,
+        selectedRegion,
         selectedDistance,
         selectedMonth,
         selectedTags,

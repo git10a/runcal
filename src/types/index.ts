@@ -18,4 +18,4 @@ export interface Race {
     is_hot?: boolean;
 }
 
-export type FilterType = 'prefecture' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags';
+export type FilterType = 'prefecture' | 'region' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags';

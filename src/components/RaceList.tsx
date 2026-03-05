@@ -17,6 +17,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
     const {
         filteredRaces,
         selectedPrefecture,
+        selectedRegion,
         selectedDistance,
         selectedMonth,
         selectedTags,
@@ -44,6 +45,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                 prefectures={prefectures}
                 distances={distances}
                 selectedPrefecture={selectedPrefecture}
+                selectedRegion={selectedRegion}
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
                 selectedTags={selectedTags}
