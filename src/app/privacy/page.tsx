@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'プライバシーポリシー',
+    description: 'ランカレのプライバシーポリシー。個人情報の取り扱い、データ収集について説明します。',
+    robots: { index: false, follow: true },
+};
 
 export default function PrivacyPage() {
     return (

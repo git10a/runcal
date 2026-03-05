@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Calendar, Award, Footprints, Clock, ChevronLeft, ExternalLink, Store, Video, Navigation, Map, Tag } from 'lucide-react';
@@ -17,6 +18,50 @@ export async function generateStaticParams() {
     return (racesData as Race[]).map((race) => ({
         id: race.id,
     }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { id } = await params;
+    const race = (racesData as Race[]).find((r) => r.id === id);
+
+    if (!race) {
+        return { title: '大会が見つかりません' };
+    }
+
+    const formattedDate = formatRaceDate(race.date);
+    const normalizedName = normalizeRaceName(race.name);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const details = (raceDetailsData as any)[normalizedName];
+    const oneLine = details?.one_line_summary;
+
+    const title = `${race.name}（${formattedDate}・${race.prefecture}）`;
+    const description = oneLine
+        ? `${oneLine}。日程・エントリー情報・コース詳細・周辺観光をまとめてチェック。`
+        : `${race.prefecture}${race.city ? race.city : ''}で開催される${race.name}の日程・エントリー情報。${race.distance.join('・')}の情報をまとめてチェック。`;
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title: `${race.name} | ランカレ`,
+            description,
+            type: 'article',
+            ...(race.image_url ? {
+                images: [{
+                    url: race.image_url,
+                    width: 1200,
+                    height: 630,
+                    alt: `${race.name}の画像`,
+                }],
+            } : {}),
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${race.name} | ランカレ`,
+            description,
+            ...(race.image_url ? { images: [race.image_url] } : {}),
+        },
+    };
 }
 
 export default async function RaceDetailPage({ params }: PageProps) {
@@ -51,8 +96,39 @@ export default async function RaceDetailPage({ params }: PageProps) {
     const tSpots = testData?.tourism?.spots || [];
     const tGourmet = testData?.tourism?.local_gourmet || [];
     const tOmiyage = testData?.tourism?.omiyage || [];
+
+    // JSON-LD structured data for SEO
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'SportsEvent',
+        name: race.name,
+        startDate: race.date,
+        location: {
+            '@type': 'Place',
+            name: testData?.race_details?.venue || `${race.prefecture}${race.city ? ' ' + race.city : ''}`,
+            address: {
+                '@type': 'PostalAddress',
+                addressRegion: race.prefecture,
+                ...(race.city ? { addressLocality: race.city } : {}),
+                addressCountry: 'JP',
+            },
+        },
+        url: race.url,
+        ...(race.image_url ? { image: race.image_url } : {}),
+        ...(testData?.one_line_summary ? { description: testData.one_line_summary } : {}),
+        organizer: {
+            '@type': 'Organization',
+            name: 'ランカレ',
+            url: 'https://run-cal.com',
+        },
+    };
+
     return (
         <div className="min-h-screen bg-muted/20 py-8 px-4 sm:px-6">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="max-w-5xl mx-auto">
                 {/* Back Link */}
                 <Link href="/" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground mb-6 transition-colors">

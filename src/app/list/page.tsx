@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getAllRaces, getUniquePrefectures, getUniqueDistances } from '@/lib/data';
 import ListView from './ListView';
+
+export const metadata: Metadata = {
+    title: '大会一覧で探す',
+    description: '日本全国のマラソン大会をリスト形式で一覧表示。都道府県・距離・エントリー状況で絞り込み、次のレースをすぐに見つけられます。',
+};
 
 export default function ListPage() {
     const races = getAllRaces();

@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getAllRaces, getUniquePrefectures, getUniqueDistances } from '@/lib/data';
 import CalendarView from './CalendarView';
+
+export const metadata: Metadata = {
+    title: 'カレンダーで探す',
+    description: 'マラソン大会の日程をカレンダー形式で確認。月ごとに大会を一覧表示し、地域・距離でフィルタリング。参加したいレースの日程が一目でわかります。',
+};
 
 export default function CalendarPage() {
     const races = getAllRaces();

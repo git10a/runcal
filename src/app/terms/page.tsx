@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: '利用規約',
+    description: 'ランカレの利用規約。サービスの利用条件について説明します。',
+    robots: { index: false, follow: true },
+};
 
 export default function TermsPage() {
     return (
