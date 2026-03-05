@@ -15,7 +15,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://weekday-m.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/9b54927d-24f8-4b08-963e-feae275bd48a.jpg"
   },
   {
     "id": "78c94494-5511-47c3-af12-7f3b83f10ec8",
@@ -33,7 +34,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://onagawa-100trails-running.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/78c94494-5511-47c3-af12-7f3b83f10ec8.jpg"
   },
   {
     "id": "a608216c-38c1-4385-9b20-597faf2648c4",
@@ -54,7 +56,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/a608216c-38c1-4385-9b20-597faf2648c4.jpg"
   },
   {
     "id": "d4c0f1fb-8831-4451-839c-f6b8a4ebeda2",
@@ -74,7 +77,8 @@
     "url": "https://www.konosupansymarathon.com/",
     "updated_at": "2026年03月03日",
     "tags": [],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/d4c0f1fb-8831-4451-839c-f6b8a4ebeda2.jpg"
   },
   {
     "id": "435ef4a7-6c3d-4680-8ccf-7ec868cd49f3",
@@ -92,7 +96,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://relaymarathon-jlsa.jimdofree.com/%E9%95%B7%E5%B1%85%E5%85%AC%E5%9C%92/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/435ef4a7-6c3d-4680-8ccf-7ec868cd49f3.jpg"
   },
   {
     "id": "b0d4a57c-aee8-40fc-bbca-85ec5e7da037",
@@ -132,7 +137,8 @@
     "updated_at": "2026年03月03日",
     "tags": [
       "⛰️ タフなコース"
-    ]
+    ],
+    "image_url": "/images/races/8388beed-105e-4fbd-93cf-a36da77b7de0.jpg"
   },
   {
     "id": "591a8333-67fa-416a-84a8-b1c650f92b74",
@@ -151,7 +157,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://akabane-marathon.tokyo/list_about/20251108",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/591a8333-67fa-416a-84a8-b1c650f92b74.jpg"
   },
   {
     "id": "74047a30-a3a6-4065-9719-250057c43858",
@@ -169,7 +176,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.goodsports.jp/gs-marathon/ichiran/0307toyosu/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/74047a30-a3a6-4065-9719-250057c43858.jpg"
   },
   {
     "id": "160fd41d-4fb3-4a45-8733-f30bda3d1b65",
@@ -191,7 +199,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/160fd41d-4fb3-4a45-8733-f30bda3d1b65.jpg"
   },
   {
     "id": "a5fe2ea9-0138-422f-8ddb-08b7d29b82a5",
@@ -213,7 +222,8 @@
     "tags": [
       "🏆 タイムが狙いやすい"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/a5fe2ea9-0138-422f-8ddb-08b7d29b82a5.jpg"
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -231,7 +241,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "5354bbb6-4adb-4fa3-aad0-fea12b883ab5",
@@ -250,7 +261,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.fieldbrain.com/RM/shiga/gaiyou.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/5354bbb6-4adb-4fa3-aad0-fea12b883ab5.jpg"
   },
   {
     "id": "1ee0ce20-d4ce-4c82-aa66-682ea913499d",
@@ -270,7 +282,8 @@
     "url": "https://www.city.kamiamakusa.kumamoto.jp/q/list/343.html",
     "updated_at": "2026年03月03日",
     "tags": [],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/1ee0ce20-d4ce-4c82-aa66-682ea913499d.jpg"
   },
   {
     "id": "73b26da9-688b-4087-9391-28b476d297e1",
@@ -289,7 +302,8 @@
     "features": null,
     "url": "https://sportswiz.jp/tamahalf/",
     "updated_at": "2026年03月03日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/73b26da9-688b-4087-9391-28b476d297e1.jpg"
   },
   {
     "id": "dab96e16-daa3-43d8-b0fe-cebe7b51b763",
@@ -308,7 +322,8 @@
     "features": null,
     "url": "https://fmfukuoka.co.jp/harukaze/",
     "updated_at": "2026年03月03日",
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/dab96e16-daa3-43d8-b0fe-cebe7b51b763.jpg"
   },
   {
     "id": "262aa6d3-2f8c-4adc-92fd-4ebb733dbec3",
@@ -330,7 +345,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/262aa6d3-2f8c-4adc-92fd-4ebb733dbec3.jpg"
   },
   {
     "id": "3501da0b-28b4-4ac3-87e5-4929a97f21f9",
@@ -348,7 +364,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.joyo-taikyo.com/%E5%9F%8E%E9%99%BD%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/3501da0b-28b4-4ac3-87e5-4929a97f21f9.jpg"
   },
   {
     "id": "9e192fa4-52d0-4c79-be62-974c04136fe0",
@@ -367,7 +384,8 @@
     "features": null,
     "url": "https://ako-oysterrelaymarathon.jimdosite.com/",
     "updated_at": "2026年03月03日",
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/9e192fa4-52d0-4c79-be62-974c04136fe0.jpg"
   },
   {
     "id": "e0b3763f-424e-4de7-9933-079501412746",
@@ -385,7 +403,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.obicseagulls-narashino-sc.or.jp/smile",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/e0b3763f-424e-4de7-9933-079501412746.jpg"
   },
   {
     "id": "249312b2-e4f0-41f3-9db2-ab1ab55c7c4a",
@@ -403,7 +422,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.iwade-marathon.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/249312b2-e4f0-41f3-9db2-ab1ab55c7c4a.jpg"
   },
   {
     "id": "42ff42d5-cb8b-47ff-878d-db8b909dd8a5",
@@ -422,7 +442,8 @@
     "features": null,
     "url": "https://hanyu-marathon.jp/",
     "updated_at": "2026年03月03日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/42ff42d5-cb8b-47ff-878d-db8b909dd8a5.jpg"
   },
   {
     "id": "92c29d19-bfe8-4537-a0d0-c393148b7acc",
@@ -440,7 +461,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.sokafusasaramarathon.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/92c29d19-bfe8-4537-a0d0-c393148b7acc.jpg"
   },
   {
     "id": "f5224953-f580-4f66-92a2-ee28a204b8ca",
@@ -459,7 +481,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.wako.lg.jp/kurashi/sports/1005303/1012800.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/f5224953-f580-4f66-92a2-ee28a204b8ca.jpg"
   },
   {
     "id": "cabbfc0a-70bc-49ca-bcae-64c9ecd53679",
@@ -477,7 +500,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.hidaka.lg.jp/soshiki/kyoiku/shogaigakushu/shiminsupotsu/supotsu/2791.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/cabbfc0a-70bc-49ca-bcae-64c9ecd53679.jpg"
   },
   {
     "id": "25fb6f88-8623-4ef4-8c51-2c5cc55c0a5c",
@@ -495,7 +519,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.kazo.lg.jp/soshiki/sports/event/28282.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/25fb6f88-8623-4ef4-8c51-2c5cc55c0a5c.jpg"
   },
   {
     "id": "09ed86fd-52d9-4dbc-86ef-df9c15a185e4",
@@ -513,7 +538,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://sportsone.jp/running/osaka-half/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/09ed86fd-52d9-4dbc-86ef-df9c15a185e4.jpg"
   },
   {
     "id": "632e04f8-5029-4f60-b4d5-751b917c71a9",
@@ -531,7 +557,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.kashiwara.lg.jp/docs/2025090100025/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/632e04f8-5029-4f60-b4d5-751b917c71a9.jpg"
   },
   {
     "id": "d84fdb09-043d-44d9-9775-c9d064898163",
@@ -549,7 +576,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://aozorarun.com/lp/260308_ot/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/d84fdb09-043d-44d9-9775-c9d064898163.jpg"
   },
   {
     "id": "18f6701e-c7bd-4a25-975e-a6217ffdc23c",
@@ -567,7 +595,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.takatsuki.osaka.jp/soshiki/61/106731.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/18f6701e-c7bd-4a25-975e-a6217ffdc23c.jpg"
   },
   {
     "id": "1ee9f6f4-9840-4c8e-b8e4-eca8393a5569",
@@ -658,7 +687,8 @@
     "features": null,
     "url": "https://universal-field.com/event/maizururoadrace/",
     "updated_at": "2026年03月03日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/61d3456f-706d-4652-ba8a-b78ba0beebb6.jpg"
   },
   {
     "id": "040aca41-bde9-4a0f-82d3-8f4a2f7da198",
@@ -1021,7 +1051,8 @@
     "features": null,
     "url": "https://up-run.jp/events/mate-koukyo186/",
     "updated_at": "2026年03月02日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/bd9377df-50c4-4456-9548-e637da024eea.jpg"
   },
   {
     "id": "7597139b-79a8-4152-96cc-08132860e40e",
@@ -1041,7 +1072,8 @@
     "url": "https://up-run.jp/events/mate-higashiooshima82/",
     "updated_at": "2026年03月02日",
     "tags": [],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/7597139b-79a8-4152-96cc-08132860e40e.jpg"
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -1059,7 +1091,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "8ae2c495-ab16-4912-a21b-d5b8369874ae",
@@ -1222,7 +1255,8 @@
     "features": null,
     "url": "https://universal-field.com/event/gsct/",
     "updated_at": "2026年03月03日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/262aa6d3-2f8c-4adc-92fd-4ebb733dbec3.jpg"
   },
   {
     "id": "46a8ac35-6eb4-4150-9c9d-c727ba986f32",
@@ -1313,7 +1347,8 @@
     "features": null,
     "url": "https://www.town.daigo.ibaraki.jp/page/dir003794.html",
     "updated_at": "2026年03月03日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/a28a988a-8eb6-416b-a5b9-c67c64c84cc0.jpg"
   },
   {
     "id": "edef5651-be8b-44f2-ba81-347833174758",
@@ -1442,7 +1477,8 @@
     "url": "https://universal-field.com/event/sendaigawa-kakou/",
     "updated_at": "2026年03月03日",
     "tags": [],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/c3a11e9d-db4c-4ff7-b534-f626ed7151aa.jpg"
   },
   {
     "id": "e708bc8f-9b2b-4004-8d23-e275b01299c7",
@@ -1465,7 +1501,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/e708bc8f-9b2b-4004-8d23-e275b01299c7.jpg"
   },
   {
     "id": "0718f731-161b-484c-a57d-b2d8bd1cc905",
@@ -1634,7 +1671,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/5dee4e22-5e9e-4759-8b88-8b55342d0b4e.jpg"
   },
   {
     "id": "c5239cf6-a4a0-4a88-aa5b-eba99333a003",
@@ -1730,7 +1768,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/cd01f507-14a9-4989-8c6a-d46d9b091a98.jpg"
   },
   {
     "id": "b44162e1-0fba-47ec-9e92-ee045040230e",
@@ -1826,7 +1865,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/ea7d181a-28f2-41c0-aa60-aa4d6ea6dc24.jpg"
   },
   {
     "id": "0b9a1d97-bc50-4d4d-a598-4af953531a5a",
@@ -1902,7 +1942,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏆 タイムが狙いやすい"
-    ]
+    ],
+    "image_url": "/images/races/27bc0e68-eb93-443a-b0bb-9d3142336fd6.jpg"
   },
   {
     "id": "83bd9926-8100-4e89-aa41-611c643a41f6",
@@ -1943,7 +1984,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/7f5d8f51-c799-47cf-9cca-54a3667e18a4.jpg"
   },
   {
     "id": "a9aa9d3d-d07c-4cc2-a592-8944602e229a",
@@ -1983,7 +2025,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/c32f0e91-9136-4669-a69a-c740fe30ae1d.jpg"
   },
   {
     "id": "5bd3b93e-0cda-463d-ad29-580f765639f5",
@@ -2038,7 +2081,8 @@
     "features": null,
     "url": "https://local-gain.com/hita-hinamatsuri-marathon/",
     "updated_at": "2026年03月03日",
-    "tags": []
+    "tags": [],
+    "image_url": "/images/races/2aa5715f-67ce-4bcf-bafa-03ea0522f031.jpg"
   },
   {
     "id": "9581545a-237f-4676-b5f4-62ebabdbbb7b",
@@ -2093,7 +2137,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://runnet.jp/entry/runtes/user/pc/moshicomDetailAction.do?raceId=127589&div=1",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/09ed86fd-52d9-4dbc-86ef-df9c15a185e4.jpg"
   },
   {
     "id": "ad794125-382b-45be-9b53-91ab25782f03",
@@ -2117,7 +2162,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/ad794125-382b-45be-9b53-91ab25782f03.jpg"
   },
   {
     "id": "6417ef0c-d8be-4ed0-bd4f-17f701395377",
@@ -2360,7 +2406,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/59a245b4-779a-45c1-9839-eaa0de5ce984.jpg"
   },
   {
     "id": "46346d21-f471-4e72-b9b0-e1be97b0e083",
@@ -2385,7 +2432,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/46346d21-f471-4e72-b9b0-e1be97b0e083.jpg"
   },
   {
     "id": "8748eccb-afb7-4b6e-95be-16ed5e5f5fb8",
@@ -2408,7 +2456,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/8748eccb-afb7-4b6e-95be-16ed5e5f5fb8.jpg"
   },
   {
     "id": "1a4bce93-320a-42d2-aaac-0b5391cc6748",
@@ -2467,7 +2516,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/072fd113-2caf-4f67-a0d3-49dd3452317e.jpg"
   },
   {
     "id": "d397507d-6a8d-4acf-926a-c6d39d0b8359",
@@ -2491,7 +2541,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/d397507d-6a8d-4acf-926a-c6d39d0b8359.jpg"
   },
   {
     "id": "1825b619-57c0-499f-99ad-2219508638e2",
@@ -2569,7 +2620,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/48018c1e-06e7-40f9-b84e-6649c45b9aea.jpg"
   },
   {
     "id": "25fd3576-dd2b-4bfd-acb1-693339f94b54",
@@ -2808,7 +2860,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/862e593f-02bf-4e89-b3bb-0e8f8161a168.jpg"
   },
   {
     "id": "10df1a98-3518-4524-a808-915f62715a37",
@@ -2835,7 +2888,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/10df1a98-3518-4524-a808-915f62715a37.jpg"
   },
   {
     "id": "aa9fde0d-06ca-4e72-a84a-3e67ac0c28bf",
@@ -2912,7 +2966,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/3a6c8a3f-df42-40f7-9556-94ae2cc2eda2.jpg"
   },
   {
     "id": "c95f873b-62ef-4524-be8a-986af211833c",
@@ -2953,7 +3008,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/b6f9e189-9fff-4805-bbea-9fd198f2b309.jpg"
   },
   {
     "id": "b422dcbb-4f7a-41f8-a4b6-3f591c29ba5a",
@@ -3084,7 +3140,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/1c9c5b00-ffc1-46cf-8dc7-ea339c94d741.jpg"
   },
   {
     "id": "4aabe86d-a2c1-4ef8-ae8e-4422fb78819f",
@@ -3181,7 +3238,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/e8d5097c-a23e-41cb-9589-6590e26d6738.jpg"
   },
   {
     "id": "d16995dc-ec1d-47d4-a8a5-fec101e32f47",
@@ -3240,7 +3298,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/c7451f56-53e2-4630-8eda-bd085cc84b9e.jpg"
   },
   {
     "id": "a5fe2ea9-0138-422f-8ddb-08b7d29b82a5",
@@ -3259,7 +3318,8 @@
     "features": null,
     "url": "https://team-mk.net/mkdc/",
     "updated_at": "2026年03月02日",
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/a5fe2ea9-0138-422f-8ddb-08b7d29b82a5.jpg"
   },
   {
     "id": "7403bff1-06bb-4e7a-a6c5-f0090d374b13",
@@ -3318,7 +3378,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/a342bf65-ce25-4a31-88bf-d9e5ec8712c8.jpg"
   },
   {
     "id": "f845c3d0-e791-4b4c-a6f8-0cd6d128fa55",
@@ -3503,7 +3564,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/543e856f-825a-45a1-94fb-7c287552ffc8.jpg"
   },
   {
     "id": "d6bb47d0-74a3-4fc2-9dde-b9fa6353b0b7",
@@ -3579,7 +3641,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/85fdde16-5f14-4a16-ad2e-5dda63fb4603.jpg"
   },
   {
     "id": "b36d78a1-0d2d-408b-abc7-588cf3ebaec1",
@@ -3619,7 +3682,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/599ba7df-ff33-4783-8af3-ffdd1e5c84be.jpg"
   },
   {
     "id": "45842313-f440-4744-9563-8b9e061b7994",
@@ -3660,7 +3724,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/3a00c4c1-69a7-446c-9c67-7e256eaae641.jpg"
   },
   {
     "id": "22b5e9fb-3afd-4998-af7e-7d86dde253db",
@@ -3846,7 +3911,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/6b05db5c-b839-4e4a-8ca8-cf8ba6f0334b.jpg"
   },
   {
     "id": "ad82dcfa-b83c-469c-9842-79ca0a32098e",
@@ -3888,7 +3954,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/6a9c38cc-f78e-40a7-9176-64723d77a6e0.jpg"
   },
   {
     "id": "464c7304-a78e-41cf-a48d-91a38d2633d1",
@@ -3984,7 +4051,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/fc507a09-ea3f-4e4a-a61f-9b5a2f64f92e.jpg"
   },
   {
     "id": "18e59c24-4b4e-43ac-b28b-064724293abc",
@@ -4007,7 +4075,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/18e59c24-4b4e-43ac-b28b-064724293abc.jpg"
   },
   {
     "id": "47501ba8-023b-4f19-ad57-96996c135a21",
@@ -4030,7 +4099,8 @@
       "⛰️ タフなコース",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/47501ba8-023b-4f19-ad57-96996c135a21.jpg"
   },
   {
     "id": "9bcd497d-ba00-450c-b99e-0ee3f7491704",
@@ -4107,7 +4177,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/c94b6a02-4b36-4c89-95fe-00cc21cde245.jpg"
   },
   {
     "id": "1eaec973-eaea-4ed4-9cde-ba803b8ba5e2",
@@ -4129,7 +4200,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/1eaec973-eaea-4ed4-9cde-ba803b8ba5e2.jpg"
   },
   {
     "id": "f79e972c-7ddc-46ea-a7a1-23b783c9538d",
@@ -4170,7 +4242,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/c03ecc5e-a838-4a1b-9b7a-b1b3186d7690.jpg"
   },
   {
     "id": "8bdda62f-2d8b-4631-b53e-d88fedba2a0a",
@@ -4210,7 +4283,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/554ed959-11aa-48c6-b0ca-8e6b4f33bb3d.jpg"
   },
   {
     "id": "dd7f7e56-4bff-42b5-9f89-9a0d489e4758",
@@ -4269,7 +4343,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/abb70e5b-a04e-4c5a-a3f4-cf0d16c6c295.jpg"
   },
   {
     "id": "483e9c00-9483-4a43-bb9a-7face6753adb",
@@ -4292,7 +4367,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/483e9c00-9483-4a43-bb9a-7face6753adb.jpg"
   },
   {
     "id": "df5c66e6-dbb0-4840-bc79-626c1d554c25",
@@ -4316,7 +4392,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/df5c66e6-dbb0-4840-bc79-626c1d554c25.jpg"
   },
   {
     "id": "f4ca54a9-57f6-42ce-bfd4-6e1b795cd63f",
@@ -4465,7 +4542,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/cc8d36ff-563f-4992-bf71-d93ae953b6a1.jpg"
   },
   {
     "id": "cb0c0969-063a-407d-b6df-ee1efca88467",
@@ -4634,7 +4712,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/472ec63e-398f-43c2-80d5-49e7f495c0c3.jpg"
   },
   {
     "id": "487dad0b-f7c9-4278-a961-44e0342656e5",
@@ -4688,7 +4767,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "f403bae9-b002-4e1c-b12e-e649b1ab2aff",
@@ -4748,7 +4828,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/c6d05daa-3fa9-441a-8e8e-1251d9d68376.jpg"
   },
   {
     "id": "5fd4c80c-bd0a-45bb-892e-951a13cd1fec",
@@ -4772,7 +4853,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/5fd4c80c-bd0a-45bb-892e-951a13cd1fec.jpg"
   },
   {
     "id": "8167eddf-243f-40b4-9ec1-a43e24705731",
@@ -4867,7 +4949,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/98f82bb4-8549-486d-a2e0-b494ec4c4d92.jpg"
   },
   {
     "id": "82c64bb4-218b-4687-8ef2-b9974d8d2d0c",
@@ -4928,7 +5011,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/46346d21-f471-4e72-b9b0-e1be97b0e083.jpg"
   },
   {
     "id": "cdcbdcc0-1f62-4370-89a1-482084233ee2",
@@ -5005,7 +5089,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/73b26da9-688b-4087-9391-28b476d297e1.jpg"
   },
   {
     "id": "809ef7c3-833c-445e-8de0-c4d12c62802b",
@@ -5049,7 +5134,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/da1b22bf-93b5-4d2b-9073-38784e1a9d5c.jpg"
   },
   {
     "id": "36737149-a3a3-448d-9be7-54dcfa47695a",
@@ -5127,7 +5213,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/e945c187-9d90-4bf7-99d1-db38ea3ff985.jpg"
   },
   {
     "id": "d37e544b-a51c-46c8-9073-cae5af251822",
@@ -5149,7 +5236,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/d37e544b-a51c-46c8-9073-cae5af251822.jpg"
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -5167,7 +5255,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "d9986d4a-9695-48a5-8b5c-19c8ff43dc45",
@@ -5190,7 +5279,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/d9986d4a-9695-48a5-8b5c-19c8ff43dc45.jpg"
   },
   {
     "id": "2c442815-4a74-4b93-afbd-f5756af94692",
@@ -5285,7 +5375,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/d0a45c74-d61e-4b9b-b979-9ad6a629630b.jpg"
   },
   {
     "id": "be2e99e3-306d-4124-aaf8-3c1d2af17206",
@@ -5308,7 +5399,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/be2e99e3-306d-4124-aaf8-3c1d2af17206.jpg"
   },
   {
     "id": "d6255f3c-9b91-46fd-82d7-7bf4c93b843c",
@@ -5402,7 +5494,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/4c101d00-c5bd-4e95-afb8-fcfce635232f.jpg"
   },
   {
     "id": "85f628f6-63f1-48cd-b74e-dd25421e45c1",
@@ -5463,7 +5556,8 @@
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/510e003b-1103-4fbf-9abd-657820368d50.jpg"
   },
   {
     "id": "95e0ccda-dc52-4ef4-adc7-d4f847798b55",
@@ -5539,7 +5633,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/cae0bf23-c635-48f9-8783-50c56a6e18db.jpg"
   },
   {
     "id": "13d8a967-ff25-4197-a450-2b6bbda70171",
@@ -5562,7 +5657,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/13d8a967-ff25-4197-a450-2b6bbda70171.jpg"
   },
   {
     "id": "dfeea015-deac-4ae2-8811-e758355ba443",
@@ -5622,7 +5718,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/6b9ee220-8512-4463-b1b1-614c23527e9f.jpg"
   },
   {
     "id": "36737149-a3a3-448d-9be7-54dcfa47695a",
@@ -5682,7 +5779,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/35153279-994c-4030-9244-1e4ba64c2c8c.jpg"
   },
   {
     "id": "39be5121-fafa-49f6-ad5e-d8e1bfad4332",
@@ -5779,7 +5877,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/e64360c7-6b40-490c-ad53-ada0d6e4fb03.jpg"
   },
   {
     "id": "36b39dda-52d1-4768-a2da-eb3d3fa45350",
@@ -5801,7 +5900,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/36b39dda-52d1-4768-a2da-eb3d3fa45350.jpg"
   },
   {
     "id": "267921f9-a43c-4c20-8749-8ea637d0d410",
@@ -5824,7 +5924,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/267921f9-a43c-4c20-8749-8ea637d0d410.jpg"
   },
   {
     "id": "b6634a51-108f-4def-8786-4fc0541d0fb2",
@@ -5920,7 +6021,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/25128550-4c42-4cc7-922b-5688b0a73d21.jpg"
   },
   {
     "id": "3b5badf0-4ed7-49a7-842d-2edd76ffbcaf",
@@ -5961,7 +6063,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/feb99789-4d29-410e-9d40-6c7414e33a68.jpg"
   },
   {
     "id": "348d12cd-1bcd-46ea-a482-b4cc7e0e4e14",
@@ -5984,7 +6087,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/348d12cd-1bcd-46ea-a482-b4cc7e0e4e14.jpg"
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -6002,7 +6106,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "a0f55de1-6495-42da-8359-a9e6e3789665",
@@ -6064,7 +6169,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/c34df6f6-c14c-4a64-a47c-8f890173d446.jpg"
   },
   {
     "id": "d08e63a0-d3b8-4460-8084-e65921ea5c22",
@@ -6086,7 +6192,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/d08e63a0-d3b8-4460-8084-e65921ea5c22.jpg"
   },
   {
     "id": "44c2f7e5-b238-491e-aa6d-a116390f2174",
@@ -6166,7 +6273,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/b4c31097-e797-4f44-b7f1-6e2c8caf8242.jpg"
   },
   {
     "id": "fe9dc0b4-cc79-403f-9e52-2d2591d84386",
@@ -6190,7 +6298,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/fe9dc0b4-cc79-403f-9e52-2d2591d84386.jpg"
   },
   {
     "id": "19f9c575-4d7b-4bab-9a94-6c336fa38e69",
@@ -6211,7 +6320,8 @@
     "updated_at": "2026年03月03日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/19f9c575-4d7b-4bab-9a94-6c336fa38e69.jpg"
   },
   {
     "id": "b62501da-c1d6-420b-93d2-88e6f190a0e0",
@@ -6253,7 +6363,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/0f0bd2c5-9928-4eb6-9cae-b1711d5c0799.jpg"
   },
   {
     "id": "7d32c45a-8ee2-4505-a078-60fcaf26bc39",
@@ -6277,7 +6388,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/7d32c45a-8ee2-4505-a078-60fcaf26bc39.jpg"
   },
   {
     "id": "13fb8159-f1d5-4524-82b5-24e1c809197a",
@@ -6319,7 +6431,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/b152c86c-7371-4dbe-aa17-5566c1733bd3.jpg"
   },
   {
     "id": "c3744d8b-234f-402c-8ffb-23debab7875f",
@@ -6342,7 +6455,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/c3744d8b-234f-402c-8ffb-23debab7875f.jpg"
   },
   {
     "id": "aa26c441-1ba6-44a1-b555-14527126aaf6",
@@ -6366,7 +6480,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/aa26c441-1ba6-44a1-b555-14527126aaf6.jpg"
   },
   {
     "id": "3a654049-238a-4fb2-9ebc-7f1403fb00ef",
@@ -6390,7 +6505,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/3a654049-238a-4fb2-9ebc-7f1403fb00ef.jpg"
   },
   {
     "id": "1d68c91a-63fa-42b3-990c-b444c1d9b2d7",
@@ -6431,7 +6547,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/ca5b0d25-d75b-44ed-beb1-b02a79726127.jpg"
   },
   {
     "id": "6feb3e11-b364-45be-9653-d74ad8527025",
@@ -6487,7 +6604,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "784d0187-89e6-47cb-b4f3-310cee19e4bb",
@@ -6528,7 +6646,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/cb656dfb-c186-4c3d-980a-78b0190b9f9b.jpg"
   },
   {
     "id": "5651f2c3-73ec-49b0-b75e-c69fd9cec5a0",
@@ -6636,7 +6755,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://hyogorc-timetrial.net/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/7f2ddcb3-645c-4f74-9671-3933058c5913.jpg"
   },
   {
     "id": "979432ba-3986-4bfe-b637-7068e32548bb",
@@ -6659,7 +6779,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/979432ba-3986-4bfe-b637-7068e32548bb.jpg"
   },
   {
     "id": "3551d28f-42e2-438f-a82a-522fca67686c",
@@ -6683,7 +6804,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/3551d28f-42e2-438f-a82a-522fca67686c.jpg"
   },
   {
     "id": "21d8c53c-38bf-46f6-a8a0-4c39c8fe8540",
@@ -6706,7 +6828,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/21d8c53c-38bf-46f6-a8a0-4c39c8fe8540.jpg"
   },
   {
     "id": "ae78c089-c948-4ce5-92fb-4be11533480b",
@@ -6782,7 +6905,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/043ae16d-9270-4946-aeb5-0332c9dd3cdc.jpg"
   },
   {
     "id": "643b7253-5760-44a8-b25d-b722002886cf",
@@ -6805,7 +6929,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/643b7253-5760-44a8-b25d-b722002886cf.jpg"
   },
   {
     "id": "5c14cdc4-ba68-4c7a-8686-92b355d8d312",
@@ -6866,7 +6991,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/a342bf65-ce25-4a31-88bf-d9e5ec8712c8.jpg"
   },
   {
     "id": "612a9d12-996a-42de-a143-9d0e21fb54d0",
@@ -6923,7 +7049,8 @@
     "updated_at": "2026年03月03日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/874cb058-ad32-4233-809f-29aa9af70f53.jpg"
   },
   {
     "id": "e3882dc8-c624-4639-b3d3-14eea3e98b5a",
@@ -6947,7 +7074,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/e3882dc8-c624-4639-b3d3-14eea3e98b5a.jpg"
   },
   {
     "id": "537b9d5c-c392-43af-a325-8560e17bd264",
@@ -6970,7 +7098,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/537b9d5c-c392-43af-a325-8560e17bd264.jpg"
   },
   {
     "id": "39a8703a-291f-4f39-9a11-7dd03d7eeb92",
@@ -6993,7 +7122,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/39a8703a-291f-4f39-9a11-7dd03d7eeb92.jpg"
   },
   {
     "id": "90a5602f-8e68-4a4e-bb0e-3926782967bd",
@@ -7034,7 +7164,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/11d6d45b-241b-4820-85d8-32a3c5da9949.jpg"
   },
   {
     "id": "bc021f7b-d13c-4129-ab41-747f347e7f6d",
@@ -7077,7 +7208,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/00f40626-1ed6-4613-8e03-50cf2ab01615.jpg"
   },
   {
     "id": "1758e928-3ed2-4cf3-aa1d-16e5405132f6",
@@ -7139,7 +7271,8 @@
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/6f4738ef-4b53-4412-9c1f-f3e2ea03d3fb.jpg"
   },
   {
     "id": "ec62a901-81c7-47ac-bd50-f9e9a21886e7",
@@ -7162,7 +7295,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/ec62a901-81c7-47ac-bd50-f9e9a21886e7.jpg"
   },
   {
     "id": "117c4d85-4913-415e-9690-7dccacfb0986",
@@ -7184,7 +7318,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/117c4d85-4913-415e-9690-7dccacfb0986.jpg"
   },
   {
     "id": "5f643c79-c5c7-4797-919b-e20a638928d4",
@@ -7316,7 +7451,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/9cb99bdb-94c1-4c25-a36b-93a43308b13b.jpg"
   },
   {
     "id": "846620e4-9629-4c4e-9278-8062663f0228",
@@ -7339,7 +7475,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/846620e4-9629-4c4e-9278-8062663f0228.jpg"
   },
   {
     "id": "399637f1-4561-4602-8d73-5993094f6b41",
@@ -7380,7 +7517,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/8ba95bd4-5dab-4a3e-8b73-dcb8d2a5b419.jpg"
   },
   {
     "id": "c98f722b-c4d9-41e9-bfe3-3069ed5590aa",
@@ -7404,7 +7542,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/c98f722b-c4d9-41e9-bfe3-3069ed5590aa.jpg"
   },
   {
     "id": "718b8eae-0edd-4276-9932-34731da1001a",
@@ -7444,7 +7583,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/69fa5e3e-1fbd-4fd2-ab59-2e15cea00e60.jpg"
   },
   {
     "id": "11f62e3e-8da9-4d5c-b2b7-2fbaa7e398b1",
@@ -7468,7 +7608,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/11f62e3e-8da9-4d5c-b2b7-2fbaa7e398b1.jpg"
   },
   {
     "id": "3c79b561-c4d2-45d7-9785-e80135dfd6c4",
@@ -7527,7 +7668,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/98d47ca9-6db8-4ff8-a0c8-eda81fbf4a31.jpg"
   },
   {
     "id": "da32f3e1-8611-4850-8661-d4362e15b846",
@@ -7550,7 +7692,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/da32f3e1-8611-4850-8661-d4362e15b846.jpg"
   },
   {
     "id": "b8c3bb0a-e32d-4813-8491-197dc8f2668c",
@@ -7571,7 +7714,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/b8c3bb0a-e32d-4813-8491-197dc8f2668c.jpg"
   },
   {
     "id": "6abf2604-9418-4b6e-ba40-0c4d374a426c",
@@ -7597,7 +7741,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/6abf2604-9418-4b6e-ba40-0c4d374a426c.jpg"
   },
   {
     "id": "29da480e-d683-4b2a-957e-b8af507d44d3",
@@ -7619,7 +7764,8 @@
     "tags": [
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/29da480e-d683-4b2a-957e-b8af507d44d3.jpg"
   },
   {
     "id": "69886c44-1249-4320-8c05-2052e6f6c930",
@@ -7637,7 +7783,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.i-sam.co.jp/shioyawan_trim/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/69886c44-1249-4320-8c05-2052e6f6c930.jpg"
   },
   {
     "id": "51449af0-70d9-4714-a96e-ebe42b58a13b",
@@ -7660,7 +7807,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/51449af0-70d9-4714-a96e-ebe42b58a13b.jpg"
   },
   {
     "id": "c066e8f2-1f6b-4c47-b925-5286c88777ed",
@@ -7683,7 +7831,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/c066e8f2-1f6b-4c47-b925-5286c88777ed.jpg"
   },
   {
     "id": "2516bf7d-e122-48ea-9ebe-454e5c72de41",
@@ -7707,7 +7856,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/2516bf7d-e122-48ea-9ebe-454e5c72de41.jpg"
   },
   {
     "id": "7de56cb4-d9d0-49c1-aa28-cd67c24fcd23",
@@ -7730,7 +7880,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/7de56cb4-d9d0-49c1-aa28-cd67c24fcd23.jpg"
   },
   {
     "id": "7159e760-b391-4e6a-b66f-1bfe9f75c837",
@@ -7882,7 +8033,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/89f8ac1a-7765-4707-a7f1-82254ab6b525.jpg"
   },
   {
     "id": "5968fce5-20a8-49ea-a565-080c3cfaeb67",
@@ -7923,7 +8075,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/51ce3703-b25c-47e1-b196-9b7804069a30.jpg"
   },
   {
     "id": "9673b5c0-b0f1-4b3a-b518-c9bb7e16439f",
@@ -7963,7 +8116,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/088326ba-cf64-4aa7-8df2-a23f6d066e58.jpg"
   },
   {
     "id": "18c522c9-ad52-4274-abea-52bdeacc4435",
@@ -7986,7 +8140,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/18c522c9-ad52-4274-abea-52bdeacc4435.jpg"
   },
   {
     "id": "c56a05ad-5833-4993-9219-d01a8653c3af",
@@ -8010,7 +8165,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/c56a05ad-5833-4993-9219-d01a8653c3af.jpg"
   },
   {
     "id": "1e28aea2-19f7-4b35-9f34-5bd4b6070671",
@@ -8035,7 +8191,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/1e28aea2-19f7-4b35-9f34-5bd4b6070671.jpg"
   },
   {
     "id": "f2965dc1-41aa-455d-96e9-2d318640f098",
@@ -8059,7 +8216,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/f2965dc1-41aa-455d-96e9-2d318640f098.jpg"
   },
   {
     "id": "a04e0b21-b8fe-4ec3-96d2-f37d0e611d5f",
@@ -8100,7 +8258,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/2e84dca2-fc41-41b6-bc34-97f57b4f957f.jpg"
   },
   {
     "id": "e7b49178-8065-47af-96a6-6db84bdf0663",
@@ -8158,7 +8317,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/e47fa9ca-a8eb-409c-a191-6358986dc6b9.jpg"
   },
   {
     "id": "3cd302ce-000a-4caf-97a5-2e7274c42f00",
@@ -8181,7 +8341,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/3cd302ce-000a-4caf-97a5-2e7274c42f00.jpg"
   },
   {
     "id": "761b9db4-12a6-4265-86c7-f09c896fa787",
@@ -8240,7 +8401,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/b8c9c230-dc83-4d92-b059-5fe6adedf2c9.jpg"
   },
   {
     "id": "32979d58-58f3-4de3-a681-b5f46a60cc6d",
@@ -8282,7 +8444,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/537467f0-6a11-465b-90fa-809279850bc4.jpg"
   },
   {
     "id": "c28b2fe5-96f8-4db3-a7fa-90b507565778",
@@ -8305,7 +8468,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/c28b2fe5-96f8-4db3-a7fa-90b507565778.jpg"
   },
   {
     "id": "b77d6ca4-eb05-4595-ba52-3fdd589739f0",
@@ -8350,7 +8514,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/fbc4ebd6-1c1f-4611-9d61-b9219427a0b9.jpg"
   },
   {
     "id": "c1d5e4d7-68d8-45e6-bacc-46f81699301a",
@@ -8481,7 +8646,8 @@
       "⛰️ タフなコース",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/df14a9c4-c57a-4c00-9cd4-bd73258d468e.jpg"
   },
   {
     "id": "98a2b27e-bedf-43c0-b47f-ac6a45f297d8",
@@ -8556,7 +8722,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/bdb41fc5-28c8-476e-90ed-70e81b7f04fe.jpg"
   },
   {
     "id": "e280699a-0efd-488a-b4c0-a60c5268f4f8",
@@ -8578,7 +8745,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/e280699a-0efd-488a-b4c0-a60c5268f4f8.jpg"
   },
   {
     "id": "cc742c61-951d-4b7b-918b-75ac6553b057",
@@ -8620,7 +8788,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/14df453a-f185-4c2b-8ae1-b41830812b80.jpg"
   },
   {
     "id": "1ba04a6f-c55d-4734-90f1-dd88f221c9f9",
@@ -8642,7 +8811,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/1ba04a6f-c55d-4734-90f1-dd88f221c9f9.jpg"
   },
   {
     "id": "79b78b45-3476-46f4-9fef-5dcb94161ed0",
@@ -8665,7 +8835,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/79b78b45-3476-46f4-9fef-5dcb94161ed0.jpg"
   },
   {
     "id": "9d02e164-1c83-4761-8b60-e6cb1cf49f08",
@@ -8687,7 +8858,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/9d02e164-1c83-4761-8b60-e6cb1cf49f08.jpg"
   },
   {
     "id": "80bb7136-7c07-4455-9f98-6587fde38033",
@@ -8727,7 +8899,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/d7498dfa-f4cb-4ef4-88dd-223c34adc188.jpg"
   },
   {
     "id": "046c69c8-df56-4fd5-b577-0e7367f82e81",
@@ -8822,7 +8995,8 @@
     "tags": [
       "⛰️ タフなコース",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/f4d65434-d781-41d0-8e57-2831fd179990.jpg"
   },
   {
     "id": "87122c18-858e-43f7-8ddc-a9e10eee9f83",
@@ -8843,7 +9017,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/87122c18-858e-43f7-8ddc-a9e10eee9f83.jpg"
   },
   {
     "id": "852ee030-13f7-40e6-8111-cc0cf55a2606",
@@ -8866,7 +9041,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/852ee030-13f7-40e6-8111-cc0cf55a2606.jpg"
   },
   {
     "id": "ba5d2372-2f5b-4f13-a95b-01df42cb5cb1",
@@ -8884,7 +9060,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://nagorun.com/info/4-29%E7%A5%9D%E3%83%BB%E6%B0%B4%E9%96%8B%E5%82%AC%E7%AC%AC13%E5%9B%9Eaed%E3%83%81%E3%83%A3%E3%83%AA%E3%83%86%E3%82%A3%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/ba5d2372-2f5b-4f13-a95b-01df42cb5cb1.jpg"
   },
   {
     "id": "7c287790-8708-4cce-af36-05d6e3f9376e",
@@ -8908,7 +9085,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/7c287790-8708-4cce-af36-05d6e3f9376e.jpg"
   },
   {
     "id": "d620b420-2212-43fc-ae25-3f016dcb85ca",
@@ -8947,7 +9125,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/5ae41cdb-c627-41e3-80e6-dbe8168c3e26.jpg"
   },
   {
     "id": "225d47f1-fa0e-4ee1-8611-d093811ecea7",
@@ -8970,7 +9149,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/225d47f1-fa0e-4ee1-8611-d093811ecea7.jpg"
   },
   {
     "id": "822b3e91-87e1-45f3-a83c-868ee2022894",
@@ -9010,7 +9190,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/a6140b8e-2fc9-45d4-a9c5-325ab929f2a3.jpg"
   },
   {
     "id": "ac4c8e97-4930-469b-97e6-623c7ba2df5a",
@@ -9051,7 +9232,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/6ed77db2-b1c2-4f2c-8018-b1b98c045270.jpg"
   },
   {
     "id": "4d79d1a2-1b7f-4f71-a3aa-45b8a7139cbf",
@@ -9073,7 +9255,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/4d79d1a2-1b7f-4f71-a3aa-45b8a7139cbf.jpg"
   },
   {
     "id": "feb4bd36-812d-4cfd-ba48-63200aba9e6a",
@@ -9127,7 +9310,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://sportswiz.jp/tamahalf/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/73b26da9-688b-4087-9391-28b476d297e1.jpg"
   },
   {
     "id": "a252a762-7f68-48e7-a9d1-7eae62be2b03",
@@ -9150,7 +9334,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/a252a762-7f68-48e7-a9d1-7eae62be2b03.jpg"
   },
   {
     "id": "66e134b3-1343-42de-af87-0f6c294e285e",
@@ -9193,7 +9378,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/a16aef12-c07c-4382-b1c2-ac346da71a24.jpg"
   },
   {
     "id": "c4c82ac9-bdba-4dd1-9376-263bb6db578b",
@@ -9235,7 +9421,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/c0f58d2e-c7e4-4f83-a8a5-0feeaec9fb5d.jpg"
   },
   {
     "id": "9b3592f7-bc73-4f44-9e06-2dbe92e22264",
@@ -9312,7 +9499,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/206d5899-420d-4a2b-8fd3-b38de7c2369b.jpg"
   },
   {
     "id": "0cbe38b6-b560-4ad4-b5dc-d489e915aa53",
@@ -9352,7 +9540,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/136c6596-734b-4dba-a7df-7535099737a9.jpg"
   },
   {
     "id": "847ba64c-6692-4f93-ba06-d72a74a41271",
@@ -9376,7 +9565,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/847ba64c-6692-4f93-ba06-d72a74a41271.jpg"
   },
   {
     "id": "64133b8f-6f79-432e-9e53-37e06e1d69fa",
@@ -9436,7 +9626,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/bf8dc0bd-164c-41f4-a7ca-f08e5a4498e9.jpg"
   },
   {
     "id": "142eb752-d7f8-4102-a99d-96e4fd11d86e",
@@ -9493,7 +9684,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/b2f36051-e9b6-4785-adb2-f275bcedaebf.jpg"
   },
   {
     "id": "84fa3786-47b3-4344-9e55-be4c5e51de0a",
@@ -9534,7 +9726,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/206d5899-420d-4a2b-8fd3-b38de7c2369b.jpg"
   },
   {
     "id": "2717c81e-e701-4040-a91a-9eed64ad42d9",
@@ -9574,7 +9767,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/6bfd7f9a-06b8-42c4-896d-ed9ff2d8db51.jpg"
   },
   {
     "id": "543e856f-825a-45a1-94fb-7c287552ffc8",
@@ -9592,7 +9786,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.ecomarathon.run/%E9%96%A2%E8%A5%BF/%E6%9E%9A%E6%96%B9/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/543e856f-825a-45a1-94fb-7c287552ffc8.jpg"
   },
   {
     "id": "dae64ea7-b101-4695-9b3c-3ad49b5be560",
@@ -9634,7 +9829,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/8482a71a-f131-410d-b062-bc8865585ee4.jpg"
   },
   {
     "id": "ff6a73ac-271c-43cc-b7d9-464d1656bc84",
@@ -9675,7 +9871,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/e996d041-66e2-492d-9045-c4b43716f5a1.jpg"
   },
   {
     "id": "df0ea3c0-7eb2-41df-9670-3084f148a893",
@@ -9696,7 +9893,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/df0ea3c0-7eb2-41df-9670-3084f148a893.jpg"
   },
   {
     "id": "3e021cdd-7988-4418-9419-582d08283e64",
@@ -9773,7 +9971,8 @@
     "tags": [
       "⛰️ タフなコース"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/1a2b065f-6864-4b3b-abe4-ffa05670c9aa.jpg"
   },
   {
     "id": "7f34709d-b59e-4a33-bac6-c8d2b7abff06",
@@ -9817,7 +10016,8 @@
       "🔰 初心者向け",
       "♨️ 観光・温泉が楽しめる"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/96927832-046c-4f8a-aa95-b940b182031a.jpg"
   },
   {
     "id": "a04e0b21-b8fe-4ec3-96d2-f37d0e611d5f",
@@ -9859,7 +10059,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/a86be0e3-c3ea-4758-ac87-6c344a7a0d66.jpg"
   },
   {
     "id": "fa699a76-4ad1-452a-98c2-17bf122e5647",
@@ -9882,7 +10083,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/fa699a76-4ad1-452a-98c2-17bf122e5647.jpg"
   },
   {
     "id": "9b78a52b-7cf6-40b0-a7a0-83fb2705241c",
@@ -9981,7 +10183,8 @@
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/ecbe4870-3eee-47db-a69d-e6b9f62a7b20.jpg"
   },
   {
     "id": "ce2b0e57-e169-4222-a3ac-4248fc347490",
@@ -10004,7 +10207,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/ce2b0e57-e169-4222-a3ac-4248fc347490.jpg"
   },
   {
     "id": "2b08b0da-cb2c-48c5-b16f-a1101dd5a6c3",
@@ -10028,7 +10232,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/2b08b0da-cb2c-48c5-b16f-a1101dd5a6c3.jpg"
   },
   {
     "id": "00f40626-1ed6-4613-8e03-50cf2ab01615",
@@ -10052,7 +10257,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/00f40626-1ed6-4613-8e03-50cf2ab01615.jpg"
   },
   {
     "id": "101939c8-36f2-4e0a-a9f6-7b6271e55e99",
@@ -10075,7 +10281,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/101939c8-36f2-4e0a-a9f6-7b6271e55e99.jpg"
   },
   {
     "id": "ba2cd9ba-2910-4735-af9d-ff4c0dafea65",
@@ -10118,7 +10325,8 @@
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/b40b7de1-df99-49c7-a9b3-4aa404e724b0.jpg"
   },
   {
     "id": "fa1bda56-9f8d-42c7-8b35-e320dbf9348f",
@@ -10140,7 +10348,8 @@
     "tags": [
       "⛰️ タフなコース",
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/fa1bda56-9f8d-42c7-8b35-e320dbf9348f.jpg"
   },
   {
     "id": "7c2a3f74-360e-42f0-b2a2-6de66a00cacc",
@@ -10198,7 +10407,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/a69082dd-cba3-4465-90c4-d507c0a92614.jpg"
   },
   {
     "id": "9e85a5ee-87d4-46fe-96e5-12b0e77a3ea8",
@@ -10241,7 +10451,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/a8f39aad-21e2-4d17-a134-6ab0f2ef7b07.jpg"
   },
   {
     "id": "1be99b91-3d5e-472b-b0e5-22c06677c0d2",
@@ -10265,7 +10476,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/1be99b91-3d5e-472b-b0e5-22c06677c0d2.jpg"
   },
   {
     "id": "e4afd88e-2a23-4324-9d10-8f41a04c9d67",
@@ -10304,7 +10516,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/48684b21-2bbc-4073-a51d-b7193dce970c.jpg"
   },
   {
     "id": "ec9e2e0c-173d-48aa-8502-14fb6ce971db",
@@ -10340,7 +10553,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://runnet-ekiden.jp/okinawa/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/c646de70-d964-40c2-a203-de95f9d0f371.jpg"
   },
   {
     "id": "af1a00a7-19e5-4693-b4cf-30e85a578ba3",
@@ -10399,7 +10613,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/aab24519-0308-42e4-9f1c-6e3d381ca833.jpg"
   },
   {
     "id": "d12b9dd6-7735-4e65-9824-e9e2c4703754",
@@ -10421,7 +10636,8 @@
     "tags": [
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/d12b9dd6-7735-4e65-9824-e9e2c4703754.jpg"
   },
   {
     "id": "0eaf35d4-8d1b-4ac2-80f5-13710a18a399",
@@ -10445,7 +10661,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/0eaf35d4-8d1b-4ac2-80f5-13710a18a399.jpg"
   },
   {
     "id": "18ded9fa-ed95-4eb2-9e60-63a638c8e2b9",
@@ -10558,7 +10775,8 @@
       "⛰️ タフなコース",
       "🎉 お祭り・応援が熱い"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/182e58a0-99cc-4eeb-94d9-1f2aaf4c4805.jpg"
   },
   {
     "id": "2487984d-aa34-4c10-9644-a4da8b2b6737",
@@ -10580,7 +10798,8 @@
     "tags": [
       "⛰️ タフなコース",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/2487984d-aa34-4c10-9644-a4da8b2b6737.jpg"
   },
   {
     "id": "b77d6ca4-eb05-4595-ba52-3fdd589739f0",
@@ -10621,7 +10840,8 @@
       "⛰️ タフなコース",
       "🏞️ 景色が良い",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/d9698a47-50f2-46b7-afaa-79aba155bdc0.jpg"
   },
   {
     "id": "2e042b8d-4e20-4813-a0ba-d1226eecbd11",
@@ -10680,7 +10900,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/b604c00c-8808-4252-b199-a4d5a9eb1a5b.jpg"
   },
   {
     "id": "7403bff1-06bb-4e7a-a6c5-f0090d374b13",
@@ -10720,7 +10941,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/80d1d447-0515-4dd8-89b9-98032aaaf8f1.jpg"
   },
   {
     "id": "1364b7f0-989d-497e-b64b-200143e1a7f9",
@@ -10756,7 +10978,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "a342bf65-ce25-4a31-88bf-d9e5ec8712c8",
@@ -10779,7 +11002,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/a342bf65-ce25-4a31-88bf-d9e5ec8712c8.jpg"
   },
   {
     "id": "83a8b0d8-524c-4070-a01b-fa6e6c0bcb16",
@@ -10821,7 +11045,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/6090fcc1-385e-4a23-b1ba-bc16fd710d8a.jpg"
   },
   {
     "id": "4d1b41b5-ea69-4a01-80ea-38ffc7aeca9d",
@@ -10844,7 +11069,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/4d1b41b5-ea69-4a01-80ea-38ffc7aeca9d.jpg"
   },
   {
     "id": "c193882f-eefb-48c1-acab-57b179ec5ae6",
@@ -10862,7 +11088,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.zoomlinemarathon.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/c193882f-eefb-48c1-acab-57b179ec5ae6.jpg"
   },
   {
     "id": "38b06c56-d4a1-4353-8e5a-97f8da0c9892",
@@ -10922,7 +11149,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け"
     ],
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/8da6f959-a2fc-488c-89ba-9b9d4487b538.jpg"
   },
   {
     "id": "532db2c7-c172-44bd-a8a3-7ec5296b497d",
@@ -10940,7 +11168,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://kozaki-marathon.jp/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/532db2c7-c172-44bd-a8a3-7ec5296b497d.jpg"
   },
   {
     "id": "a7e5f18a-ab56-4fc1-857f-ea470a7e5541",
@@ -10958,7 +11187,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://hadashirunning.jp/event/2026/5/202605-4423.php",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/a7e5f18a-ab56-4fc1-857f-ea470a7e5541.jpg"
   },
   {
     "id": "19cf383c-4236-49f9-8195-87d1bee87a9a",
@@ -10976,7 +11206,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.bungotakada.oita.jp/soshiki/29/29988.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/19cf383c-4236-49f9-8195-87d1bee87a9a.jpg"
   },
   {
     "id": "5fd3eca6-3040-4c90-967d-d2b1c0e37d30",
@@ -10994,7 +11225,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://sportsone.jp/ed/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/5fd3eca6-3040-4c90-967d-d2b1c0e37d30.jpg"
   },
   {
     "id": "9f9a674d-a1b9-4427-b13b-77d47bb57615",
@@ -11012,7 +11244,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://universal-field.com/event/kagamizu-forest-trail/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/9f9a674d-a1b9-4427-b13b-77d47bb57615.jpg"
   },
   {
     "id": "3a8d54d7-2a7b-495f-9165-323fe6b5f604",
@@ -11084,7 +11317,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.hiroshima.coop/family_marathon/index.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/12c0d409-523a-4daa-83ac-f01fa594ac2d.jpg"
   },
   {
     "id": "98e36a9e-3ca2-4cee-89a1-5e3cada3bb36",
@@ -11120,7 +11354,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://saiotocolors.themedia.jp/pages/5017539/greenver",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/8bb13aae-a42d-49c1-bc91-6ba976d485cd.jpg"
   },
   {
     "id": "1adc00d1-a8d4-4af5-a441-7433b5918573",
@@ -11138,7 +11373,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.outdoor-sports.info/iya-skyrun",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/1adc00d1-a8d4-4af5-a441-7433b5918573.jpg"
   },
   {
     "id": "884dc2f7-7dd0-45da-93df-b500bf3a4fc8",
@@ -11156,7 +11392,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://aichi.njsf.net/?p=1067",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/884dc2f7-7dd0-45da-93df-b500bf3a4fc8.jpg"
   },
   {
     "id": "f0b51b84-0fbd-401a-a475-9487235597ac",
@@ -11174,7 +11411,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://trail.damonde.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/f0b51b84-0fbd-401a-a475-9487235597ac.jpg"
   },
   {
     "id": "418c3576-3fcf-4943-8d6a-97ea51d72117",
@@ -11213,7 +11451,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/ea7ca98d-0827-458d-98fb-612e5574b5f6.jpg"
   },
   {
     "id": "ef2eceb8-3c96-4a67-bd13-28cf3cf255fe",
@@ -11236,7 +11475,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/ef2eceb8-3c96-4a67-bd13-28cf3cf255fe.jpg"
   },
   {
     "id": "16611bd2-8a79-4cd6-898b-45b51224ce5d",
@@ -11254,7 +11494,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "2a5e1749-9473-44f2-9a8f-f945fdede7a0",
@@ -11272,7 +11513,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.okusupo.com/marason.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/2a5e1749-9473-44f2-9a8f-f945fdede7a0.jpg"
   },
   {
     "id": "ce7d7698-9f92-4861-9d53-df5e076c3bcd",
@@ -11290,7 +11532,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://trailrunners.jp/20251024/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/ce7d7698-9f92-4861-9d53-df5e076c3bcd.jpg"
   },
   {
     "id": "75a102c3-0b7a-49f1-8fac-835759f2e306",
@@ -11313,7 +11556,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/75a102c3-0b7a-49f1-8fac-835759f2e306.jpg"
   },
   {
     "id": "83596a56-c29c-4b79-a5e6-a4e1c23a2f31",
@@ -11331,7 +11575,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.wrj.jp/event/relay",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/83596a56-c29c-4b79-a5e6-a4e1c23a2f31.jpg"
   },
   {
     "id": "8a1c8ada-5ffd-4c9f-9228-cabb5e564e41",
@@ -11349,7 +11594,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.awara.lg.jp/mokuteki/education/education03/education0301/p015163.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/8a1c8ada-5ffd-4c9f-9228-cabb5e564e41.jpg"
   },
   {
     "id": "bf00e4d8-06ac-45db-b048-03ea14ad46d3",
@@ -11386,7 +11632,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.fukushimahalf.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/49d34b2b-a881-4ea1-92da-d9ceba0aee11.jpg"
   },
   {
     "id": "f25f8903-9ec5-4217-b0c7-34191e7be9c1",
@@ -11441,7 +11688,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.umineko-marathon.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/efd1cd10-d47e-4d6d-baf7-0c911c3ac631.jpg"
   },
   {
     "id": "168e99cf-1cd0-4e09-993c-fcbeec1777fc",
@@ -11459,7 +11707,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.lap.co.jp/nanohana2026/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/168e99cf-1cd0-4e09-993c-fcbeec1777fc.jpg"
   },
   {
     "id": "e9d0f22c-720d-4d5b-9150-c1f4d4504c49",
@@ -11477,7 +11726,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.town.shodoshima.lg.jp/kanko/news/syoudosimaoribumarasonzenkokutaikai/index.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/e9d0f22c-720d-4d5b-9150-c1f4d4504c49.jpg"
   },
   {
     "id": "06af6694-6279-4123-a7da-ee5d6d613b73",
@@ -11514,7 +11764,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.tottori.lg.jp/www/contents/1702251958271/index.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/123a6744-f156-457a-aa1c-30e614a91bec.jpg"
   },
   {
     "id": "3ee6a80a-84c8-4303-b1d9-0f606c3d6bca",
@@ -11534,7 +11785,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.rh-track.com/roundgirls100/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/3ee6a80a-84c8-4303-b1d9-0f606c3d6bca.jpg"
   },
   {
     "id": "855a8a1f-58e8-49ac-9cd8-45e10a4bfb4a",
@@ -11570,7 +11822,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.actrep-sports.com/nose-trailrun/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/6e07d0ad-8a58-49c8-bd13-9bbf043559b3.jpg"
   },
   {
     "id": "842558e4-c21d-49dc-82c6-e66abf33f436",
@@ -11588,7 +11841,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://taikai.in/kirishimashuzo-relaymarathon/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/842558e4-c21d-49dc-82c6-e66abf33f436.jpg"
   },
   {
     "id": "063866a3-36b2-477d-bbf1-a25c3fef7aa0",
@@ -11665,7 +11919,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/6db0079a-fa7f-4135-9b07-b35c2b9a9bfb.jpg"
   },
   {
     "id": "77229db0-a305-40dd-8d29-d5b028184a0f",
@@ -11683,7 +11938,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://runnet.jp/entry/runtes/user/pc/competitionDetailAction.do?raceId=370275&div=1",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/77229db0-a305-40dd-8d29-d5b028184a0f.jpg"
   },
   {
     "id": "4e6ae918-9b75-4e1e-af7a-035db202b536",
@@ -11720,7 +11976,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://kosha.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/f368900c-bfea-4ca5-95a5-275dea214762.jpg"
   },
   {
     "id": "07a8e6f4-7a7e-4567-8bca-b40674fc7056",
@@ -11739,7 +11996,8 @@
     "time_limit": "570km207km189km175km",
     "features": null,
     "url": "https://www.sportsentry.ne.jp/event/t/103622",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/07a8e6f4-7a7e-4567-8bca-b40674fc7056.jpg"
   },
   {
     "id": "a3e7d29c-ffbc-4a84-9546-20a05559c79a",
@@ -11757,7 +12015,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.komono-four-peaks-trail.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/a3e7d29c-ffbc-4a84-9546-20a05559c79a.jpg"
   },
   {
     "id": "68a7bd6b-f54c-4141-b38e-e44404f9d34a",
@@ -11775,7 +12034,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://xn--3ck5c7a3b1589amb4a8l4d8ca.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/68a7bd6b-f54c-4141-b38e-e44404f9d34a.jpg"
   },
   {
     "id": "2cc982b9-962f-423d-b845-7417bfb37dbe",
@@ -11795,7 +12055,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://htj.gr.jp/summary/miki_crosscountry",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/2cc982b9-962f-423d-b845-7417bfb37dbe.jpg"
   },
   {
     "id": "7b7ce6e7-04ec-48c5-8562-e1c40f31c8b2",
@@ -11813,7 +12074,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://inagawa-trail.jimdofree.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/7b7ce6e7-04ec-48c5-8562-e1c40f31c8b2.jpg"
   },
   {
     "id": "b0e9101a-3378-4c80-9816-3a57fd923049",
@@ -11831,7 +12093,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://aozorarun.com/lp/20260524sm-s/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/b0e9101a-3378-4c80-9816-3a57fd923049.jpg"
   },
   {
     "id": "c1b1c63f-650c-468b-b597-66c35eab0c1a",
@@ -11849,7 +12112,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://kamusi26.trailscene.net/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/c1b1c63f-650c-468b-b597-66c35eab0c1a.jpg"
   },
   {
     "id": "4abbf3d6-8dc6-4aec-a823-ea940d29cdff",
@@ -11885,7 +12149,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://njsf-chiba.perma.jp/relaymarathon2026.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/49d629ff-5b7a-4137-85f6-b623c35568f9.jpg"
   },
   {
     "id": "e92e2292-773f-42e5-9ac2-79e7721e30aa",
@@ -11903,7 +12168,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://riverside-marathon.jimdofree.com/%E6%B7%80%E5%B7%9D%E5%A4%A7%E4%BC%9A-%E4%B8%8A%E6%B5%81%E3%82%B3%E3%83%BC%E3%82%B9/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/e92e2292-773f-42e5-9ac2-79e7721e30aa.jpg"
   },
   {
     "id": "7f32819e-f3fc-4c00-a460-30065f291344",
@@ -11939,7 +12205,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://akiyoshidai-trail.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/591a5d81-c129-4f20-9059-982b6dc2d7bf.jpg"
   },
   {
     "id": "1839decd-af5f-45b6-a51a-43ada197cb3c",
@@ -11957,7 +12224,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://nakatsugawa-rm.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/1839decd-af5f-45b6-a51a-43ada197cb3c.jpg"
   },
   {
     "id": "85c6e42e-6e8e-4952-8a25-c01581461798",
@@ -11975,7 +12243,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/141899",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/85c6e42e-6e8e-4952-8a25-c01581461798.jpg"
   },
   {
     "id": "4dada89f-d0ae-4bf2-9fca-deb00963720a",
@@ -12052,7 +12321,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/8d641f70-679f-4755-adb5-6d87499d8092.jpg"
   },
   {
     "id": "a266715c-cc10-464a-9d43-19ed58eb35f9",
@@ -12071,7 +12341,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/139541/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/a266715c-cc10-464a-9d43-19ed58eb35f9.jpg"
   },
   {
     "id": "a63f9106-6338-4286-9abe-93ca734f1083",
@@ -12089,7 +12360,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://re-plus-ing.com/2026/e-summer-half-2/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/a63f9106-6338-4286-9abe-93ca734f1083.jpg"
   },
   {
     "id": "44966159-5557-4ab2-aa2f-3a03856b97d2",
@@ -12107,7 +12379,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.city.ono.fukui.jp/kenko/sports/meisuimarason/62meisuientry.html",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/44966159-5557-4ab2-aa2f-3a03856b97d2.jpg"
   },
   {
     "id": "b6a670f9-ad0a-47da-88e9-99e98221aff1",
@@ -12143,7 +12416,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "f368900c-bfea-4ca5-95a5-275dea214762",
@@ -12161,7 +12435,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://kosha.jp/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/f368900c-bfea-4ca5-95a5-275dea214762.jpg"
   },
   {
     "id": "396b4c88-280c-453c-8596-bebb8b19c790",
@@ -12180,7 +12455,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.sugadaira-trail.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/396b4c88-280c-453c-8596-bebb8b19c790.jpg"
   },
   {
     "id": "dbbbaf3c-94df-4757-99b8-4b92b2a43858",
@@ -12240,7 +12516,8 @@
       "🏞️ 景色が良い",
       "🔰 初心者向け",
       "🎉 お祭り・応援が熱い"
-    ]
+    ],
+    "image_url": "/images/races/b94f9be1-440d-4450-a5e4-3944da249490.jpg"
   },
   {
     "id": "4664c0f9-b390-470a-9995-0f858e833271",
@@ -12277,7 +12554,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://okumusashi105k-race.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/bf613253-4a10-4144-88cc-a99dc17f70f0.jpg"
   },
   {
     "id": "3a00c4c1-69a7-446c-9c67-7e256eaae641",
@@ -12295,7 +12573,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://jiowsa-marathon.com/%E5%A4%95%E7%A9%BA%E7%B5%B6%E6%99%AF%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%EF%BC%92%EF%BC%90%EF%BC%92%EF%BC%96/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/3a00c4c1-69a7-446c-9c67-7e256eaae641.jpg"
   },
   {
     "id": "cae0bf23-c635-48f9-8783-50c56a6e18db",
@@ -12316,7 +12595,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏆 タイムが狙いやすい"
-    ]
+    ],
+    "image_url": "/images/races/cae0bf23-c635-48f9-8783-50c56a6e18db.jpg"
   },
   {
     "id": "f76aa4eb-cf42-496b-a9c7-41c813d7767f",
@@ -12338,7 +12618,8 @@
     "tags": [
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/f76aa4eb-cf42-496b-a9c7-41c813d7767f.jpg"
   },
   {
     "id": "429bb921-1839-415c-ae59-e3540a1eaea9",
@@ -12356,7 +12637,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/index.php/140736",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/429bb921-1839-415c-ae59-e3540a1eaea9.jpg"
   },
   {
     "id": "9f527847-2f71-49b4-8c47-36a62cd8fe56",
@@ -12411,7 +12693,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://boost-inc.jp/todoroki/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/8bc7a42c-1b01-49fd-9c3f-901bc96bf077.jpg"
   },
   {
     "id": "eb01e760-310b-4612-818c-1ebb3b0e01d1",
@@ -12433,7 +12716,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/eb01e760-310b-4612-818c-1ebb3b0e01d1.jpg"
   },
   {
     "id": "509e8b4b-e050-45fb-b6e7-0d2ef0c7170c",
@@ -12470,7 +12754,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.nature-scene.net/kyogatake/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/5654b0d3-d2b6-4f75-a0b7-867919c85fad.jpg"
   },
   {
     "id": "42d4ffcf-f68a-45e9-be6c-339914fbaa72",
@@ -12506,7 +12791,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://info663681.wixsite.com/love-sima",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/1906160f-6a07-4b73-80ee-6135df4c093f.jpg"
   },
   {
     "id": "b77d6ca4-eb05-4595-ba52-3fdd589739f0",
@@ -12561,7 +12847,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://sagae-sakuranbo-m.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/51399ad5-9a29-4e5f-9d22-b7592ecacbd8.jpg"
   },
   {
     "id": "c97a9378-46c5-4aee-8623-741c0ab66cfd",
@@ -12579,7 +12866,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.town.iide.yamagata.jp/007/44damumarason.html",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/c97a9378-46c5-4aee-8623-741c0ab66cfd.jpg"
   },
   {
     "id": "65e70276-47fb-416a-ad3e-71fab250c86b",
@@ -12615,7 +12903,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://kinshuko-marathon.com/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/e828d274-8aac-4a0a-ad9a-7e5986ef9663.jpg"
   },
   {
     "id": "96101edd-6b75-4f7b-8959-366c07162f79",
@@ -12672,7 +12961,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://nagorun.com/info/5-31%E9%96%8B%E5%82%AC%E5%90%8D%E5%8F%A4%E5%B1%8B%E3%81%97%E3%82%83%E3%81%A1%E3%81%BB%E3%81%93%E3%83%88%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%ABvol-9",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/7c8d6e51-61b4-4d69-9726-dccaf9dbe211.jpg"
   },
   {
     "id": "10e72539-f311-4df3-baf3-b073ffe2aa46",
@@ -12690,7 +12980,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://trailrunners.jp/event/tsunan-2026/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/10e72539-f311-4df3-baf3-b073ffe2aa46.jpg"
   },
   {
     "id": "e280699a-0efd-488a-b4c0-a60c5268f4f8",
@@ -12712,7 +13003,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/e280699a-0efd-488a-b4c0-a60c5268f4f8.jpg"
   },
   {
     "id": "e4115a23-1184-49d7-bd18-007b031b8fb7",
@@ -12733,7 +13025,8 @@
     "updated_at": "2026年03月02日",
     "tags": [
       "🏞️ 景色が良い"
-    ]
+    ],
+    "image_url": "/images/races/e4115a23-1184-49d7-bd18-007b031b8fb7.jpg"
   },
   {
     "id": "0ad5d923-681b-42a1-b3af-caa9317fabaf",
@@ -12751,7 +13044,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.siobara.or.jp/information/20251203/4465/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/0ad5d923-681b-42a1-b3af-caa9317fabaf.jpg"
   },
   {
     "id": "90c4292d-4d9e-4656-a32b-2cdaf1b217ed",
@@ -12769,7 +13063,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://relay-marathon.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/90c4292d-4d9e-4656-a32b-2cdaf1b217ed.jpg"
   },
   {
     "id": "33ec93c8-b93c-4910-b4d0-9ad0082b32e2",
@@ -12824,7 +13119,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://universal-field.com/event/miyazaki100kmrelay/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/8ce41042-5ad9-4257-87ae-7bc33530cf4f.jpg"
   },
   {
     "id": "a7612a50-a2b2-456b-9416-c4564c6c688b",
@@ -12860,7 +13156,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.biwakoskyrun.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/70f85b4a-ccb9-4636-9c1a-9b621fb66603.jpg"
   },
   {
     "id": "8528022c-7145-4878-81b4-0c50b372dc93",
@@ -12896,7 +13193,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://nanaojo-project.amebaownd.com/posts/58484047",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/ece8645e-6d78-46fd-af76-7771479e86bc.jpg"
   },
   {
     "id": "73b26da9-688b-4087-9391-28b476d297e1",
@@ -12914,7 +13212,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://sportswiz.jp/tamahalf/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/73b26da9-688b-4087-9391-28b476d297e1.jpg"
   },
   {
     "id": "95b4b5f9-65a9-43dc-a920-61569a6287f0",
@@ -12950,7 +13249,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://okushinano100.com/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/80bd4f7e-c820-4ff2-af55-9c6bceda4e87.jpg"
   },
   {
     "id": "88c175bc-9b3f-4972-bfe1-a7974036d522",
@@ -12986,7 +13286,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.e-marathon.jp/tataragi/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/4782ee02-6927-413c-b90e-43a6e16b8198.jpg"
   },
   {
     "id": "53665faf-eccf-44fc-84e5-e44f8f94805c",
@@ -13058,7 +13359,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://aozorarun.com/lp/260607_ot/",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/cc0edccf-fb23-41e3-9176-b2082f96f89d.jpg"
   },
   {
     "id": "c2216381-11c6-4454-af9b-6381fbd40e8e",
@@ -13259,7 +13561,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.sportsentry.ne.jp/event/t/104094",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/70f85b4a-ccb9-4636-9c1a-9b621fb66603.jpg"
   },
   {
     "id": "c77e399d-7ae2-4a1a-919d-48094d3c083a",
@@ -13533,7 +13836,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "40f46b7d-9618-4d5f-a77c-52276d1379f3",
@@ -13696,7 +14000,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://runnet.jp/entry/runtes/user/pc/moshicomDetailAction.do?raceId=127340&div=1",
-    "updated_at": "2026年03月03日"
+    "updated_at": "2026年03月03日",
+    "image_url": "/images/races/e92e2292-773f-42e5-9ac2-79e7721e30aa.jpg"
   },
   {
     "id": "6dec1a20-34fe-42a8-ad73-77065d68589c",
@@ -13896,7 +14201,8 @@
     "time_limit": null,
     "features": null,
     "url": "http://www.kamakurun.jp/tochigiken-getsurei",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/16611bd2-8a79-4cd6-898b-45b51224ce5d.jpg"
   },
   {
     "id": "67236659-eb31-40c2-bf96-578c2573ed34",
@@ -14185,7 +14491,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://takashi.daa.jp/musako/",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/a342bf65-ce25-4a31-88bf-d9e5ec8712c8.jpg"
   },
   {
     "id": "94356cea-e540-41e2-8bf2-02b660f5cb78",
@@ -14224,7 +14531,8 @@
     "features": null,
     "url": "http://sportsaid-japan.org/",
     "updated_at": "2026年03月02日",
-    "is_hot": true
+    "is_hot": true,
+    "image_url": "/images/races/00f40626-1ed6-4613-8e03-50cf2ab01615.jpg"
   },
   {
     "id": "fe6bec86-5c77-4e49-8978-a73a780f4f47",
@@ -14374,7 +14682,8 @@
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け",
       "♨️ 観光・温泉が楽しめる"
-    ]
+    ],
+    "image_url": "/images/races/cae0bf23-c635-48f9-8783-50c56a6e18db.jpg"
   },
   {
     "id": "770e7b18-19ff-4b13-bcf4-13849d66020b",
@@ -14472,7 +14781,8 @@
     "tags": [
       "🏆 タイムが狙いやすい",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/e280699a-0efd-488a-b4c0-a60c5268f4f8.jpg"
   },
   {
     "id": "38a5dab7-527c-4ba5-8a45-33d4f8f587a0",
@@ -15223,7 +15533,8 @@
     "time_limit": null,
     "features": null,
     "url": "https://www.zhihu.com/question/302212609",
-    "updated_at": "2026年03月02日"
+    "updated_at": "2026年03月02日",
+    "image_url": "/images/races/73b26da9-688b-4087-9391-28b476d297e1.jpg"
   },
   {
     "id": "bf52b2cb-2f6d-45a8-972c-0ce1d2a32a34",
@@ -15463,7 +15774,8 @@
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
       "🔰 初心者向け"
-    ]
+    ],
+    "image_url": "/images/races/c28b2fe5-96f8-4db3-a7fa-90b507565778.jpg"
   },
   {
     "id": "28e563c1-4add-497c-ba08-8e6e76e048b6",
