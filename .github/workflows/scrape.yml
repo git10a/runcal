@@ -29,7 +29,10 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f scraper/requirements.txt ]; then pip install -r scraper/requirements.txt; fi
 
-      - name: Run Scraper
+      - name: Run Scraper (RunnersBible + SERP Discovery)
+        env:
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scraper/main.py
 
       - name: Refresh entry statuses from known dates

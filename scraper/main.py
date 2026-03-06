@@ -421,31 +421,43 @@ def main():
     jst_now = datetime.now(timezone(timedelta(hours=9)))
     today_str = jst_now.strftime("%Y-%m-%d")
 
-    # 0. Load existing races, filtering out past events and RunnersBible data (will be re-scraped)
+    # 0. Load existing races, filtering out past events and stale source data
     if os.path.exists(json_path):
         try:
             with open(json_path, 'r', encoding='utf-8') as f:
                 existing_races = json.load(f)
                 kept = 0
                 removed_past = 0
-                removed_rb = 0
+                removed_refresh = 0
+                refresh_sources = {'runnersbible', 'serp_discovery'}
                 for race in existing_races:
                     if race.get('date') and race['date'] < today_str:
                         removed_past += 1
                         continue
-                    if race.get('source') == 'runnersbible':
-                        removed_rb += 1
+                    if race.get('source') in refresh_sources:
+                        removed_refresh += 1
                         continue
                     all_races.append(race)
                     kept += 1
-                print(f"Loaded {kept} existing races (removed {removed_past} past, {removed_rb} RunnersBible to re-scrape)")
+                print(f"Loaded {kept} existing races (removed {removed_past} past, {removed_refresh} to re-scrape)")
         except json.JSONDecodeError:
             print(f"Warning: Could not parse {json_path}. Starting fresh.")
 
     # 1. Scrape RunnersBible (Marathon + Ultra)
-    print("\n[1/1] Scraping RunnersBible (Marathon + Ultra)...")
+    print("\n[1/2] Scraping RunnersBible (Marathon + Ultra)...")
     runnersbible_races = scrape_runners_bible()
     all_races.extend(runnersbible_races)
+
+    # 2. SERP-based race discovery (requires API keys)
+    print("\n[2/2] SERP Race Discovery...")
+    try:
+        from serp_race_discovery import discover_upcoming_races, merge_discovered_races
+        discovered = discover_upcoming_races(months_ahead=6)
+        if discovered:
+            new_races = merge_discovered_races(discovered, all_races)
+            all_races.extend(new_races)
+    except Exception as e:
+        print(f"SERP discovery skipped: {e}")
 
     # 3. Deduplicate
     print("\n" + "=" * 50)
