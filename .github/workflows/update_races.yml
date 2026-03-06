@@ -34,6 +34,7 @@ jobs:
     - name: Run update script
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
       # xvfb-run を使って仮想ディスプレイ上でHeadedモードブラウザを走らせる（Cloudflare回避策）
       run: |
         xvfb-run --auto-servernum --server-args="-screen 0 1280x720x24" python scraper/update_races_info.py --limit 50

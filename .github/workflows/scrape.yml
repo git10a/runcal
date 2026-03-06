@@ -29,8 +29,15 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f scraper/requirements.txt ]; then pip install -r scraper/requirements.txt; fi
 
+      - name: Merge marathon_master.csv
+        run: python scripts/merge_marathons.py
+
       - name: Run Scraper
         run: python scraper/main.py
+
+      - name: Refresh entry statuses from known dates
+        run: python scraper/update_races_info.py --status-only
+        working-directory: ${{ github.workspace }}
 
       - name: Commit and Push changes
         run: |
