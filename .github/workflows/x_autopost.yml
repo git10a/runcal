@@ -2,13 +2,11 @@ name: X Autopost
 
 on:
   schedule:
-    # 1日3回 (JST 6:15, 12:00, 21:30)
-    # 6:15 JST = 21:15 UTC (前日)
-    # 12:00 JST = 3:00 UTC
-    # 21:30 JST = 12:30 UTC
-    - cron: '15 21 * * *'
-    - cron: '0 3 * * *'
-    - cron: '30 12 * * *'
+    # JST 8:00-21:00 の毎時に起動し、スクリプト側で1日3回ランダム投稿を判定
+    # 8:00 JST = 23:00 UTC (前日)
+    # 9:00-21:00 JST = 0:00-12:00 UTC
+    - cron: '0 23 * * *'
+    - cron: '0 0-12 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
@@ -69,6 +67,7 @@ jobs:
       - name: Commit and push changes
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run == 'no')
         run: |
+          git diff --quiet -- data/x_posts_history.json && echo "No history changes to push" && exit 0
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/x_posts_history.json

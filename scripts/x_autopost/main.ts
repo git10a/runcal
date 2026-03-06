@@ -9,6 +9,10 @@ dotenv.config();
 const RACES_PATH = path.join(process.cwd(), 'data/races.json');
 const RACE_DETAILS_PATH = path.join(process.cwd(), 'data/race_details.json');
 const HISTORY_PATH = path.join(process.cwd(), 'data/x_posts_history.json');
+const JST_TIME_ZONE = 'Asia/Tokyo';
+const AUTO_POSTS_PER_DAY = 3;
+const AUTO_POST_START_HOUR = 8;
+const AUTO_POST_END_HOUR = 21;
 
 interface Race {
     id: string;
@@ -113,17 +117,79 @@ function getUpcomingRaces(races: Race[], days: number = 30): Race[] {
     });
 }
 
+function getJstDateTimeParts(date: Date = new Date()) {
+    const formatter = new Intl.DateTimeFormat('en-CA', {
+        timeZone: JST_TIME_ZONE,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hourCycle: 'h23',
+    });
+
+    const parts = Object.fromEntries(
+        formatter
+            .formatToParts(date)
+            .filter(part => part.type !== 'literal')
+            .map(part => [part.type, part.value])
+    ) as Record<string, string>;
+
+    return {
+        dateKey: `${parts.year}-${parts.month}-${parts.day}`,
+        hour: Number(parts.hour),
+    };
+}
+
+function countTodayPosts(history: PostHistory[], dateKey: string) {
+    return history.filter(entry => getJstDateTimeParts(new Date(entry.date)).dateKey === dateKey).length;
+}
+
+function shouldPostInThisScheduledRun(history: PostHistory[]) {
+    const nowJst = getJstDateTimeParts();
+
+    if (nowJst.hour < AUTO_POST_START_HOUR || nowJst.hour > AUTO_POST_END_HOUR) {
+        return false;
+    }
+
+    const postedToday = countTodayPosts(history, nowJst.dateKey);
+    if (postedToday >= AUTO_POSTS_PER_DAY) {
+        return false;
+    }
+
+    const remainingPosts = AUTO_POSTS_PER_DAY - postedToday;
+    const remainingSlots = AUTO_POST_END_HOUR - nowJst.hour + 1;
+    const probability = remainingPosts / remainingSlots;
+    const roll = Math.random();
+
+    console.log(
+        `Schedule decision (JST ${nowJst.dateKey} ${String(nowJst.hour).padStart(2, '0')}:00): ` +
+        `postedToday=${postedToday}, remainingPosts=${remainingPosts}, remainingSlots=${remainingSlots}, ` +
+        `probability=${probability.toFixed(4)}, roll=${roll.toFixed(4)}`
+    );
+
+    return roll < probability;
+}
+
 async function main() {
     const dryRunEnv = process.env.DRY_RUN;
     const dryRun = dryRunEnv === 'true' || dryRunEnv === 'yes';
     const forcedRaceName = process.env.FORCE_RACE_NAME?.trim();
     const forcedCategory = process.env.FORCE_CATEGORY?.trim();
+    const eventName = process.env.GITHUB_EVENT_NAME;
     console.log(`Starting X autopost... (Dry Run: ${dryRun})`);
 
     // Load data
     const races: Race[] = JSON.parse(fs.readFileSync(RACES_PATH, 'utf-8'));
     const raceDetails: Record<string, any> = JSON.parse(fs.readFileSync(RACE_DETAILS_PATH, 'utf-8'));
     const history: PostHistory[] = JSON.parse(fs.readFileSync(HISTORY_PATH, 'utf-8'));
+
+    const isScheduledRun = eventName === 'schedule';
+    if (isScheduledRun && !shouldPostInThisScheduledRun(history)) {
+        console.log('Skip posting in this scheduled run.');
+        return;
+    }
 
     const validCategory = forcedCategory && CATEGORIES.some(c => c.name === forcedCategory);
     const category = validCategory ? forcedCategory! : selectCategory();
