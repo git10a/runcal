@@ -108,6 +108,42 @@ function getNamedItems(value: any): Array<{ name?: string; description?: string 
     return [];
 }
 
+function getTourismItems(detail: any): Array<{ name?: string; description?: string }> {
+    return getNamedItems(detail?.tourism);
+}
+
+function getGourmetItems(detail: any): Array<{ name?: string; description?: string }> {
+    return [
+        ...getNamedItems(detail?.local_gourmet),
+        ...getNamedItems(detail?.tourism?.local_gourmet),
+    ];
+}
+
+function hasRaceDetailsForCategory(race: Race, raceDetails: Record<string, any>, category: string) {
+    const detail = findRaceDetails(race, raceDetails);
+    if (!detail) {
+        return false;
+    }
+
+    if (category === 'race_gourmet') {
+        return getGourmetItems(detail).length > 0 || getTourismItems(detail).length > 0;
+    }
+
+    if (category === 'race_feature') {
+        return Boolean(
+            detail.overview ||
+            detail.course?.details ||
+            detail.runner_review?.good_points?.length
+        );
+    }
+
+    return true;
+}
+
+function categoryNeedsDetailedRace(category: string) {
+    return category === 'race_feature' || category === 'race_gourmet';
+}
+
 function getUpcomingRaces(races: Race[], days: number = 30): Race[] {
     const now = new Date();
     const cutoff = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
@@ -206,18 +242,29 @@ async function main() {
             console.error(`FORCE_RACE_NAME not found: ${forcedRaceName}`);
             process.exit(1);
         }
+        if (categoryNeedsDetailedRace(category) && !hasRaceDetailsForCategory(selectedRace, raceDetails, category)) {
+            console.error(`Forced race does not have enough details for category "${category}": ${selectedRace.name}`);
+            process.exit(1);
+        }
         console.log(`Forced race: ${selectedRace.name}`);
     } else {
         const recentRaceIds = history.slice(-30).map(h => h.race_id);
+        const availableRaces = races.filter(r => !recentRaceIds.includes(r.id));
+        const eligibleRaces = categoryNeedsDetailedRace(category)
+            ? availableRaces.filter(r => hasRaceDetailsForCategory(r, raceDetails, category))
+            : availableRaces;
 
         // Try upcoming races first (within 30 days)
-        const upcomingRaces = getUpcomingRaces(races, 30).filter(r => !recentRaceIds.includes(r.id));
+        const upcomingRaces = getUpcomingRaces(eligibleRaces, 30);
         if (upcomingRaces.length > 0) {
             selectedRace = upcomingRaces[Math.floor(Math.random() * upcomingRaces.length)];
         } else {
-            // Fallback: any race not recently posted
-            const availableRaces = races.filter(r => !recentRaceIds.includes(r.id));
-            selectedRace = availableRaces[Math.floor(Math.random() * availableRaces.length)];
+            // Fallback: any eligible race not recently posted
+            if (eligibleRaces.length === 0) {
+                console.error(`No eligible races found for category "${category}".`);
+                process.exit(1);
+            }
+            selectedRace = eligibleRaces[Math.floor(Math.random() * eligibleRaces.length)];
         }
     }
 
@@ -230,16 +277,18 @@ async function main() {
             if (detail.overview) parts.push(`概要: ${detail.overview}`);
             if (detail.course?.details) parts.push(`コース: ${detail.course.details}`);
             if (detail.runner_review?.good_points) parts.push(`良い点: ${detail.runner_review.good_points.join(' / ')}`);
-            if (detail.local_gourmet) {
-                const gourmets = getNamedItems(detail.local_gourmet)
+            const gourmetItems = getGourmetItems(detail);
+            if (gourmetItems.length > 0) {
+                const gourmets = gourmetItems
                     .map((g: any) => `${g.name}: ${g.description}`)
                     .join(' / ');
                 if (gourmets) {
                     parts.push(`ご当地グルメ: ${gourmets}`);
                 }
             }
-            if (detail.tourism) {
-                const spots = getNamedItems(detail.tourism)
+            const tourismItems = getTourismItems(detail);
+            if (tourismItems.length > 0) {
+                const spots = tourismItems
                     .map((t: any) => `${t.name}: ${t.description}`)
                     .join(' / ');
                 if (spots) {
