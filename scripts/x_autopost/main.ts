@@ -84,6 +84,26 @@ function findRaceDetails(race: Race | undefined, raceDetails: Record<string, any
     return undefined;
 }
 
+function getNamedItems(value: any): Array<{ name?: string; description?: string }> {
+    if (Array.isArray(value)) {
+        return value;
+    }
+
+    if (value && typeof value === 'object') {
+        if (Array.isArray(value.spots)) {
+            return value.spots;
+        }
+        if (Array.isArray(value.items)) {
+            return value.items;
+        }
+        if (Array.isArray(value.entries)) {
+            return value.entries;
+        }
+    }
+
+    return [];
+}
+
 function getUpcomingRaces(races: Race[], days: number = 30): Race[] {
     const now = new Date();
     const cutoff = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
@@ -145,12 +165,20 @@ async function main() {
             if (detail.course?.details) parts.push(`コース: ${detail.course.details}`);
             if (detail.runner_review?.good_points) parts.push(`良い点: ${detail.runner_review.good_points.join(' / ')}`);
             if (detail.local_gourmet) {
-                const gourmets = detail.local_gourmet.map((g: any) => `${g.name}: ${g.description}`).join(' / ');
-                parts.push(`ご当地グルメ: ${gourmets}`);
+                const gourmets = getNamedItems(detail.local_gourmet)
+                    .map((g: any) => `${g.name}: ${g.description}`)
+                    .join(' / ');
+                if (gourmets) {
+                    parts.push(`ご当地グルメ: ${gourmets}`);
+                }
             }
             if (detail.tourism) {
-                const spots = detail.tourism.map((t: any) => `${t.name}: ${t.description}`).join(' / ');
-                parts.push(`周辺観光: ${spots}`);
+                const spots = getNamedItems(detail.tourism)
+                    .map((t: any) => `${t.name}: ${t.description}`)
+                    .join(' / ');
+                if (spots) {
+                    parts.push(`周辺観光: ${spots}`);
+                }
             }
             detailsContext = parts.join('\n');
         }
