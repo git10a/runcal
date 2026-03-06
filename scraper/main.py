@@ -384,7 +384,6 @@ def deduplicate_races(races):
     unique_races = []
 
     for race in races:
-        # Create a key from normalized name + date
         norm_name = normalize_race_name(race['name'])
         key = f"{norm_name}_{race['date']}"
 
@@ -392,19 +391,14 @@ def deduplicate_races(races):
             seen[key] = race
             unique_races.append(race)
         else:
-            # Prefer RunnersBible data (has more details like entry dates, time limit)
             existing = seen[key]
             if race.get('source') == 'runnersbible' and existing.get('source') != 'runnersbible':
-                # Replace with RunnersBible version
                 idx = unique_races.index(existing)
                 unique_races[idx] = race
                 seen[key] = race
             elif existing.get('source') == 'runnersbible':
-                # Keep existing RunnersBible version
                 pass
             else:
-                # Both are from same source or neither is RunnersBible
-                # Keep the one with more info
                 if race.get('entry_start_date') and not existing.get('entry_start_date'):
                     idx = unique_races.index(existing)
                     unique_races[idx] = race
@@ -424,14 +418,27 @@ def main():
     os.makedirs(public_images_dir, exist_ok=True)
 
     all_races = []
+    jst_now = datetime.now(timezone(timedelta(hours=9)))
+    today_str = jst_now.strftime("%Y-%m-%d")
 
-    # 0. Load existing races to prevent overwriting manual data
+    # 0. Load existing races, filtering out past events and RunnersBible data (will be re-scraped)
     if os.path.exists(json_path):
         try:
             with open(json_path, 'r', encoding='utf-8') as f:
                 existing_races = json.load(f)
-                all_races.extend(existing_races)
-                print(f"Loaded {len(existing_races)} existing races from {json_path}")
+                kept = 0
+                removed_past = 0
+                removed_rb = 0
+                for race in existing_races:
+                    if race.get('date') and race['date'] < today_str:
+                        removed_past += 1
+                        continue
+                    if race.get('source') == 'runnersbible':
+                        removed_rb += 1
+                        continue
+                    all_races.append(race)
+                    kept += 1
+                print(f"Loaded {kept} existing races (removed {removed_past} past, {removed_rb} RunnersBible to re-scrape)")
         except json.JSONDecodeError:
             print(f"Warning: Could not parse {json_path}. Starting fresh.")
 
@@ -481,10 +488,6 @@ def main():
                             json.dump(unique_races, f, ensure_ascii=False, indent=2)
 
         # --- End Image Generation Step ---
-
-        # Remove source field before saving (internal use only)
-        for race in unique_races:
-            race.pop('source', None)
 
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(unique_races, f, ensure_ascii=False, indent=2)

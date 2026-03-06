@@ -63,13 +63,13 @@ def main():
                 existing = races_by_name[name]
                 
             if existing:
-                # Preserve everything except what we explicitly update from CSV
                 race = existing.copy()
                 race['name'] = name
                 race['url'] = url
                 race['date'] = parsed_date
                 race['prefecture'] = prefecture
                 race['city'] = city
+                race['source'] = 'csv'
                 race['updated_at'] = today_str
                 preserved_count += 1
             else:
@@ -88,6 +88,7 @@ def main():
                     "time_limit": None,
                     "features": None,
                     "url": url,
+                    "source": "csv",
                     "updated_at": today_str,
                     "image_url": None
                 }
