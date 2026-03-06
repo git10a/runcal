@@ -19,6 +19,21 @@ on:
         options:
           - 'yes'
           - 'no'
+      force_race_name:
+        description: 'Optional race name for testing'
+        required: false
+        default: ''
+        type: string
+      force_category:
+        description: 'Optional category override'
+        required: false
+        default: 'race_feature'
+        type: choice
+        options:
+          - 'race_feature'
+          - 'race_gourmet'
+          - 'site_tips'
+          - 'dev_story'
 
 jobs:
   autopost:
@@ -48,6 +63,8 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run || 'no' }}
+          FORCE_RACE_NAME: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force_race_name || '' }}
+          FORCE_CATEGORY: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force_category || '' }}
 
       - name: Commit and push changes
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.dry_run == 'no')

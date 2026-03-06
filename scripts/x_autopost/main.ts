@@ -51,6 +51,39 @@ function selectCategory() {
     return CATEGORIES[0].name;
 }
 
+function normalizeText(value: string) {
+    return value.trim().toLowerCase();
+}
+
+function findRaceByName(races: Race[], raceName: string) {
+    const normalized = normalizeText(raceName);
+    return races.find(r => normalizeText(r.name) === normalized);
+}
+
+function findRaceDetails(race: Race | undefined, raceDetails: Record<string, any>) {
+    if (!race) return undefined;
+
+    if (raceDetails[race.name]) {
+        return raceDetails[race.name];
+    }
+
+    const normalizedRaceName = normalizeText(race.name);
+
+    for (const [detailName, detail] of Object.entries(raceDetails)) {
+        const normalizedDetailName = normalizeText(detailName);
+        if (
+            normalizedRaceName.startsWith(normalizedDetailName) ||
+            normalizedDetailName.startsWith(normalizedRaceName) ||
+            normalizedRaceName.includes(normalizedDetailName) ||
+            normalizedDetailName.includes(normalizedRaceName)
+        ) {
+            return detail;
+        }
+    }
+
+    return undefined;
+}
+
 function getUpcomingRaces(races: Race[], days: number = 30): Race[] {
     const now = new Date();
     const cutoff = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
@@ -63,6 +96,8 @@ function getUpcomingRaces(races: Race[], days: number = 30): Race[] {
 async function main() {
     const dryRunEnv = process.env.DRY_RUN;
     const dryRun = dryRunEnv === 'true' || dryRunEnv === 'yes';
+    const forcedRaceName = process.env.FORCE_RACE_NAME?.trim();
+    const forcedCategory = process.env.FORCE_CATEGORY?.trim();
     console.log(`Starting X autopost... (Dry Run: ${dryRun})`);
 
     // Load data
@@ -70,27 +105,40 @@ async function main() {
     const raceDetails: Record<string, any> = JSON.parse(fs.readFileSync(RACE_DETAILS_PATH, 'utf-8'));
     const history: PostHistory[] = JSON.parse(fs.readFileSync(HISTORY_PATH, 'utf-8'));
 
-    const category = selectCategory();
+    const validCategory = forcedCategory && CATEGORIES.some(c => c.name === forcedCategory);
+    const category = validCategory ? forcedCategory! : selectCategory();
     console.log(`Selected category: ${category}`);
+    if (forcedCategory && !validCategory) {
+        console.warn(`Unknown FORCE_CATEGORY: ${forcedCategory}. Falling back to random category.`);
+    }
 
     // Always select a race — prioritize upcoming races
     let selectedRace: Race | undefined;
-    const recentRaceIds = history.slice(-30).map(h => h.race_id);
-
-    // Try upcoming races first (within 30 days)
-    const upcomingRaces = getUpcomingRaces(races, 30).filter(r => !recentRaceIds.includes(r.id));
-    if (upcomingRaces.length > 0) {
-        selectedRace = upcomingRaces[Math.floor(Math.random() * upcomingRaces.length)];
+    if (forcedRaceName) {
+        selectedRace = findRaceByName(races, forcedRaceName);
+        if (!selectedRace) {
+            console.error(`FORCE_RACE_NAME not found: ${forcedRaceName}`);
+            process.exit(1);
+        }
+        console.log(`Forced race: ${selectedRace.name}`);
     } else {
-        // Fallback: any race not recently posted
-        const availableRaces = races.filter(r => !recentRaceIds.includes(r.id));
-        selectedRace = availableRaces[Math.floor(Math.random() * availableRaces.length)];
+        const recentRaceIds = history.slice(-30).map(h => h.race_id);
+
+        // Try upcoming races first (within 30 days)
+        const upcomingRaces = getUpcomingRaces(races, 30).filter(r => !recentRaceIds.includes(r.id));
+        if (upcomingRaces.length > 0) {
+            selectedRace = upcomingRaces[Math.floor(Math.random() * upcomingRaces.length)];
+        } else {
+            // Fallback: any race not recently posted
+            const availableRaces = races.filter(r => !recentRaceIds.includes(r.id));
+            selectedRace = availableRaces[Math.floor(Math.random() * availableRaces.length)];
+        }
     }
 
     // Get detailed info if available
     let detailsContext = '';
     if (selectedRace) {
-        const detail = raceDetails[selectedRace.name];
+        const detail = findRaceDetails(selectedRace, raceDetails);
         if (detail) {
             const parts: string[] = [];
             if (detail.overview) parts.push(`概要: ${detail.overview}`);
@@ -183,7 +231,7 @@ ${recentContext}
 - 挨拶は不要。
 - 段落を区切る場合、必ず空行を1行挟む（改行を2回入れる）。1回だけの改行で次の文を始めない。
 - 大会について語る場合、データのスペックを並べるのではなく「走りたくなるポイント」や「この大会ならではの魅力」を自分の言葉で語る。
-- 投稿の最後にランカレのURLを自然に添える。
+- 投稿の最後にランカレのURLをそのまま添える。宣伝文句や誘導文を足さない。
 - 人間味を極限まで高めてください。
 `;
 }
