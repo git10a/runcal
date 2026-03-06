@@ -225,8 +225,9 @@ def convert_ahotu_to_race(event_item):
         if isinstance(image_url, list) and image_url:
             image_url = image_url[0]
 
+        from main import generate_race_id
         return {
-            "id": str(uuid.uuid4()),
+            "id": generate_race_id(name, parsed_date),
             "name": name,
             "date": parsed_date,
             "entry_start_date": None,

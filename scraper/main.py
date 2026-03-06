@@ -8,6 +8,12 @@ import time
 import hashlib
 from datetime import datetime, timezone, timedelta
 
+
+def generate_race_id(name: str, date: str) -> str:
+    """Generate a deterministic UUID from race name + date."""
+    seed = f"{name}_{date}"
+    return str(uuid.uuid5(uuid.NAMESPACE_URL, seed))
+
 # Import the image generator
 try:
     import image_generator
@@ -323,7 +329,7 @@ def scrape_runners_bible_page(url, default_distance="フル"):
             features_str = features_str[:50] + "..."
 
         races.append({
-            "id": str(uuid.uuid4()),
+            "id": generate_race_id(name_str, parsed_date),
             "name": name_str,
             "date": parsed_date,
             "entry_start_date": entry_start,

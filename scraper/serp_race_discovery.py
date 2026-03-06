@@ -21,6 +21,7 @@ from datetime import datetime, timezone, timedelta
 import requests
 from google import genai
 
+from main import generate_race_id
 from serp_entry_extractor import (
     _get_serper_api_key,
     _get_gemini_client,
@@ -278,9 +279,10 @@ def discover_upcoming_races(months_ahead=6):
                 distance = ["その他"]
             distance = ["フル" if d == "マラソン" else d for d in distance]
 
+            race_name = race_data.get("name", "")
             all_discovered.append({
-                "id": str(uuid.uuid4()),
-                "name": race_data.get("name", ""),
+                "id": generate_race_id(race_name, date),
+                "name": race_name,
                 "date": date,
                 "entry_start_date": None,
                 "entry_end_date": None,
