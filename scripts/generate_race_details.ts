@@ -19,7 +19,6 @@ if (!ANTHROPIC_API_KEY) {
 
 const DATA_DIR = path.resolve(__dirname, '../data');
 const RACES_JSON_PATH = path.join(DATA_DIR, 'races.json');
-const MASTER_CSV_PATH = path.join(DATA_DIR, 'marathon_master.csv');
 const OUTPUT_JSON_PATH = path.join(DATA_DIR, 'race_details.json');
 
 export function normalizeRaceName(name: string): string {
@@ -124,20 +123,6 @@ async function main() {
   // races.json の読み込み
   const racesData = JSON.parse(fs.readFileSync(RACES_JSON_PATH, 'utf-8'));
 
-  // marathon_master.csv の読み込み（簡易パース：URLの突き合わせに使用）
-  const csvContent = fs.readFileSync(MASTER_CSV_PATH, 'utf-8');
-  const csvLines = csvContent.split('\n').filter(line => line.trim() !== '');
-  const raceUrlMap = new Map();
-  // CSVは: 大会名,公式サイトURL,開催日,開催地,都道府県
-  for (let i = 1; i < csvLines.length; i++) {
-    const cols = csvLines[i].split(',');
-    if (cols.length >= 2) {
-      const name = cols[0].trim();
-      const url = cols[1].trim();
-      raceUrlMap.set(name, url);
-    }
-  }
-
   // 過去の生成結果を読み込み（あれば）
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let existingDetails: Record<string, any> = {};
@@ -168,18 +153,16 @@ async function main() {
       continue;
     }
 
-    const raceUrl = raceUrlMap.get(targetRace.name) || null;
-
     const inputJson = {
-      id: targetRace.id, // Only keeping for reference, though not strictly needed anymore
-      name: normalizedName, // Give AI the normalized name to avoid tying it to a specific year
+      id: targetRace.id,
+      name: normalizedName,
       date: targetRace.date,
       entry_end_date: targetRace.entry_end_date,
       entry_status: targetRace.entry_status,
       prefecture: targetRace.prefecture,
       city: targetRace.city,
       distance: targetRace.distance,
-      url: raceUrl
+      url: targetRace.url || null
     };
 
     console.log(`\n[${i + 1}/${racesData.length}] 対象大会: ${inputJson.name}`);
