@@ -292,7 +292,7 @@ function buildPrompt(category: string, race: Race | undefined, detailsContext: s
 - 場所: ${race.prefecture}${race.city ? ' ' + race.city : ''}
 - 種目: ${race.distance.join(', ')}
 - エントリー状況: ${race.entry_status}
-- サイトURL: https://runcal.com/races/${race.id}
+- サイトURL: https://run-cal.com/races/${race.id}
 ${race.tags ? `- タグ: ${race.tags.join(', ')}` : ''}
 
 ${detailsContext ? `大会の詳細情報:\n${detailsContext}` : ''}
