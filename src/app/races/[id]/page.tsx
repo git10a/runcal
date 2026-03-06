@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const description = oneLine
         ? `${oneLine}。日程・エントリー情報・コース詳細・周辺観光をまとめてチェック。`
         : `${race.prefecture}${race.city ? race.city : ''}で開催される${race.name}の日程・エントリー情報。${race.distance.join('・')}の情報をまとめてチェック。`;
+    const ogImage = race.image_url || '/runcalogp.png';
 
     return {
         title,
@@ -46,20 +47,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             title: `${race.name} | ランカレ`,
             description,
             type: 'article',
-            ...(race.image_url ? {
-                images: [{
-                    url: race.image_url,
-                    width: 1200,
-                    height: 630,
-                    alt: `${race.name}の画像`,
-                }],
-            } : {}),
+            images: [{
+                url: ogImage,
+                width: 1200,
+                height: 630,
+                alt: race.image_url ? `${race.name}の画像` : 'ランカレのOGP画像',
+            }],
         },
         twitter: {
             card: 'summary_large_image',
             title: `${race.name} | ランカレ`,
             description,
-            ...(race.image_url ? { images: [race.image_url] } : {}),
+            images: [ogImage],
         },
     };
 }
