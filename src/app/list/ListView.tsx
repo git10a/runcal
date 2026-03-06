@@ -21,7 +21,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
         selectedDistance,
         selectedMonth,
         selectedTags,
-        showOnlyOpen,
+        selectedEntryStatus,
         showOnlyCertified,
         handleFilterChange,
         handleClearAll,
@@ -39,7 +39,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
     useEffect(() => {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setCurrentPage(1);
-    }, [selectedPrefecture, selectedRegion, selectedDistance, selectedMonth, showOnlyOpen, showOnlyCertified]);
+    }, [selectedPrefecture, selectedRegion, selectedDistance, selectedMonth, selectedEntryStatus, showOnlyCertified]);
 
     const totalPages = Math.ceil(filteredRaces.length / ITEMS_PER_PAGE);
     const paginatedRaces = filteredRaces.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
@@ -54,7 +54,7 @@ export default function ListView({ initialRaces, prefectures, distances }: ListV
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
                 selectedTags={selectedTags}
-                showOnlyOpen={showOnlyOpen}
+                selectedEntryStatus={selectedEntryStatus}
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={(type, val) => {
                     handleFilterChange(type, val);

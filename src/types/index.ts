@@ -18,4 +18,5 @@ export interface Race {
     is_hot?: boolean;
 }
 
-export type FilterType = 'prefecture' | 'region' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags';
+export type EntryStatusValue = 'エントリー前' | '受付中' | '受付終了';
+export type FilterType = 'prefecture' | 'region' | 'distance' | 'month' | 'entryStatus' | 'onlyCertified' | 'tags';

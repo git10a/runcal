@@ -21,7 +21,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
         selectedDistance,
         selectedMonth,
         selectedTags,
-        showOnlyOpen,
+        selectedEntryStatus,
         showOnlyCertified,
         handleFilterChange,
         handleClearAll,
@@ -49,7 +49,7 @@ export default function RaceList({ initialRaces, prefectures, distances }: RaceL
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
                 selectedTags={selectedTags}
-                showOnlyOpen={showOnlyOpen}
+                selectedEntryStatus={selectedEntryStatus}
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={(type, val) => {
                     handleFilterChange(type, val);

@@ -11,8 +11,9 @@ export function useRaceFilters(initialRaces: Race[]) {
     const selectedDistance = searchParams.get('distance');
     const selectedMonth = searchParams.get('month');
     const selectedTags = searchParams.getAll('tags');
-    const openParam = searchParams.get('open');
-    const showOnlyOpen = openParam === null ? true : openParam === 'true';
+    const statusParam = searchParams.get('status');
+    const selectedEntryStatus: import('@/types').EntryStatusValue | null =
+        statusParam === null ? '受付中' : statusParam === 'all' ? null : statusParam as import('@/types').EntryStatusValue;
     const showOnlyCertified = searchParams.get('certified') === 'true';
 
     const updateFilterParams = (key: string, value: string | string[] | null | boolean) => {
@@ -30,15 +31,15 @@ export function useRaceFilters(initialRaces: Race[]) {
         router.push(`?${params.toString()}`);
     };
 
-    const handleFilterChange = (type: 'prefecture' | 'region' | 'distance' | 'month' | 'onlyOpen' | 'onlyCertified' | 'tags', value: string | string[] | boolean | null) => {
+    const handleFilterChange = (type: 'prefecture' | 'region' | 'distance' | 'month' | 'entryStatus' | 'onlyCertified' | 'tags', value: string | string[] | boolean | null) => {
         switch (type) {
             case 'prefecture':
                 updateFilterParams('prefecture', value);
-                updateFilterParams('region', null); // 都道府県選択時は地方をクリア
+                updateFilterParams('region', null);
                 break;
             case 'region':
                 updateFilterParams('region', value);
-                updateFilterParams('prefecture', null); // 地方選択時は都道府県をクリア
+                updateFilterParams('prefecture', null);
                 break;
             case 'distance':
                 updateFilterParams('distance', value);
@@ -49,8 +50,8 @@ export function useRaceFilters(initialRaces: Race[]) {
             case 'tags':
                 updateFilterParams('tags', value);
                 break;
-            case 'onlyOpen':
-                updateFilterParams('open', value);
+            case 'entryStatus':
+                updateFilterParams('status', value === null ? 'all' : value);
                 break;
             case 'onlyCertified':
                 updateFilterParams('certified', value);
@@ -76,8 +77,8 @@ export function useRaceFilters(initialRaces: Race[]) {
     if (selectedDistance) {
         filteredRaces = filteredRaces.filter(r => r.distance.includes(selectedDistance));
     }
-    if (showOnlyOpen) {
-        filteredRaces = filteredRaces.filter(r => r.entry_status === '受付中');
+    if (selectedEntryStatus) {
+        filteredRaces = filteredRaces.filter(r => r.entry_status === selectedEntryStatus);
     }
     if (showOnlyCertified) {
         filteredRaces = filteredRaces.filter(r => r.is_jaaf_certified === true);
@@ -96,7 +97,7 @@ export function useRaceFilters(initialRaces: Race[]) {
         selectedDistance,
         selectedMonth,
         selectedTags,
-        showOnlyOpen,
+        selectedEntryStatus,
         showOnlyCertified,
         handleFilterChange,
         handleClearAll,

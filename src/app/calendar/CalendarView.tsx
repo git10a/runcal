@@ -21,7 +21,7 @@ export default function CalendarView({ initialRaces, prefectures, distances }: C
         selectedDistance,
         selectedMonth,
         selectedTags,
-        showOnlyOpen,
+        selectedEntryStatus,
         showOnlyCertified,
         handleFilterChange,
         handleClearAll,
@@ -40,7 +40,7 @@ export default function CalendarView({ initialRaces, prefectures, distances }: C
                 selectedDistance={selectedDistance}
                 selectedMonth={selectedMonth}
                 selectedTags={selectedTags}
-                showOnlyOpen={showOnlyOpen}
+                selectedEntryStatus={selectedEntryStatus}
                 showOnlyCertified={showOnlyCertified}
                 onFilterChange={handleFilterChange}
                 onClearAll={handleClearAll}

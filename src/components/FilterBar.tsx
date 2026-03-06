@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { Check, X, Info } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { FilterType } from '@/types';
+import { FilterType, EntryStatusValue } from '@/types';
 import MonthFilter from './filters/MonthFilter';
 import PrefectureFilter from './filters/PrefectureFilter';
 import DistanceFilter from './filters/DistanceFilter';
@@ -17,7 +17,7 @@ interface FilterBarProps {
     selectedDistance: string | null;
     selectedMonth: string | null;
     selectedTags: string[];
-    showOnlyOpen: boolean;
+    selectedEntryStatus: EntryStatusValue | null;
     showOnlyCertified: boolean;
     onFilterChange: (type: FilterType, value: string | string[] | boolean | null) => void;
     onClearAll: () => void;
@@ -32,7 +32,7 @@ export default function FilterBar({
     selectedDistance,
     selectedMonth,
     selectedTags,
-    showOnlyOpen,
+    selectedEntryStatus,
     showOnlyCertified,
     onFilterChange,
     onClearAll,
@@ -49,9 +49,9 @@ export default function FilterBar({
             selectedDistance !== null ||
             selectedMonth !== null ||
             selectedTags.length > 0 ||
-            showOnlyOpen === false ||
+            selectedEntryStatus !== '受付中' ||
             showOnlyCertified;
-    }, [selectedPrefecture, selectedRegion, selectedDistance, selectedMonth, selectedTags, showOnlyOpen, showOnlyCertified]);
+    }, [selectedPrefecture, selectedRegion, selectedDistance, selectedMonth, selectedTags, selectedEntryStatus, showOnlyCertified]);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -109,19 +109,25 @@ export default function FilterBar({
                         }}
                     />
 
-                    {/* Only Open Toggle */}
-                    <button
-                        onClick={() => onFilterChange('onlyOpen', !showOnlyOpen)}
-                        className={cn(
-                            "px-3 py-2 rounded-full text-sm font-bold transition-all border flex items-center gap-1.5 cursor-pointer",
-                            showOnlyOpen
-                                ? "bg-primary text-primary-foreground shadow-md border-primary"
-                                : "bg-card border-border/80 text-foreground hover:bg-muted"
-                        )}
-                    >
-                        受付中
-                        {showOnlyOpen && <Check size={14} />}
-                    </button>
+                    {/* Entry Status Filter */}
+                    {(['エントリー前', '受付中', '受付終了'] as EntryStatusValue[]).map((status) => {
+                        const isSelected = selectedEntryStatus === status;
+                        return (
+                            <button
+                                key={status}
+                                onClick={() => onFilterChange('entryStatus', isSelected ? null : status)}
+                                className={cn(
+                                    "px-3 py-2 rounded-full text-sm font-bold transition-all border flex items-center gap-1.5 cursor-pointer",
+                                    isSelected
+                                        ? "bg-primary text-primary-foreground shadow-md border-primary"
+                                        : "bg-card border-border/80 text-foreground hover:bg-muted"
+                                )}
+                            >
+                                {status}
+                                {isSelected && <Check size={14} />}
+                            </button>
+                        );
+                    })}
 
                     {/* Certified Toggle */}
                     <div className="relative flex items-center">
