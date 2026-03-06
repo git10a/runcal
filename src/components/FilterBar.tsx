@@ -8,6 +8,7 @@ import MonthFilter from './filters/MonthFilter';
 import PrefectureFilter from './filters/PrefectureFilter';
 import DistanceFilter from './filters/DistanceFilter';
 import TagsFilter from './filters/TagsFilter';
+import EntryStatusFilter from './filters/EntryStatusFilter';
 
 interface FilterBarProps {
     prefectures: string[];
@@ -38,7 +39,7 @@ export default function FilterBar({
     onClearAll,
     totalResults
 }: FilterBarProps) {
-    const [openDropdown, setOpenDropdown] = useState<'prefecture' | 'distance' | 'month' | 'tags' | null>(null);
+    const [openDropdown, setOpenDropdown] = useState<'prefecture' | 'distance' | 'month' | 'tags' | 'entryStatus' | null>(null);
     const [showCertifiedTooltip, setShowCertifiedTooltip] = useState(false);
     const filterRef = useRef<HTMLDivElement>(null);
 
@@ -109,25 +110,12 @@ export default function FilterBar({
                         }}
                     />
 
-                    {/* Entry Status Filter */}
-                    {(['エントリー前', '受付中', '受付終了'] as EntryStatusValue[]).map((status) => {
-                        const isSelected = selectedEntryStatus === status;
-                        return (
-                            <button
-                                key={status}
-                                onClick={() => onFilterChange('entryStatus', isSelected ? null : status)}
-                                className={cn(
-                                    "px-3 py-2 rounded-full text-sm font-bold transition-all border flex items-center gap-1.5 cursor-pointer",
-                                    isSelected
-                                        ? "bg-primary text-primary-foreground shadow-md border-primary"
-                                        : "bg-card border-border/80 text-foreground hover:bg-muted"
-                                )}
-                            >
-                                {status}
-                                {isSelected && <Check size={14} />}
-                            </button>
-                        );
-                    })}
+                    <EntryStatusFilter
+                        selectedStatus={selectedEntryStatus}
+                        isOpen={openDropdown === 'entryStatus'}
+                        onToggle={() => setOpenDropdown(prev => prev === 'entryStatus' ? null : 'entryStatus')}
+                        onSelect={(val) => { onFilterChange('entryStatus', val); setOpenDropdown(null); }}
+                    />
 
                     {/* Certified Toggle */}
                     <div className="relative flex items-center">
