@@ -84,11 +84,12 @@ export function useRaceFilters(initialRaces: Race[]) {
         filteredRaces = filteredRaces.filter(r => r.is_jaaf_certified === true);
     }
     if (selectedTags.length > 0) {
-        // AND search logic: the race must have all selected tags
         filteredRaces = filteredRaces.filter(r =>
             selectedTags.every(tag => r.tags && r.tags.includes(tag))
         );
     }
+
+    filteredRaces = filteredRaces.sort((a, b) => a.date.localeCompare(b.date));
 
     return {
         filteredRaces,
