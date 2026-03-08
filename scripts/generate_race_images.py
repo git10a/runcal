@@ -58,6 +58,11 @@ def generate_race_image(event_name, output_path):
         return False
 
 def main():
+    if os.getenv('ENABLE_AI_GENERATION') != 'true':
+        print('--- AI生成が無効化されています (ENABLE_AI_GENERATION != true) ---')
+        print('APIコスト削減のため、処理を中断します。')
+        return
+
     if not os.path.exists(IMAGES_DIR):
         os.makedirs(IMAGES_DIR)
 

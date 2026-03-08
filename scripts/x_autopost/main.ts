@@ -13,6 +13,7 @@ const JST_TIME_ZONE = 'Asia/Tokyo';
 const AUTO_POSTS_PER_DAY = 3;
 const AUTO_POST_START_HOUR = 8;
 const AUTO_POST_END_HOUR = 21;
+const MAX_TWEET_LENGTH = 200;
 
 interface Race {
     id: string;
@@ -208,7 +209,39 @@ function shouldPostInThisScheduledRun(history: PostHistory[]) {
     return roll < probability;
 }
 
+async function generateTweetWithinLimit(prompt: string, model: string, maxLength: number) {
+    let tweetText = (await generateTweet(prompt, model)).trim();
+    let attempt = 1;
+
+    while (tweetText && tweetText.length > maxLength && attempt < 3) {
+        console.warn(
+            `Generated tweet is too long (${tweetText.length} chars). Retrying with stricter instruction...`
+        );
+
+        tweetText = (await generateTweet(
+            `${prompt}
+
+以下は長すぎた下書きです。意味をなるべく保ったまま、改行やURLを含めて${maxLength}文字以内に短く書き直してください。
+説明や前置きは不要で、完成した本文だけを返してください。
+
+下書き:
+${tweetText}`,
+            model
+        )).trim();
+
+        attempt += 1;
+    }
+
+    return tweetText;
+}
+
 async function main() {
+    if (process.env.ENABLE_AI_GENERATION !== 'true') {
+        console.log('--- AI生成・自動投稿が無効化されています (ENABLE_AI_GENERATION != true) ---');
+        console.log('APIコスト削減のため、処理を中断します。');
+        return;
+    }
+
     const dryRunEnv = process.env.DRY_RUN;
     const dryRun = dryRunEnv === 'true' || dryRunEnv === 'yes';
     const forcedRaceName = process.env.FORCE_RACE_NAME?.trim();
@@ -301,13 +334,22 @@ async function main() {
 
     const prompt = buildPrompt(category, selectedRace, detailsContext, history.slice(-5));
 
-    const tweetText = await generateTweet(prompt, process.env.CLAUDE_MODEL || 'claude-sonnet-4-6');
+    const tweetText = await generateTweetWithinLimit(
+        prompt,
+        process.env.CLAUDE_MODEL || 'claude-sonnet-4-6',
+        MAX_TWEET_LENGTH
+    );
     console.log('--- Generated Tweet ---');
     console.log(tweetText);
     console.log('-----------------------');
 
     if (!tweetText) {
         console.error('Failed to generate tweet text.');
+        return;
+    }
+
+    if (tweetText.length > MAX_TWEET_LENGTH) {
+        console.error(`Generated tweet is still too long: ${tweetText.length} characters.`);
         return;
     }
 
@@ -375,6 +417,7 @@ ${recentContext}
 - 段落を区切る場合、必ず空行を1行挟む（改行を2回入れる）。1回だけの改行で次の文を始めない。
 - 大会について語る場合、データのスペックを並べるのではなく「走りたくなるポイント」や「この大会ならではの魅力」を自分の言葉で語る。
 - 投稿の最後にランカレのURLをそのまま添える。宣伝文句や誘導文を足さない。
+- 投稿全体は改行やURLを含めて${MAX_TWEET_LENGTH}文字以内に収める。短めで読みやすくする。
 - 人間味を極限まで高めてください。
 `;
 }

@@ -119,6 +119,12 @@ const SYSTEM_PROMPT = `あなたはマラソン大会の紹介記事を生成す
 - 過度な装飾は不要`;
 
 async function main() {
+  if (process.env.ENABLE_AI_GENERATION !== 'true') {
+    console.log('--- AI世代が無効化されています (ENABLE_AI_GENERATION != true) ---');
+    console.log('APIコスト削減のため、処理を中断します。');
+    return;
+  }
+
   console.log('--- 1. データの読み込み ---');
   // races.json の読み込み
   const racesData = JSON.parse(fs.readFileSync(RACES_JSON_PATH, 'utf-8'));
