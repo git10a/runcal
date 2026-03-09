@@ -280,7 +280,7 @@ def process_race(race, today_str, use_llm=True, use_serp=True):
 
         # Tier 1.8+1.9: SERP API — search Google snippets for entry dates.
         # Domain-specific first, then broad search if needed. One Gemini call.
-        if not updated and use_serp and SERP_AVAILABLE:
+        if not updated and use_serp and SERP_AVAILABLE and os.getenv('ENABLE_AI_GENERATION') == 'true':
             print(f"[SERP] {race['name']}")
             try:
                 start, end, serp_status = extract_entry_dates_with_serp(
@@ -299,7 +299,7 @@ def process_race(race, today_str, use_llm=True, use_serp=True):
                 print(f"  -> SERP error: {e}")
 
         # Tier 2: If all else failed, try direct page LLM analysis
-        if not updated and use_llm and LLM_AVAILABLE:
+        if not updated and use_llm and LLM_AVAILABLE and os.getenv('ENABLE_AI_GENERATION') == 'true':
             print(f"[LLM] {race['name']}")
             try:
                 start, end, llm_status = extract_entry_dates_with_llm(url, race['name'], race.get('date', ''))
@@ -376,8 +376,15 @@ def main():
         refresh_all_statuses()
         return
 
-    use_llm = not args.no_llm and LLM_AVAILABLE
-    use_serp = not args.no_serp and SERP_AVAILABLE
+    if os.getenv('ENABLE_AI_GENERATION') != 'true':
+        print("--- AI生成機能が無効化されています (ENABLE_AI_GENERATION != true) ---")
+        print("APIコスト削減のため、LLMやSERP APIによる高度な抽出を停止し、正規表現ベースの検索のみ行います。")
+        use_llm = False
+        use_serp = False
+    else:
+        use_llm = not args.no_llm and LLM_AVAILABLE
+        use_serp = not args.no_serp and SERP_AVAILABLE
+
     print(f"Starting update script (LLM: {'ON' if use_llm else 'OFF'}, SERP: {'ON' if use_serp else 'OFF'})...")
     
     if not os.path.exists(RACES_JSON_PATH):

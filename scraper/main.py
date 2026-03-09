@@ -414,6 +414,10 @@ def deduplicate_races(races):
 
 
 def main():
+    if os.getenv('ENABLE_AI_GENERATION') != 'true':
+        print("--- AI生成機能が無効化されています (ENABLE_AI_GENERATION != true) ---")
+        print("APIコスト削減のため、一部の処理（SERPディスカバリ、画像生成など）をスキップまたは制限します。")
+
     print("Starting marathon race scraping...")
     print("=" * 50)
 
@@ -456,14 +460,17 @@ def main():
 
     # 2. SERP-based race discovery (requires API keys)
     print("\n[2/2] SERP Race Discovery...")
-    try:
-        from serp_race_discovery import discover_upcoming_races, merge_discovered_races
-        discovered = discover_upcoming_races(months_ahead=6)
-        if discovered:
-            new_races = merge_discovered_races(discovered, all_races)
-            all_races.extend(new_races)
-    except Exception as e:
-        print(f"SERP discovery skipped: {e}")
+    if os.getenv('ENABLE_AI_GENERATION') == 'true':
+        try:
+            from serp_race_discovery import discover_upcoming_races, merge_discovered_races
+            discovered = discover_upcoming_races(months_ahead=6)
+            if discovered:
+                new_races = merge_discovered_races(discovered, all_races)
+                all_races.extend(new_races)
+        except Exception as e:
+            print(f"SERP discovery skipped: {e}")
+    else:
+        print("SERP discovery skipped (ENABLE_AI_GENERATION != true)")
 
     # 3. Deduplicate
     print("\n" + "=" * 50)
@@ -494,12 +501,17 @@ def main():
                 # Image already exists
                 race['image_url'] = generated_url
             else:
-                if image_generator:
+                if image_generator and os.getenv('ENABLE_AI_GENERATION') == 'true':
                     success = image_generator.generate_and_save_race_image(race['name'], image_filepath)
                     if success:
                         race['image_url'] = generated_url
                         # Add a small delay to avoid hitting API rate limits immediately
                         time.sleep(2)
+                else:
+                    if not image_generator:
+                        print(f"  -> Skipping image (generator not available)")
+                    else:
+                        print(f"  -> Skipping image (ENABLE_AI_GENERATION != true)")
 
                         # Incrementally save the JSON file so the UI can update while processing
                         with open(json_path, 'w', encoding='utf-8') as f:

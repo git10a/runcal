@@ -21,6 +21,10 @@ def generate_and_save_race_image(event_name, output_path):
     
     Returns True if successful, False otherwise.
     """
+    if os.getenv('ENABLE_AI_GENERATION') != 'true':
+        print("AI generation is disabled (ENABLE_AI_GENERATION != true). Skipping.")
+        return False
+
     if not client:
         print("Gemini client not initialized. Skipping image generation.")
         return False
