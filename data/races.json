@@ -1,146 +1,5 @@
 [
   {
-    "id": "31cd7557-f33e-5ed8-951c-69994324fa93",
-    "name": "第38回春日部大凧マラソン大会",
-    "date": "2026-05-04",
-    "entry_start_date": "2025-12-25",
-    "entry_end_date": "2026-02-23",
-    "entry_status": "受付終了",
-    "prefecture": "埼玉県",
-    "city": "春日部市",
-    "distance": [
-      "フル"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": null,
-    "features": null,
-    "url": "https://odako-marathon.jp/",
-    "updated_at": "2026年03月06日"
-  },
-  {
-    "id": "7c50edf2-6670-552a-b591-2eec3f31659f",
-    "name": "山香10マイルロードレース2026（旧山香エビネマラソン）",
-    "date": "2026-05-04",
-    "entry_start_date": "2026-02-16",
-    "entry_end_date": null,
-    "entry_status": "受付中",
-    "prefecture": "大分県",
-    "city": "杵築市",
-    "distance": [
-      "フル"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": null,
-    "features": null,
-    "url": "https://www.city.kitsuki.lg.jp/soshiki/7/bunka/sports/taikai_gyoji/12159.html",
-    "updated_at": "2026年03月07日",
-    "tags": [
-      "⛰️ タフなコース",
-      "🏞️ 景色が良い",
-      "🎉 お祭り・応援が熱い",
-      "♨️ 観光・温泉が楽しめる"
-    ]
-  },
-  {
-    "id": "c925924d-36a5-596a-a249-c5fe7ac6f0ec",
-    "name": "第18回富田林エコマラソン",
-    "date": "2026-05-04",
-    "entry_start_date": "2026-01-20",
-    "entry_end_date": "2026-04-21",
-    "entry_status": "受付終了",
-    "prefecture": "大阪府",
-    "city": "富田林市",
-    "distance": [
-      "フル"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": null,
-    "features": null,
-    "url": "https://www.ecomarathon.run/%E5%AF%8C%E7%94%B0%E6%9E%97/",
-    "updated_at": "2026年04月22日"
-  },
-  {
-    "id": "24e52491-6aaa-5707-b6a5-94be66181506",
-    "name": "第13回 HIRAO風緑マラソン",
-    "date": "2026-05-04",
-    "entry_start_date": "2026-02-28",
-    "entry_end_date": "2026-04-15",
-    "entry_status": "受付終了",
-    "prefecture": "山口県",
-    "city": "平生町",
-    "distance": [
-      "フル"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": null,
-    "features": null,
-    "url": "https://toranosuke86.wixsite.com/hirao-w",
-    "updated_at": "2026年04月16日"
-  },
-  {
-    "id": "cdaa41e1-2e78-54dd-ad20-ef221403fc83",
-    "name": "第229回UP RUN皇居マラソン",
-    "date": "2026-05-04",
-    "entry_start_date": "2026-02-10",
-    "entry_end_date": "2026-05-03",
-    "entry_status": "受付終了",
-    "prefecture": "東京都",
-    "city": "千代田区",
-    "distance": [
-      "フル"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": null,
-    "features": null,
-    "url": "https://up-run.jp/events/up-koukyo229/",
-    "updated_at": "2026年05月04日",
-    "tags": [
-      "🏞️ 景色が良い"
-    ]
-  },
-  {
-    "id": "3da69e29-c5f3-5350-b21d-9d07688c81a7",
-    "name": "2026 UEDA VERTICAL RACE ～第12回 太郎山登山競走～",
-    "date": "2026-05-04",
-    "entry_start_date": "2025-12-03",
-    "entry_end_date": "2026-04-03",
-    "entry_status": "受付終了",
-    "prefecture": "長野県",
-    "city": "上田市",
-    "distance": [
-      "その他"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": null,
-    "features": null,
-    "url": "https://www.uedavertical.com/",
-    "updated_at": "2026年04月04日",
-    "tags": [
-      "⛰️ タフなコース",
-      "🏞️ 景色が良い",
-      "🎉 お祭り・応援が熱い"
-    ]
-  },
-  {
-    "id": "8afc3546-dd1c-54e1-8a56-be69cd48dc7a",
-    "name": "橘湾岸スーパーマラニック273 2026 春の野母崎・諫早ステージ大会",
-    "date": "2026-05-04",
-    "entry_start_date": "2025-11-25",
-    "entry_end_date": "2026-03-31",
-    "entry_status": "受付終了",
-    "prefecture": "長崎県",
-    "city": "長崎市",
-    "distance": [
-      "その他"
-    ],
-    "is_jaaf_certified": false,
-    "time_limit": "217km173km80km55km",
-    "features": null,
-    "url": "https://www.tachibanawangan.net/",
-    "source": "runnersbible",
-    "updated_at": "2026年05月04日"
-  },
-  {
     "id": "2cf19fa9-bbf7-5339-bf9f-5a892c8f15dd",
     "name": "第9回 春のさわやかマラソン",
     "date": "2026-05-05",
@@ -204,7 +63,7 @@
     "date": "2026-05-05",
     "entry_start_date": "2026-02-10",
     "entry_end_date": "2026-05-04",
-    "entry_status": "受付中",
+    "entry_status": "受付終了",
     "prefecture": "東京都",
     "city": "江戸川区",
     "distance": [
@@ -214,7 +73,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://up-run.jp/events/mate-higashiooshima83/",
-    "updated_at": "2026年03月06日",
+    "updated_at": "2026年05月05日",
     "tags": [
       "🏆 タイムが狙いやすい",
       "🏞️ 景色が良い",
@@ -257,7 +116,7 @@
     "features": null,
     "url": "https://race.rdc-run.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "c38399cc-4ac7-5183-a87e-7dfbe4a10049",
@@ -320,7 +179,7 @@
     "features": null,
     "url": "https://yokohama-race.rdc-run.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "71baeb52-055b-5199-975f-4789669c3f69",
@@ -569,7 +428,7 @@
     "features": "ランナーに人気の新横浜！鶴見川河川敷を走るフラットな走りやすいコースで初心者から上級者まで楽しめる大...",
     "url": "https://up-run.jp/events/up-shinyokohama85/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "3de3c492-424d-525e-8cac-e133c68521ac",
@@ -589,7 +448,7 @@
     "features": null,
     "url": "https://kimitsu-iron.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "b057c77e-ffa3-5983-bafd-7aa4261fb76f",
@@ -1126,7 +985,7 @@
     "features": null,
     "url": "https://sites.google.com/view/hagiokanmaranic/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "6e338084-b4a7-5584-bee5-129672de81a6",
@@ -1145,7 +1004,7 @@
     "features": null,
     "url": "http://www.jogtrip.org/trip/index.php/view/1693",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "05fde95a-2f1b-5b9a-9980-f4de9b75b25b",
@@ -1486,7 +1345,7 @@
     "features": "ランナーに人気の府中！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/mate-futyu46/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "35c7119d-152e-5b6e-a89e-fb05e5e07b60",
@@ -1505,7 +1364,7 @@
     "features": "ランニングを習慣としている方、他のランナーと一緒に走ってみたい方などを集めて競いあいましょう。 多摩...",
     "url": "https://up-run.jp/events/up-kawasaki76/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "ec002ef1-b2a2-5cae-8ae3-574495bc6c03",
@@ -2048,7 +1907,7 @@
     "features": null,
     "url": "https://www.toyako-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "bbe9b918-e0a9-5f71-a8ca-b443b1cb493a",
@@ -2067,7 +1926,7 @@
     "features": "全国有数の高低差20m以内の高速平坦コース！",
     "url": "https://oshukirameki.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "7652e04c-69c9-5fc0-9fbf-3f0da3177978",
@@ -2086,7 +1945,7 @@
     "features": "市民ランナー主役の大会です。柏崎の風・海・山、そして温もりに触れていただくイベントです。",
     "url": "https://shiokaze-run.info/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "fc023992-f877-5e42-8cd7-94a69f8de889",
@@ -2105,7 +1964,7 @@
     "features": "5月のさわやかな風、清流のせせらぎ、雄大な北アルプス、緑豊かな神通川河川敷コース",
     "url": "http://www.seiryu-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "ba605d79-db7d-56dd-ba86-cea0cdce283e",
@@ -2125,7 +1984,7 @@
     "features": null,
     "url": "https://saba-ultra.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "9279d81d-699d-56aa-b23f-3758f9e42c6d",
@@ -2137,15 +1996,15 @@
     "prefecture": "長野県",
     "city": "南牧村",
     "distance": [
-      "ウルトラ",
-      "100km"
+      "100km",
+      "ウルトラ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km68km",
     "features": null,
     "url": "https://www.r-wellness.com/nobeyama/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "cbd57c5a-851d-53b1-84ab-2447eb404662",
@@ -2353,7 +2212,7 @@
     "features": "ランナーに人気の松戸！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/mate-matudo68/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "4e9891cb-1c30-505d-96fc-73ce1447e399",
@@ -2372,7 +2231,7 @@
     "features": null,
     "url": "https://sakura-seitai.jpn.com/dandosan",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f03760c6-6cfe-5658-8b46-818a9053a0b5",
@@ -2562,7 +2421,7 @@
     "date": "2026-05-24",
     "entry_start_date": "2026-02-20",
     "entry_end_date": "2026-05-04",
-    "entry_status": "受付中",
+    "entry_status": "受付終了",
     "prefecture": "岩手県",
     "city": "葛巻町",
     "distance": [
@@ -2572,7 +2431,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/141899",
-    "updated_at": "2026年03月06日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "9015ef3f-9c25-5de4-ad37-a54394d67329",
@@ -2619,7 +2478,7 @@
     "date": "2026-05-24",
     "entry_start_date": "2026-02-20",
     "entry_end_date": "2026-05-04",
-    "entry_status": "受付中",
+    "entry_status": "受付終了",
     "prefecture": "栃木県",
     "city": "那須町",
     "distance": [
@@ -2630,7 +2489,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/139541/",
-    "updated_at": "2026年03月06日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f34205bf-4399-537e-af8e-cd666e5f30ad",
@@ -2794,7 +2653,7 @@
     "features": null,
     "url": "https://earthrunclub.net/competition/20260524_inage_hana_14/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e95ae775-1fa6-54eb-9388-aeccc810e1e4",
@@ -2813,7 +2672,7 @@
     "features": "人気の府中風の道マラソン！！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっており...",
     "url": "https://up-run.jp/events/up-fuchuu77/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "b5649bd0-3683-5164-84c9-11cbc2a4fe69",
@@ -2832,7 +2691,7 @@
     "features": null,
     "url": "https://www.kurobe-taikyo.jp/road/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "aac4a87e-c3fb-5289-ab72-a9be92a4f136",
@@ -2844,16 +2703,16 @@
     "prefecture": "愛知県",
     "city": "名古屋市",
     "distance": [
+      "ハーフ",
       "フル",
-      "リレー",
-      "ハーフ"
+      "リレー"
     ],
     "is_jaaf_certified": false,
     "time_limit": "5時間20分",
     "features": null,
     "url": "https://athmico.jp/item/sg2605",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "d4a250b3-c439-5c91-bdb5-1e02d508b2f5",
@@ -2872,7 +2731,7 @@
     "features": null,
     "url": "https://universal-field.com/event/shimokoshiki-maranic/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "beb02a79-2bf7-5a98-be44-dfc38867b607",
@@ -3004,7 +2863,7 @@
     "date": "2026-05-30",
     "entry_start_date": "2026-02-20",
     "entry_end_date": "2026-05-04",
-    "entry_status": "受付中",
+    "entry_status": "受付終了",
     "prefecture": "栃木県",
     "city": "那須塩原市",
     "distance": [
@@ -3014,7 +2873,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/index.php/140736",
-    "updated_at": "2026年03月06日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "be195205-d85c-5f17-aa0b-464630a1138c",
@@ -3110,7 +2969,7 @@
     "features": null,
     "url": "https://michikusa-ultra.com/event/10th_yokosuka.html",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e212f1da-84e4-55f5-a1f6-9c4f49b9f42c",
@@ -3122,15 +2981,15 @@
     "prefecture": "長野県",
     "city": "諏訪市",
     "distance": [
-      "ウルトラ",
-      "100km"
+      "100km",
+      "ウルトラ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km80km64km48km",
     "features": null,
     "url": "https://gsrun.jp/ultra_suwako/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "feb4d92f-3829-5972-aaa2-76853878dc15",
@@ -3149,7 +3008,7 @@
     "features": null,
     "url": "https://moshicom.com/141324",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "b990f8ca-cecb-5625-8d0f-94720db95e4b",
@@ -3430,7 +3289,7 @@
     "features": "人気の新横浜鶴見川マラソン！！神奈川の中心地でありながら、沢山の自然にふれあえるフラットでとても走り...",
     "url": "https://up-run.jp/events/mate-shinyokohama96/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "8bdb7835-c8c8-5785-83ee-a842d793004e",
@@ -3450,7 +3309,7 @@
     "features": null,
     "url": "https://www.r-wellness.com/nara/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "df1ae083-10b9-5f02-a42d-3f7db0894759",
@@ -3469,7 +3328,7 @@
     "features": null,
     "url": "http://ebidai100km.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "cd3abe27-e497-5cd3-97ef-893028d90dba",
@@ -3488,7 +3347,7 @@
     "features": null,
     "url": "https://shimanami-surround.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "d1dd5eb1-659b-59ec-9746-01cf63216e71",
@@ -3616,7 +3475,7 @@
     "features": "ランナーに人気の松戸！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/mate-matudo69/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "97906a57-2e33-5f8f-a77c-f3ffd26dc6af",
@@ -3635,7 +3494,7 @@
     "features": "ランナーに人気の荒川！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/up-akabanezensyumoku32/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "6a0972c2-d0aa-51e2-9254-b422a144bb94",
@@ -3654,7 +3513,7 @@
     "features": null,
     "url": "https://yypark.com/tojinbo100km/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "4f4ba548-5b46-56a3-a27d-96586e5a3f3a",
@@ -3673,7 +3532,7 @@
     "features": null,
     "url": "https://teamultra-k.info/race/miyako100mile/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "67708e2a-6e27-5c03-83a7-abd808f67cee",
@@ -4131,7 +3990,7 @@
     "features": null,
     "url": "https://chitose-jal-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "faac4859-b38d-50ee-9eb0-b505a7cb2f0e",
@@ -4150,7 +4009,7 @@
     "features": "ランナーに人気の新横浜！鶴見川河川敷を走るフラットな走りやすいコースで初心者から上級者まで楽しめる大...",
     "url": "https://up-run.jp/events/up-shinyokohama86/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "1bf67da5-9dd5-56a8-a74b-59fd9e5ac058",
@@ -4169,7 +4028,7 @@
     "features": null,
     "url": "https://www.town.rishirifuji.hokkaido.jp/rishirifuji/1130.htm",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "85e1d1cc-b740-50b2-b1f9-71d2ebfa45f4",
@@ -4188,7 +4047,7 @@
     "features": null,
     "url": "https://www.town.kanegasaki.iwate.jp/articles/2025112100026/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "a2feb87d-5409-5a1f-a3ae-83afc8935840",
@@ -4207,7 +4066,7 @@
     "features": null,
     "url": "http://www.jogtrip.org/trip/index.php/view/455",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "16bbdbc1-e065-5458-9071-d22e855b5b5a",
@@ -4749,7 +4608,7 @@
     "features": "ランナーに人気の府中！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/mate-futyu47/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e3fc2ca7-d5b5-59b4-a5e4-4862c67132e3",
@@ -4768,7 +4627,7 @@
     "features": "ランニングを習慣としている方、他のランナーと一緒に走ってみたい方などを集めて競いあいましょう。 多摩...",
     "url": "https://up-run.jp/events/up-kawasaki77/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "758a40f5-cafe-57f7-8076-49f7332fbc45",
@@ -4787,7 +4646,7 @@
     "features": null,
     "url": "https://www.mukatsuku-w-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f48267e3-8e2f-52e6-8f9a-0a53f8c07c8f",
@@ -4807,7 +4666,7 @@
     "features": null,
     "url": "https://www.iwate-ginga100.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f21ac226-49b0-55e1-b5f8-f4160bb8a42f",
@@ -4827,7 +4686,7 @@
     "features": null,
     "url": "https://www.outdoorsportsjapan.com/aizu_ultra/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "fb0a751a-034d-53f3-87b2-37b5bcff9313",
@@ -4847,7 +4706,7 @@
     "features": null,
     "url": "https://www.r-wellness.com/takayama/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "4a307e0f-1487-598f-a696-7dfdc3c0c1dc",
@@ -4992,7 +4851,7 @@
     "features": "ランナーに人気の絶景スポット彩湖！！「水と緑のオアシス」彩湖での最高の景観を見ながら走るコースは格別...",
     "url": "https://up-run.jp/events/up-saiko45/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "38f95a96-4626-59ca-b79d-c3c11fa7df4d",
@@ -5011,7 +4870,7 @@
     "features": "ランナーに人気の荒川！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっております。",
     "url": "https://up-run.jp/events/up-higashiooshimalong32/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "64edd38e-38d3-5688-8bcf-51d13176e095",
@@ -5159,7 +5018,7 @@
     "features": "隠岐の風土が刻むゆったりとした時間の中で、ランナーと島民が共に大会を作り上げ、スタート・沿道・フィニ...",
     "url": "https://okinoshima-ultra.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "603dded1-8b67-5fc7-a589-8f3cc1290be9",
@@ -5219,7 +5078,7 @@
     "features": "人気の新横浜鶴見川マラソン！！神奈川の中心地でありながら、沢山の自然にふれあえるフラットでとても走り...",
     "url": "https://up-run.jp/events/mate-shinyokohama97/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "268ca633-e589-5127-bc9b-41744d079aa6",
@@ -5239,7 +5098,7 @@
     "features": null,
     "url": "https://michikusa-ultra.com/event/30th31st_overnight.html",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "a36abadf-19e1-5ade-a736-c330376db276",
@@ -5336,7 +5195,7 @@
     "features": null,
     "url": "https://hakodate-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "88a05f47-9361-5729-bc92-e93abe7f5b54",
@@ -5355,7 +5214,7 @@
     "features": null,
     "url": "https://nanakita-sports.com/ys-news/1280/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "94355749-40bd-51ef-9cc5-e985dc48cae2",
@@ -5374,7 +5233,7 @@
     "features": "人気の府中風の道マラソン！！フラットな走りやすいコースで初心者から上級者まで楽しめる大会となっており...",
     "url": "https://up-run.jp/events/up-fuchuu78/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "11c61daa-c3e5-5510-b647-76ad32b70146",
@@ -5386,15 +5245,15 @@
     "prefecture": "北海道",
     "city": "湧別町、佐呂間町、北見市",
     "distance": [
-      "ウルトラ",
-      "100km"
+      "100km",
+      "ウルトラ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km公認50km",
     "features": null,
     "url": "https://saromanblue.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "a6415901-9511-5502-a283-a83d3693559d",
@@ -5594,7 +5453,7 @@
     "features": null,
     "url": "https://fun-trails.com/race/gassan/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "5c4c30e1-a166-5bba-983d-18b23485a5f6",
@@ -5614,7 +5473,7 @@
     "features": null,
     "url": "http://sportsaid-japan.org/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "42fc1126-9bca-599a-8fa9-0b7166841521",
@@ -5671,7 +5530,7 @@
     "features": null,
     "url": "http://www.jogtrip.org/trip/index.php/view/341",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "0bdde6ed-c5d7-579b-9930-f9f6386c447c",
@@ -5763,7 +5622,7 @@
     "features": null,
     "url": "https://sdome-event.jp/marathon2026/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "3029bcdf-54e4-5134-b394-b07cc824d8ad",
@@ -5812,15 +5671,15 @@
     "city": "弘前市",
     "distance": [
       "177km",
-      "262km",
-      "85km"
+      "85km",
+      "262km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "262km177km85km",
     "features": null,
     "url": "https://sportsaid-japan.org/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "c0cf35d7-047d-542f-a8d5-6cb20d87f7a5",
@@ -5839,7 +5698,7 @@
     "features": "千葉県の房総半島を1周するウルトラマラソンです。自然に囲まれた房総エリアを満喫する、約300kmのコ...",
     "url": "https://npo-hashiru.org/event/bouso_ultra_vol004/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "3b28c5ae-cd48-5a0f-a563-dbca0506a71c",
@@ -5913,7 +5772,7 @@
     "features": null,
     "url": "https://michikusa-ultra.com/event/30th31st_overnight.html",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "80ef226f-66b4-5ac7-ae29-c455eaca8d49",
@@ -6112,7 +5971,7 @@
     "features": null,
     "url": "https://trainic-world.org/fujisanroku/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e7d22dad-9ed1-50ae-9254-393751336642",
@@ -6149,7 +6008,7 @@
     "features": null,
     "url": "https://earthrunclub.net/competition/20260823_kashiwa_soukai_14/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "b96449a5-7700-5519-98b6-67f63765f68f",
@@ -6168,7 +6027,7 @@
     "features": null,
     "url": "https://morioka-endurance-quest.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "048c94f9-4a7f-5661-a6c8-cf2e923ee702",
@@ -6176,7 +6035,7 @@
     "date": "2026-08-30",
     "entry_start_date": "2026-02-20",
     "entry_end_date": "2026-05-04",
-    "entry_status": "受付中",
+    "entry_status": "受付終了",
     "prefecture": "大阪府",
     "city": "豊中市",
     "distance": [
@@ -6191,7 +6050,7 @@
     "time_limit": null,
     "features": null,
     "url": "https://moshicom.com/140291",
-    "updated_at": "2026年03月06日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "50e09f78-9428-51f5-912a-21681a6e4a65",
@@ -6210,7 +6069,7 @@
     "features": "世界のトップアスリートが競ったコースで、新たに生まれ変わった北海道マラソンが繰り広げられます。",
     "url": "https://hokkaido-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "6602199f-db35-59cf-992e-1521f392e40e",
@@ -6247,7 +6106,7 @@
     "features": "平和の願いを海風に乗せて走る",
     "url": "https://wakkanai-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "108e5408-5b39-5c52-a9d9-9316a3625df4",
@@ -6302,7 +6161,7 @@
     "features": null,
     "url": "https://earthrunclub.net/competition/20260913_tokyotoyosu_marathon_03/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "8f0c73cc-ac90-5a36-9721-3e68269ffad4",
@@ -6321,7 +6180,7 @@
     "features": null,
     "url": "https://yasya.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "35b668e1-54f0-5205-af27-17a78fc2d6b4",
@@ -6340,7 +6199,7 @@
     "features": null,
     "url": "https://www.sportsentry.ne.jp/event/t/105170",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "5a1965c6-37dc-5071-975a-b8e2abfe3e0d",
@@ -6359,7 +6218,7 @@
     "features": "笑顔も深さも日本一！！～田沢湖ブルーを駆けぬけろ～",
     "url": "https://tazawako-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "00aa9e43-6fe9-56ac-a09b-f814a40eaa6f",
@@ -6371,15 +6230,15 @@
     "prefecture": "京都府",
     "city": "京丹後市",
     "distance": [
-      "ウルトラ",
-      "100km"
+      "100km",
+      "ウルトラ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km60km",
     "features": "京都、丹後ウルトラマラソンの舞台は、山陰海岸ジオパークに認定された 日本屈指の美しい海岸線。走るたび...",
     "url": "https://www.r-wellness.com/tango/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "da49fd61-67bd-509a-98c4-5e8a98fa15ef",
@@ -6416,7 +6275,7 @@
     "features": null,
     "url": "https://ainan-maranic.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "16390180-7785-5492-8918-cba91d0f7014",
@@ -6453,7 +6312,7 @@
     "features": null,
     "url": "https://www.abashiri-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e9c520a3-a23f-512f-9a8f-631ce64c39b5",
@@ -6472,7 +6331,7 @@
     "features": "高崎市を代表する風光明媚な観光地「榛名湖」を舞台に、日本一標高の高い日本陸上競技連盟公認コースを走る...",
     "url": "https://www.harunako-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "9fd98ad1-7cc5-51be-ad8d-c6c6f7674718",
@@ -6491,7 +6350,7 @@
     "features": null,
     "url": "https://www.north-ontake.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "de1a6c12-441f-56fd-897a-d785226e7b36",
@@ -6503,15 +6362,15 @@
     "prefecture": "秋田県",
     "city": "仙北市",
     "distance": [
-      "フル",
-      "100km"
+      "100km",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km70km50km",
     "features": null,
     "url": "https://www.kumagera.ne.jp/a100km/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "9e8f9b3a-b095-56e7-81a3-9f070ffd7bbb",
@@ -6531,7 +6390,7 @@
     "features": "埼玉県皆野町を基点としたウルトラマラソンをFunTrailsが企画!! 75K・35K・40Kのコー...",
     "url": "https://fun-trails.com/race/minano-ultra/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "435a1e1e-b756-5fa1-8ffb-abdee9782aa6",
@@ -6551,7 +6410,7 @@
     "features": "日本屈指の山岳ウルトラ！地元あげて笑顔の応援団！",
     "url": "https://info770417.wixsite.com/muraokaultra",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "da9020dc-6d2e-569f-bc36-f382a9d3d73e",
@@ -6588,7 +6447,7 @@
     "features": null,
     "url": "https://iwate-morioka-city-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "be987778-5fca-5ef0-b979-d61458c4c55d",
@@ -6607,7 +6466,7 @@
     "features": null,
     "url": "https://izufootjourney.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "5a207d17-daa8-53b9-82ff-394843490d33",
@@ -6626,7 +6485,7 @@
     "features": null,
     "url": "https://sportsone.jp/rocket-marathon/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "816d21f7-bf45-5218-9482-e3bcf4b294a2",
@@ -6645,7 +6504,7 @@
     "features": null,
     "url": "https://runfes-niigata.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "d6ef5867-affb-5a44-9f22-efe452f1f6d9",
@@ -6664,7 +6523,7 @@
     "features": null,
     "url": "http://echigo-joetsu.com/100km/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f825f7f1-50b9-5fe7-9ec7-3049bc73112e",
@@ -6683,7 +6542,7 @@
     "features": null,
     "url": "https://www.ontrastarelaymarathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e77a722c-1b3d-577c-82cb-7cb22c11d6d6",
@@ -6757,7 +6616,7 @@
     "features": null,
     "url": "https://iki-ultra.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "2e7cf76f-8cfa-5b32-9f55-904e60e53cd5",
@@ -6776,7 +6635,7 @@
     "features": null,
     "url": "https://sapporo-race.rdc-run.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "85d75483-2fd4-5321-a319-4c5b2a748458",
@@ -6795,7 +6654,7 @@
     "features": null,
     "url": "https://alps-marathon.net/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f993731d-9c02-549c-ba66-282a001e6cfc",
@@ -6833,7 +6692,7 @@
     "features": "水戸市民先行枠のエントリー期間は令和8年4月16日（木）午前10時～22日（水）",
     "url": "https://mitokomon-manyu-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "321f8ff3-3b46-530b-ac2c-fefb37a0b704",
@@ -6852,7 +6711,7 @@
     "features": null,
     "url": "https://yokohamamarathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "1a665f6d-934d-5331-a78c-65b13c99edb4",
@@ -6871,7 +6730,7 @@
     "features": null,
     "url": "https://www.kanazawa-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "401dabac-c7fd-5040-9cba-b66d841abf2f",
@@ -6890,7 +6749,7 @@
     "features": "『箱根八里は馬でも越すが、越すに越されぬ…』とうたわれた大河「大井川」。その大河に整備された、全国初...",
     "url": "https://www.shimada-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "65666ee0-0fa0-5d90-ab0f-249eabce9b44",
@@ -6909,7 +6768,7 @@
     "features": null,
     "url": "https://sportsone.jp/rocket-marathon/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "b79486a0-ae09-59a6-a8b3-756d86a4e961",
@@ -6928,7 +6787,7 @@
     "features": "山・海・まち　美しい富山湾を走ろう",
     "url": "https://www.toyamamarathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "bd13548e-d6b8-5730-9ad2-cd3b24d15dee",
@@ -6947,7 +6806,7 @@
     "features": null,
     "url": "https://www.osaka42195.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "dd945c88-549a-5222-aca5-4389811e5a5b",
@@ -6966,7 +6825,7 @@
     "features": "瀬戸内海（周防灘）と日本海（響灘）を臨む国内屈指のシーサイドコース。 コースから見える絶景をゆっくり...",
     "url": "https://kaikyomarathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "71ade139-8d5d-528b-8343-a531e50bee15",
@@ -6985,7 +6844,7 @@
     "features": null,
     "url": "https://www.g-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "f2962e15-fef8-5daf-8d35-6f1d9cec669a",
@@ -7022,7 +6881,7 @@
     "features": "千葉県民先行枠は3月15日（日）午後8時～3月18日（水）午後5時、その他チャリティ枠、女性応援枠な...",
     "url": "https://chiba-aqualine-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "e299c3c5-024e-5da4-bada-73d03f5c9eb7",
@@ -7041,7 +6900,7 @@
     "features": null,
     "url": "https://osaka-race.rdc-run.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "d6cf9f9a-d638-5daa-873f-2ff658f92923",
@@ -7060,7 +6919,7 @@
     "features": "岡山市民県民優先枠のエントリーは4月8日～4月15日",
     "url": "https://www.okayamamarathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "eeaef43c-d53a-572c-b452-4ba87608c893",
@@ -7079,7 +6938,7 @@
     "features": null,
     "url": "http://f-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "d60c6dd5-467a-5489-89b1-0e6b0b3daca9",
@@ -7098,7 +6957,7 @@
     "features": "先行エントリーは2025年4月5日（日）～ 2025年4月12日（日）",
     "url": "https://hitachi-marathon.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "22bca477-2f49-5b2c-9c0a-eec4abfa006a",
@@ -7117,7 +6976,7 @@
     "features": null,
     "url": "https://kobe-marathon.net/2026/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "9ce681fe-67c9-5af4-a4ba-43f8e62bb73f",
@@ -7136,7 +6995,7 @@
     "features": null,
     "url": "https://fukuchiyama-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "5c5fd86c-1f70-585e-936c-88d3f89eaeb5",
@@ -7155,7 +7014,7 @@
     "features": "制限時間４Ｈ、自己への挑戦状！",
     "url": "https://www.ohtawara-marathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "409c3603-ce95-58a7-b557-cf94e61ff013",
@@ -7197,7 +7056,7 @@
     "features": "安全な園内コースです！初マラソン大歓迎！42.195㎞にチャレンジしよう！！",
     "url": "https://htj.gr.jp/summary/akogishi",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "9172397a-1871-5bb4-a40f-71ec89dbc3ca",
@@ -7216,7 +7075,7 @@
     "features": null,
     "url": "https://www.shonan-kokusai.jp/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "1883c295-161d-5441-8893-3d09a8691840",
@@ -7253,7 +7112,7 @@
     "features": "アーリーエントリー：4月20日（月）～ 5月4日（月）",
     "url": "https://mtfujimarathon.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "14428b4d-9e2a-5d3a-bfca-cd0d723e0717",
@@ -7272,7 +7131,7 @@
     "features": null,
     "url": "https://osaka-race.rdc-run.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   },
   {
     "id": "aa0920e3-3044-5dec-b622-29dac5195d6b",
@@ -7309,6 +7168,6 @@
     "features": null,
     "url": "https://osaka-race.rdc-run.com/",
     "source": "runnersbible",
-    "updated_at": "2026年05月04日"
+    "updated_at": "2026年05月05日"
   }
 ]
