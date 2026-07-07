@@ -194,9 +194,9 @@
     "prefecture": "青森県",
     "city": "弘前市",
     "distance": [
-      "177km",
       "262km",
-      "85km"
+      "85km",
+      "177km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "262km177km85km",
@@ -288,8 +288,8 @@
     "prefecture": "神奈川県",
     "city": "横浜市",
     "distance": [
-      "60km",
-      "ウルトラ"
+      "ウルトラ",
+      "60km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "60km",
@@ -812,8 +812,8 @@
     "prefecture": "新潟県",
     "city": "佐渡市",
     "distance": [
-      "208km",
-      "ウルトラ"
+      "ウルトラ",
+      "208km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "208km",
@@ -832,8 +832,8 @@
     "prefecture": "京都府",
     "city": "京丹後市",
     "distance": [
-      "100km",
-      "ウルトラ"
+      "ウルトラ",
+      "100km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km60km",
@@ -1948,6 +1948,25 @@
     "updated_at": "2026年07月07日"
   },
   {
+    "id": "f1195032-38a7-556b-881d-c8f61949bdda",
+    "name": "【大会終了】松本マラソン",
+    "date": "2026-11-08",
+    "entry_start_date": null,
+    "entry_end_date": null,
+    "entry_status": "不明",
+    "prefecture": "長野県",
+    "city": "松本市",
+    "distance": [
+      "フル"
+    ],
+    "is_jaaf_certified": false,
+    "time_limit": "6時間",
+    "features": null,
+    "url": "https://www.city.matsumoto.nagano.jp/soshiki/149/67452.html",
+    "source": "runnersbible",
+    "updated_at": "2026年07月07日"
+  },
+  {
     "id": "e299c3c5-024e-5da4-bada-73d03f5c9eb7",
     "name": "THE CHALLENGE RACE OSAKA 5",
     "date": "2026-11-08",
@@ -2214,8 +2233,8 @@
     "updated_at": "2026年07月07日"
   },
   {
-    "id": "f206b05b-4769-5d4c-8b5a-f174263d5e8a",
-    "name": "2025第14回信州大学マラソン",
+    "id": "22b32850-66e0-5fd6-acf8-99566a266b79",
+    "name": "2026第14回信州大学マラソン",
     "date": "2026-11-28",
     "entry_start_date": "2026-06-01",
     "entry_end_date": "2026-11-08",
@@ -2567,8 +2586,8 @@
     "prefecture": "沖縄県",
     "city": "与那原町",
     "distance": [
-      "100km",
-      "ウルトラ"
+      "ウルトラ",
+      "100km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km50km",
