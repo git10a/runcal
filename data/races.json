@@ -27,8 +27,8 @@
     "prefecture": "宮城県",
     "city": "仙台市",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km50km",
@@ -216,8 +216,8 @@
     "prefecture": "新潟県",
     "city": "佐渡市",
     "distance": [
-      "208km",
-      "ウルトラ"
+      "ウルトラ",
+      "208km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "208km",
@@ -444,8 +444,8 @@
     "prefecture": "秋田県",
     "city": "仙北市",
     "distance": [
-      "フル",
-      "100km"
+      "100km",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km70km50km",
@@ -464,8 +464,8 @@
     "prefecture": "群馬県",
     "city": "前橋市",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km",
@@ -484,8 +484,8 @@
     "prefecture": "埼玉県",
     "city": "皆野町",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "76.5km",
@@ -504,8 +504,8 @@
     "prefecture": "新潟県",
     "city": "阿賀町",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km65km",
@@ -524,8 +524,8 @@
     "prefecture": "兵庫県",
     "city": "香美町",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km88km66km51km",
@@ -733,8 +733,8 @@
     "prefecture": "兵庫県",
     "city": "芦屋市",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "6時間30分",
@@ -753,8 +753,8 @@
     "prefecture": "山口県",
     "city": "美祢市",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km43km",
@@ -1093,8 +1093,8 @@
     "prefecture": "長崎県",
     "city": "壱岐市",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km50km",
@@ -1189,8 +1189,8 @@
     "prefecture": "埼玉県",
     "city": "毛呂山町",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "70km",
@@ -1209,8 +1209,8 @@
     "prefecture": "高知県",
     "city": "四万十市",
     "distance": [
-      "フル",
-      "ウルトラ"
+      "ウルトラ",
+      "フル"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km公認60km",
@@ -1667,8 +1667,8 @@
     "city": "弘前市",
     "distance": [
       "100km",
-      "50km",
-      "ウルトラ"
+      "ウルトラ",
+      "50km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km公認50km公認",
@@ -3466,6 +3466,25 @@
     "updated_at": "2026年09月05日"
   },
   {
+    "id": "cdee3a27-46e0-5333-8c3c-5d19bcda0343",
+    "name": "第18回いわきサンシャインマラソン",
+    "date": "2027-02-28",
+    "entry_start_date": "2026-09-11",
+    "entry_end_date": "2026-10-15",
+    "entry_status": "エントリー前",
+    "prefecture": "福島県",
+    "city": "いわき市",
+    "distance": [
+      "フル"
+    ],
+    "is_jaaf_certified": true,
+    "time_limit": "6時間",
+    "features": null,
+    "url": "https://iwaki-marathon.jp/",
+    "source": "runnersbible",
+    "updated_at": "2026年09月05日"
+  },
+  {
     "id": "6207d93a-10a3-57ea-8f51-67af07bf10b7",
     "name": "大阪マラソン2027～ OSAKA MARATHON 2027 ～（第15回大阪マラソン）",
     "date": "2027-02-28",
@@ -3500,6 +3519,25 @@
     "time_limit": "7時間",
     "features": "激坂と絶景　五島の聖地を走るフルマラソン",
     "url": "https://goto-tsubaki-marathon.jp/",
+    "source": "runnersbible",
+    "updated_at": "2026年09月05日"
+  },
+  {
+    "id": "281b2961-8b83-5131-a7ca-e4b46d0261ef",
+    "name": "第47回横島いちごマラソン大会／玉名いだてんマラソン2027",
+    "date": "2027-02-28",
+    "entry_start_date": "2026-09-09",
+    "entry_end_date": "2026-11-13",
+    "entry_status": "エントリー前",
+    "prefecture": "熊本県",
+    "city": "玉名市",
+    "distance": [
+      "フル"
+    ],
+    "is_jaaf_certified": false,
+    "time_limit": "6時間",
+    "features": null,
+    "url": "https://ichigo-marathon.jp/",
     "source": "runnersbible",
     "updated_at": "2026年09月05日"
   },
@@ -3652,6 +3690,25 @@
     "time_limit": "6時間30分",
     "features": null,
     "url": "https://sagasakura-marathon.jp/",
+    "source": "runnersbible",
+    "updated_at": "2026年09月05日"
+  },
+  {
+    "id": "6ec2da71-29d7-5ca7-aaa0-a5b6e67f2d1c",
+    "name": "第29回長野マラソン29h Nagano Marathon",
+    "date": "2027-04-18",
+    "entry_start_date": "2026-09-12",
+    "entry_end_date": "2026-11-01",
+    "entry_status": "エントリー前",
+    "prefecture": "長野県",
+    "city": "長野市",
+    "distance": [
+      "フル"
+    ],
+    "is_jaaf_certified": true,
+    "time_limit": "5時間",
+    "features": null,
+    "url": "https://www.naganomarathon.gr.jp/",
     "source": "runnersbible",
     "updated_at": "2026年09月05日"
   }
