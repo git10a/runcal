@@ -859,6 +859,25 @@
     "updated_at": "2026年09月12日"
   },
   {
+    "id": "7d889bd1-c3de-5c7d-84d2-09b9b4be1f3f",
+    "name": "たかす激坂フルマラソン2026【TAKASU STEEP FULL MARATHON】",
+    "date": "2026-10-11",
+    "entry_start_date": "2026-08-26",
+    "entry_end_date": "2026-10-03",
+    "entry_status": "受付中",
+    "prefecture": "福井県",
+    "city": "福井市",
+    "distance": [
+      "フル"
+    ],
+    "is_jaaf_certified": false,
+    "time_limit": null,
+    "features": null,
+    "url": "https://www.satoyamaworks.com/event/takasu-seeep-fullmarathon/",
+    "source": "runnersbible",
+    "updated_at": "2026年09月12日"
+  },
+  {
     "id": "c3586574-6bb0-5b43-95cd-57321dc0ccdc",
     "name": "第13回 龍馬脱藩マラソン大会",
     "date": "2026-10-11",
@@ -892,7 +911,7 @@
     "is_jaaf_certified": false,
     "time_limit": "100km50km",
     "features": null,
-    "url": "http://echigo-joetsu.com/100km/",
+    "url": "https://echigo-joetsu.com/100km/",
     "source": "runnersbible",
     "updated_at": "2026年09月12日"
   },
@@ -1591,8 +1610,8 @@
     "city": "弘前市",
     "distance": [
       "ウルトラ",
-      "50km",
-      "100km"
+      "100km",
+      "50km"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km公認50km公認",
