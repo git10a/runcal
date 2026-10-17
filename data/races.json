@@ -693,9 +693,9 @@
     "prefecture": "青森県",
     "city": "弘前市",
     "distance": [
-      "ウルトラ",
       "50km",
-      "100km"
+      "100km",
+      "ウルトラ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km公認50km公認",
@@ -2140,8 +2140,8 @@
     "prefecture": "沖縄県",
     "city": "与那原町",
     "distance": [
-      "ウルトラ",
-      "100km"
+      "100km",
+      "ウルトラ"
     ],
     "is_jaaf_certified": false,
     "time_limit": "100km50km",
@@ -3538,6 +3538,25 @@
     "updated_at": "2026年10月17日"
   },
   {
+    "id": "5f7f3c7a-2ccc-597e-a5a4-38403e29b6e6",
+    "name": "2027あおもり桜マラソン",
+    "date": "2027-04-18",
+    "entry_start_date": "2026-11-01",
+    "entry_end_date": "2027-01-29",
+    "entry_status": "エントリー前",
+    "prefecture": "青森県",
+    "city": "青森市",
+    "distance": [
+      "フル"
+    ],
+    "is_jaaf_certified": true,
+    "time_limit": "5時間３０分",
+    "features": null,
+    "url": "https://aomori-sakuramarathon.com/",
+    "source": "runnersbible",
+    "updated_at": "2026年10月17日"
+  },
+  {
     "id": "436dc201-092a-5b4f-946c-41c040c57b40",
     "name": "東北風土マラソン2027Tohoku Food Marathon 2027",
     "date": "2027-04-18",
@@ -3572,6 +3591,25 @@
     "time_limit": "5時間",
     "features": null,
     "url": "https://www.naganomarathon.gr.jp/",
+    "source": "runnersbible",
+    "updated_at": "2026年10月17日"
+  },
+  {
+    "id": "3bb1a03e-178d-53aa-8c35-48e5c7de45a1",
+    "name": "第3回ステージレース三陸 SRS200／100",
+    "date": "2027-05-01",
+    "entry_start_date": "2026-09-11",
+    "entry_end_date": "2026-12-25",
+    "entry_status": "受付中",
+    "prefecture": "岩手県",
+    "city": "宮古市",
+    "distance": [
+      "その他"
+    ],
+    "is_jaaf_certified": false,
+    "time_limit": "200km100km",
+    "features": null,
+    "url": "https://discover-rias.org/srs200/",
     "source": "runnersbible",
     "updated_at": "2026年10月17日"
   }
